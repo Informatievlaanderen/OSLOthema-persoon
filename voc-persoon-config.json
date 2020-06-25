@@ -1,0 +1,50 @@
+{
+  "naam": "Vocabularium Persoon",
+  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "identificator_organisatie": "https://data.vlaanderen.be/doc/organisatie/OVO002949",
+  "publicatiedatum": "2018-07-03",
+  "type_toepassing": "Aanbevolen (vrijwillig)",
+  "categorie": "Vocabularium & applicatieprofielen",
+  "specificatiedocument": [
+    {
+      "naam": "Vocabularium Persoon",
+      "waarde": "https://data.vlaanderen.be/ns/persoon"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+    {
+      "naam": "Werkgroep Charter OSLO Persoon",
+      "waarde": "Werkgroep Charter - OSLO Persoon.docx"
+    }
+  ],
+  "verslagen": [
+    {
+      "naam": "Verslag Thematische Werkgroep 1 - 2017-01-12",
+      "waarde": "Verslag TWG1 Persoon 12012017.docx"
+    },
+    {
+      "naam" : "Publieke Thematische Werkgroep 2 - 2017-03-15",
+      "waarde" : "Verslag TWG2 Persoon 15032017.doc"
+    }
+  ],
+  "presentaties": [
+    {
+      "naam" : "Publieke Werkgroep OSLO-Persoon 2017-01-12",
+      "waarde" : "OsloPersoonPubliekeWerkgroep20170112.pptx"
+    },
+    {
+      "naam" : "Publieke Werkgroep OSLO-Persoon 2017-03-15",
+      "waarde" : "OsloPersoonPubliekeWerkgroep20170315.pptx"
+    },
+    {
+      "naam" : "Webcast Persoon 2018-05-15",
+      "waarde" : "OSLO-Persoon.pptx"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor informatie met betrekking tot personen",
+  "organisatorisch_werkingsgebied": "alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "10 April 2018 (retroactief)",
+  "erkenning_werkgroep_datastandaarden": "29 Mei 2018",
+  "erkenning_stuurgroep": "03 Juli 2018"
+}
