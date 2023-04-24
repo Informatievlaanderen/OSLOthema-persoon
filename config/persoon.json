@@ -11,7 +11,6 @@
     "contributors-file": "stakeholders.csv",
     "contributors-column": "Persoon",
     "site": "site-skeleton",
-    "feedbackurl": "https://github.com/informatievlaanderen/OSLO-Discussion",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/erkende-standaarden/vocabularium-persoon/vocabularium-persoon.html"
+    "feedbackurl": "https://github.com/informatievlaanderen/OSLO-Discussion"
   }
 ]
