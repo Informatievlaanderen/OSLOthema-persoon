@@ -12,7 +12,6 @@
     "contributors-file": "stakeholders.csv",
     "contributors-column": "Persoon",
     "site": "site-skeleton/persoon-basis",
-    "feedbackurl": "https://github.com/informatievlaanderen/OSLO-Discussion",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/kandidaat-standaarden/applicatieprofiel-persoon-basis/applicatieprofiel-persoon-basis.html"
+    "feedbackurl": "https://github.com/informatievlaanderen/OSLO-Discussion"
   }
 ]
