@@ -37,15 +37,15 @@
       "EA-Guid": "{C6CF8D11-1B60-4e4c-9E3E-E6230CDF3C7C}",
       "definition": {
         "nl": "Hoofdverblijfplaats ve Persoon.",
-        "en": "Enter your translation here"
+        "en": "Main residence of a person"
       },
       "label": {
         "nl": "Domicilie",
-        "en": "Enter your translation here"
+        "en": "Domicile"
       },
       "usage": {
         "nl": "Plaats waar de Persoon het grootste deel vd tijd verblijft binnen de jurisdictie waarvan hij Inwoner is. Dit wordt doorgaans officieel vastgesteld en geregistreerd ih bevolkingsregister. Kan in praktijk verschillend vd feitelijke verblijfplaats.",
-        "en": "Enter your translation here"
+        "en": "The location of which the person resides the majority of its daily life time. This location is located within the jurisdiction of which the person is a resident. Usually this location is the outcome of a verification process and registered in the residence register of a country. "
       }
     },
     {
@@ -81,7 +81,7 @@
       "EA-Guid": "{68F9C64F-B2BC-4cdc-983F-633E88F5A446}",
       "label": {
         "nl": "Geregistreerd Persoon",
-        "en": "Enter your translation here"
+        "en": "Registered person"
       },
       "usage": {
         "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking.",
@@ -339,11 +339,11 @@
       "EA-Guid": "{D2AEE069-1764-43f4-BD00-1D0522CC6929}",
       "definition": {
         "nl": "Adres vd Verblijfplaats.",
-        "en": "Enter your translation here"
+        "en": "a address of stay"
       },
       "label": {
         "nl": "verblijfsadres",
-        "en": "Enter your translation here"
+        "en": "residence address"
       }
     },
     {
@@ -375,7 +375,7 @@
       "EA-Guid": "{138482A9-7C19-4b26-A1FB-B66958CB5C6F}",
       "label": {
         "nl": "plaats",
-        "en": "Enter your translation here"
+        "en": "location"
       }
     },
     {
@@ -383,7 +383,7 @@
       "EA-Guid": "{220D686C-C6E2-40cc-9EBD-35B8B5E2B8D0}",
       "label": {
         "nl": "nationaliteit",
-        "en": "Enter your translation here"
+        "en": "nationality"
       }
     },
     {
@@ -391,7 +391,7 @@
       "EA-Guid": "{18F83562-4D30-484f-AF12-95CFD0990138}",
       "label": {
         "nl": "land",
-        "en": "Enter your translation here"
+        "en": "country"
       }
     },
     {
@@ -563,11 +563,11 @@
       "EA-Guid": "{FB9BEC59-4ED4-4cf3-BE86-EC50EE2ED3A6}",
       "definition": {
         "nl": "Belangrijkste vd voornamen ve persoon.",
-        "en": "Enter your translation here"
+        "en": "commonly used first name of a person"
       },
       "label": {
         "nl": "gebruikte voornaam",
-        "en": "Enter your translation here"
+        "en": "used first name"
       }
     },
     {
