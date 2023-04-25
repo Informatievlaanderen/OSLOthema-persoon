@@ -551,7 +551,7 @@
       "EA-Guid": "{4AE7B4C6-2560-4cee-AE99-65610411E1E6}",
       "definition": {
         "nl": "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam.",
-        "en": "Enter your translation here"
+        "en": "The person's full name, usually the combination of his given names and familyname."
       },
       "label": {
         "nl": "volledige naam",
