@@ -16,7 +16,7 @@
 			{
 				"language": "en",
 				"template": "persoon-voc.j2",
-				"title": "ICEG Person",
+				"title": "Person",
 				"translationjson": "iceg-person_en.json",
 				"mergefile": "iceg-person_en_merged.jsonld"
 			}
