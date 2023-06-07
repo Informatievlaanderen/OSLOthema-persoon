@@ -16,7 +16,7 @@
 		"translation": [
 			{
 				"language": "en",
-				"template": "persoon-basis_en_ap.j2",
+				"template": "persoon-basis-en-ap.j2",
 				"title": "Person",
 				"translationjson": "persoon-basis_en.json",
 				"mergefile": "persoon-basis_en_merged.jsonld"
