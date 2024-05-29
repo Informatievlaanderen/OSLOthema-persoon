@@ -1,52 +1,55 @@
 {
-  "naam": "Vocabularium Persoon",
-  "rapport": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Generated/test/report/doc/vocabularium/persoon/ontwerpdocument/2020-01-06/all-persoon.jsonld",
-  "verantwoordelijke_organisatie": "Agentschap Digitaal Vlaanderen",
-  "identificator_organisatie": "https://data.vlaanderen.be/id/organisatie/OVO002949",
-  "publicatiedatum": "2018-07-03",
-  "type_toepassing": "Aanbevolen (vrijwillig)",
-  "categorie": "Vocabularium",
-  "beschrijving": "voc-persoon.md",
-  "specificatiedocument": [
+  "title": "Vocabularium Persoon",
+  "category": "Vocabularium",
+  "usage": "Aanbevolen (vrijwillig)",
+  "status": "erkende-standaard",
+  "descriptionFileName": "voc-persoon.md",
+  "responsibleOrganisation": [
     {
-      "naam": "Vocabularium Persoon",
-      "waarde": "https://data.vlaanderen.be/ns/persoon"
+      "name": "Agentschap Digitaal Vlaanderen",
+      "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "documentatie": [],
-  "charter": [
+  "publicationDate": "2018-07-03",
+  "specificationDocuments": [
     {
-      "naam": "Werkgroep Charter OSLO Persoon",
-      "waarde": "Werkgroep Charter - OSLO Persoon.docx"
+      "name": "Vocabularium Persoon",
+      "resourceReference": "https://data.vlaanderen.be/ns/persoon"
     }
   ],
-  "verslagen": [
+  "documentation": [],
+  "reports": [
     {
-      "naam": "Verslag Thematische Werkgroep 1 - 2017-01-12",
-      "waarde": "Verslag TWG1 Persoon 12012017.docx"
+      "name": "Verslag Thematische Werkgroep 1 - 2017-01-12",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/reports/Verslag TWG1 Persoon 12012017.docx"
     },
     {
-      "naam" : "Publieke Thematische Werkgroep 2 - 2017-03-15",
-      "waarde" : "Verslag TWG2 Persoon 15032017.docx"
+      "name": "Publieke Thematische Werkgroep 2 - 2017-03-15",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/reports/Verslag TWG2 Persoon 15032017.docx"
     }
   ],
-  "presentaties": [
+  "charter": {
+    "name": "Werkgroep Charter OSLO Persoon",
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/charter/Werkgroep Charter - OSLO Persoon.docx"
+  },
+  "presentations": [
     {
-      "naam" : "Publieke Werkgroep OSLO-Persoon 2017-01-12",
-      "waarde" : "OsloPersoonPubliekeWerkgroep20170112.pptx"
+      "name": "Publieke Werkgroep OSLO-Persoon 2017-01-12",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/presentations/OsloPersoonPubliekeWerkgroep20170112.pptx"
     },
     {
-      "naam" : "Publieke Werkgroep OSLO-Persoon 2017-03-15",
-      "waarde" : "OsloPersoonPubliekeWerkgroep20170315.pptx"
+      "name": "Publieke Werkgroep OSLO-Persoon 2017-03-15",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/presentations/OsloPersoonPubliekeWerkgroep20170315.pptx"
     },
     {
-      "naam" : "Webcast Persoon 2018-05-15",
-      "waarde" : "OSLO-Persoon.pptx"
+      "name": "Webcast Persoon 2018-05-15",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/standaardenregister/presentations/OSLO-Persoon.pptx"
     }
   ],
-  "functioneel_toepassingsgebied": "Semantische standaard voor informatie met betrekking tot personen",
-  "organisatorisch_werkingsgebied": "alle entiteiten van de Vlaamse overheid",
-  "datum_van_aanmelding": "10 April 2018 (retroactief)",
-  "erkenning_werkgroep_datastandaarden": "29 Mei 2018",
-  "erkenning_stuurgroep": "03 Juli 2018"
+  "dateOfRegistration": "10 April 2018 (retroactief)",
+  "dateOfAcknowledgementByWorkingGroup": "29 Mei 2018",
+  "dateOfAcknowledgementBySteeringCommittee": "03 Juli 2018",
+  "repository": "OSLOthema-persoon",
+  "datePublicReviewStart": "",
+  "endOfPublicationDate": ""
 }
