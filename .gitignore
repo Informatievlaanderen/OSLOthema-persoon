@@ -1,0 +1,5 @@
+.vscode/
+*.ldb
+report_*
+target/
+test
