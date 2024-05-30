@@ -2,4 +2,3 @@
 *.ldb
 report_*
 target/
-test
