@@ -2,7 +2,7 @@
   "title": "Applicatieprofiel Persoon basis",
   "category": "Applicatieprofiel",
   "usage": "Aanbevolgen (vrijwillig)",
-  "status": "kandidaat-standaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
   "descriptionFileName": "ap-persoon-basis.md",
   "responsibleOrganisation": [
     {
