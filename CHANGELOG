@@ -15,3 +15,5 @@
   persoon-voc
     - alle termen van erkende standaard zijn op erkend gezet
     - alle termen die nieuw zijn hebben ontwerpstandaard status
+    - voeg target card 0..* om de publicatie van deze connectoren te voorzien
+    - erkende termen ontbreken:
