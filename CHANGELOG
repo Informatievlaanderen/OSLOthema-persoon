@@ -11,3 +11,7 @@
     - (semantisch) heeft staatburgschap van een persoon is een foutieve manier om met associateklassen om te gaan. eigenschap staatburgeschap is voldoende.
     - todo: superklasse Object van Persoon moet nog verder opgelost worden.
     - todo: figuur is anders dan bij erkende standaard.
+
+  persoon-voc
+    - alle termen van erkende standaard zijn op erkend gezet
+    - alle termen die nieuw zijn hebben ontwerpstandaard status
