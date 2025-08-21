@@ -3,7 +3,7 @@
     "name": "persoon",
     "type": "voc",
     "eap": "OSLO-Persoon-VOC.eap",
-    "diagram": "OSLO-Persoon",
+    "diagram": "OSLO-Persoon-VOC",
     "template": "persoon-voc.j2",
     "title": "Persoon",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
