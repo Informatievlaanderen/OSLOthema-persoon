@@ -4,7 +4,7 @@
   aanpassingen voor vertaling in de context van ICEG
 20 aug 2025
   toolchain 4 uitrol
-  
+
   persoon-basis
     - tags voor associatieklassen toegevoegd
     - (semantisch) eigenschap heeft relatie met voor Persoonsrelatie is een foutieve uitkomst van toolchain 1
@@ -17,3 +17,12 @@
     - alle termen die nieuw zijn hebben ontwerpstandaard status
     - voeg target card 0..* om de publicatie van deze connectoren te voorzien
     - erkende termen ontbreken:
+02 okt 2025
+  persoon
+    - Attribuut plaats van Jurisdictie heeft nu de URI http://purl.org/dc/terms/spatial in plaats van een eigen URI.
+    - Attribuut voor GeregistreerdPersoon.registratie is aangepast naar de juiste URI (adms:identifier in plaats van adms:Identifier).
+    - Externe vocabularia zijn nu duidelijk aanwezig in het diagram in plaats van via OSLO Generiek.
+    - Relaties tussen Persoon en Gezin hebben nu definities in plaats van TODOs en W3C URIs waar mogelijk.
+    - AP en VOC zijn nu gemerged in 1 EAP.
+    - titel attribuut toegevoegd bij Persoon voor aanspreektitels zoals Dokter, Baron, Ingenieur, etc.
+    - Alignering tussen W3C Person - W3C PROV - DCTerms voor interoperabiliteit.
