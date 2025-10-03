@@ -26,3 +26,4 @@
     - AP en VOC zijn nu gemerged in 1 EAP.
     - titel attribuut toegevoegd bij Persoon voor aanspreektitels zoals Dokter, Baron, Ingenieur, etc.
     - Alignering tussen W3C Person - W3C PROV - DCTerms voor interoperabiliteit.
+    - heeftRelatieMet in plaats van isRelatieMet.
