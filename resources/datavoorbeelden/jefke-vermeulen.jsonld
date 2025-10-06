@@ -1,0 +1,161 @@
+{
+  "@context": [
+    "https://test.data.vlaanderen.be/doc/applicatieprofiel/persoon-basis/ontwerpstandaard/2025/context/persoon.jsonld",
+    {
+      "geosparql": "http://www.opengis.net/ont/geosparql#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "http://example.com/id/JefVermeulen",
+      "@type": "GeregistreerdPersoon",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": "123456789",
+        "Identificator.toegekendDoor": { "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248" },
+        "Identificator.toegekendDoor(String)": "Rijksregister",
+        "Identificator.toegekendOp": { "@value": "1969-04-24T10:15:00", "@type": "DateTime" }
+      },
+      "Persoon.heeftBurgerlijkeStaat": {
+        "@type": "BurgerlijkeStaat",
+        "BurgerlijkeStaat.type": { "@id": "http://example.com/concept/id/BurgerlijkeStaatType/Ongehuwd" }
+      },
+      "Persoon.heeftNationaliteit": [
+        {
+          "@type": "Nationaliteit",
+          "Nationaliteit.nationaliteit": { "@id": "http://publications.europa.eu/mdr/authority/country/BE" }
+        },
+        {
+          "@type": "Nationaliteit",
+          "Nationaliteit.nationaliteit": { "@id": "http://publications.europa.eu/mdr/authority/country/NL" }
+        }
+      ],
+      "Persoon.voornaam": "Jef",
+      "Persoon.achternaam": "Vermeulen",
+      "Persoon.gebruikteVoornaam": "Jef",
+      "Persoon.volledigeNaam": "Jef Vermeulen",
+      "Persoon.alternatieveNaam": "Jefke",
+      "Persoon.geslacht": { "@id": "http://publications.europa.eu/resource/authority/human-sex/MALE" },
+      "Persoon.inwonerschap": {
+        "@id": "http://example.com/id/Jurisdictie/BE"
+      },
+      "Persoon.staatsburgerschap": {
+        "@id": "http://example.com/id/Jurisdictie/BE"
+      },
+      "Persoon.titel": [
+        { "@value": "Dr.", "@language": "nl" },
+        { "@value": "Ing.", "@language": "nl" }
+      ],
+      "Persoon.heeftGeboorte": {
+        "@type": "Geboorte",
+        "Persoonsgebeurtenis.datum":  {
+          "@type": "DateTime",
+          "@value": "1969-04-23T03:44:00"
+        },
+        "Persoonsgebeurtenis.plaats": { 
+          "@type": "Plaats",
+          "Plaats.geometrie": {
+            "@type": "Geometrie",
+            "Geometrie.gml": {
+              "@type": "geosparql:gmlLiteral",
+              "@value": "<gml:Point gml:id=\"p21\" srsName=\"http://www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>45.67, 88.56</gml:coordinates></gml:Point>"
+            }
+          },
+          "Plaats.plaatsnaam": {
+            "@value": "Antwerpen",
+            "@language": "nl"
+          }
+        }
+      },
+      "Persoon.heeftOverlijden": {
+        "@type": "Overlijden",
+        "Persoonsgebeurtenis.datum": {
+          "@type": "DateTime",
+          "@value": "2025-09-10T14:52:00"
+        },
+        "Persoonsgebeurtenis.plaats": { 
+          "@type": "Plaats",
+          "Plaats.geometrie": {
+            "@type": "Geometrie",
+            "Geometrie.gml": {
+              "@type": "geosparql:gmlLiteral",
+              "@value": "<gml:Point gml:id=\"p21\" srsName=\"http://www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>45.67, 88.56</gml:coordinates></gml:Point>"
+            }
+          },
+          "Plaats.plaatsnaam": {
+            "@value": "Brussel",
+            "@language": "nl"
+          }
+        }
+      }
+    },
+    {
+      "@id": "http://example.com/id/InwonerschapJekfe",
+      "@type": "PermanentInwoner",
+      "Inwonerschap.persoon": { "@id": "http://example.com/id/JefVermeulen" },
+      "Inwonerschap.binnenJurisdictie": { "@id": "http://example.com/id/Jurisdictie/BE" },
+      "Inwonerschap.heeftVerblijfplaats": [
+        {
+          "@type": "Domicilie",
+          "Verblijfplaats.verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "Adresvoorstelling.straatnaam": {
+              "@value": "Stationsstraat",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.huisnummer": "12A",
+            "Adresvoorstelling.postcode": "1000",
+            "Adresvoorstelling.gemeentenaam": {
+              "@value": "Brussel",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.busnummer": "5",
+            "Adresvoorstelling.land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.volledigAdres": "Stationsstraat 12A bus 5, 1000 Brussel, België"
+          }
+        },
+        {
+          "@type": "Verblijfplaats",
+          "Verblijfplaats.verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "Adresvoorstelling.straatnaam": {
+              "@value": "Burgstraat",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.huisnummer": "34",
+            "Adresvoorstelling.postcode": "3000",
+            "Adresvoorstelling.gemeentenaam": {
+              "@value": "Leuven",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "Adresvoorstelling.volledigAdres": "Burgstraat 34, 3000 Leuven, België"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "http://example.com/id/StaatburgerschapJefke",
+      "@type": "Staatsburger",
+      "Staatburgerschap.persoon": { "@id": "http://example.com/id/JefVermeulen" },
+      "Staatburgerschap.binnenJurisdictie": { "@id": "http://example.com/id/Jurisdictie/BE" }
+    },
+    {
+      "@id": "http://example.com/id/Jurisdictie/België",
+      "@type": "Jurisdictie",
+      "Jurisdictie.plaats": {
+        "@type": "Plaats",
+        "Plaats.plaatsnaam": {
+          "@value": "België",
+          "@language": "nl"
+        }
+      }
+    }
+  ]
+}
