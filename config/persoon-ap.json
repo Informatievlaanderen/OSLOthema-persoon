@@ -4,7 +4,7 @@
     "type": "ap",
     "eap": "OSLO-Persoon.eap",
     "diagram": "OSLO-Persoon",
-    "template": "persoon-voc.j2",
+    "template": "persoon-basis-ap.j2",
     "title": "Persoon",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2025-10-03",
