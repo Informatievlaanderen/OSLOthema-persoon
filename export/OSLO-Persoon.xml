@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-09 09:29:59">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-09 10:10:55">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -20,7 +20,7 @@
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="C:\Users\vanassdy\OneDrive - Vlaamse overheid - Office 365\Documenten\OSLO\Templates\OSLOthema-template\export\OSLO-Persoon.xml"/>
 						<UML:TaggedValue tag="lastloaddate" value="2017-03-27 22:43:25"/>
-						<UML:TaggedValue tag="lastsavedate" value="2025-10-09 09:29:59"/>
+						<UML:TaggedValue tag="lastsavedate" value="2025-10-09 09:33:20"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -66,7 +66,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{42113A3E-25EF-4d4a-BA48-EA2ED3AB16E0}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={FC95FE0D-F332-4eaf-9A04-2382BFAE38FF}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={0B4EE98C-33B3-4c6f-8027-65BA6FC8F046}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={70DA8B0A-54DF-4540-9C04-034FEF62D203}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={0B4EE98C-33B3-4c6f-8027-65BA6FC8F046}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Vreemdeling" xmi.id="EAID_10B0C12D_0A75_477a_B770_AD59FBDB4898" visibility="public" namespace="EAPK_5FA6A694_075C_4e3c_8E4E_5DAED01B1982" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -715,7 +715,7 @@
 								<UML:TaggedValue tag="ea_sourceID" value="324"/>
 								<UML:TaggedValue tag="ea_targetID" value="318"/>
 								<UML:TaggedValue tag="rb" value="0..*"/>
-								<UML:TaggedValue tag="rt" value="+heeftVerblijfplaats"/>
+								<UML:TaggedValue tag="rt" value="heeftVerblijfplaats"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
 								<UML:AssociationEnd visibility="public" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_C4F93077_C7A3_4a9b_9E49_EBEC036645E5">
@@ -1065,10 +1065,10 @@
 								<UML:TaggedValue tag="ea_sourceID" value="326"/>
 								<UML:TaggedValue tag="ea_targetID" value="351"/>
 								<UML:TaggedValue tag="$ea_src_xref_property" value="$XREFPROP=$XID={1ACAB004-E090-4814-9DEA-2460356ADC3A}$XID;$NAM=MOFProps$NAM;$TYP=connectorSrcEnd property$TYP;$VIS=Public$VIS;$BEH=subsettedProperty$BEH;$DES={B450CBDC-1C64-4485-A1B7-1333551C4904}$DES;$CLT={8CB54417-2E66-4ebc-BC9F-CE82B3E37796}$CLT;$ENDXREF;"/>
-								<UML:TaggedValue tag="lb" value="1"/>
-								<UML:TaggedValue tag="lt" value="+gezinshoofd"/>
+								<UML:TaggedValue tag="lb" value="1&#xA;{subsets gezinslid}"/>
+								<UML:TaggedValue tag="lt" value="gezinshoofd"/>
 								<UML:TaggedValue tag="rb" value="0..1"/>
-								<UML:TaggedValue tag="rt" value="+isHoofdVan"/>
+								<UML:TaggedValue tag="rt" value="isHoofdVan"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
 								<UML:AssociationEnd visibility="public" multiplicity="1" name="gezinshoofd" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4AE67551_7E5E_4bb5_9D15_28D2DA99ED5B">
@@ -1114,9 +1114,9 @@
 								<UML:TaggedValue tag="ea_sourceID" value="326"/>
 								<UML:TaggedValue tag="ea_targetID" value="351"/>
 								<UML:TaggedValue tag="lb" value="1..*"/>
-								<UML:TaggedValue tag="lt" value="+gezinslid"/>
+								<UML:TaggedValue tag="lt" value="gezinslid"/>
 								<UML:TaggedValue tag="rb" value="0..*"/>
-								<UML:TaggedValue tag="rt" value="+isLidVan"/>
+								<UML:TaggedValue tag="rt" value="isLidVan"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
 								<UML:AssociationEnd visibility="public" multiplicity="1..*" name="gezinslid" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4AE67551_7E5E_4bb5_9D15_28D2DA99ED5B">
@@ -1220,7 +1220,7 @@
 								<UML:TaggedValue tag="ea_sourceID" value="326"/>
 								<UML:TaggedValue tag="ea_targetID" value="347"/>
 								<UML:TaggedValue tag="rb" value="0..1"/>
-								<UML:TaggedValue tag="rt" value="+heeftBurgerlijkeStaat"/>
+								<UML:TaggedValue tag="rt" value="heeftBurgerlijkeStaat"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
 								<UML:AssociationEnd visibility="public" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4AE67551_7E5E_4bb5_9D15_28D2DA99ED5B">
@@ -1967,7 +1967,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{4AD5F5B5-EF08-4fd6-B50E-2D58A1783FF8}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F57AF2F5-ADB1-4aec-8BFC-2719F05DFCB5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={81137558-EF0B-42e7-98B3-12CB4E44C69D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E684D49F-7B93-44ee-825F-C5A4A8F13B89}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={81137558-EF0B-42e7-98B3-12CB4E44C69D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="BinnenlandseDomicilie" xmi.id="EAID_8A5D7CC6_EFD4_47fd_A9B0_0B5606FBD984" visibility="public" namespace="EAPK_5FA6A694_075C_4e3c_8E4E_5DAED01B1982" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -2117,7 +2117,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{B11A7F25-8B7A-4806-BCFA-8FFEA5B047BE}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={078B8D7C-EB63-4b6e-BA56-C182253877F4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={ACAE08CA-87D0-4861-AB08-A4B7046944BC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5F39F1C5-F263-41b5-B402-1B737DB5B91B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={ACAE08CA-87D0-4861-AB08-A4B7046944BC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Nationaliteit" xmi.id="EAID_B9955532_1C0C_4275_A3A8_482A56775798" visibility="public" namespace="EAPK_5FA6A694_075C_4e3c_8E4E_5DAED01B1982" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -2230,7 +2230,7 @@
 								<UML:TaggedValue tag="ea_sourceID" value="326"/>
 								<UML:TaggedValue tag="ea_targetID" value="346"/>
 								<UML:TaggedValue tag="rb" value="0..*"/>
-								<UML:TaggedValue tag="rt" value="+heeftNationaliteit"/>
+								<UML:TaggedValue tag="rt" value="heeftNationaliteit"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
 								<UML:AssociationEnd visibility="public" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4AE67551_7E5E_4bb5_9D15_28D2DA99ED5B">
@@ -2278,7 +2278,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{14F8DA79-5DFC-4420-A861-B4BEB3728560}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D781F3D3-8524-4347-AF92-6B718D5E1643}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={BADDAC6B-A558-40d8-87E8-A3B6F9CA6473}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E3ADB0CA-DDD1-4829-A4D3-713AD25CB4C2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={BADDAC6B-A558-40d8-87E8-A3B6F9CA6473}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="WettelijkVerblijf" xmi.id="EAID_C27683EB_8A68_4dac_9811_C98B948F7C55" visibility="public" namespace="EAPK_5FA6A694_075C_4e3c_8E4E_5DAED01B1982" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -2488,7 +2488,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{B67D1EF3-5906-413a-BB9E-BD574531B668}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9634D1BA-47D7-417a-9339-6C6537BF0A9F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={C737BF31-0360-452c-8DEA-C2312530CC61}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={09881C4B-A750-4fed-B0F1-41EC57C13D9F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={C737BF31-0360-452c-8DEA-C2312530CC61}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Herkomst" xmi.id="EAID_D5802154_3741_41d4_89D3_21D2DC5DEE76" visibility="public" namespace="EAPK_5FA6A694_075C_4e3c_8E4E_5DAED01B1982" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -3264,7 +3264,6 @@
 		<UML:TaggedValue tag="usageNote-nl" xmi.id="EAID_93C3BCFC_1D04_4c5b_B428_945230AC7376" value="Kan, net als bijvoorbeeld een Huwelijk, de basis vormen van een Gezin." modelElement="EAID_D63CAB90_79CB_45fb_A90A_B99760063405"/>
 		<UML:TaggedValue tag="definition-nl" xmi.id="EAID_82C07547_FDB4_4537_A291_F6BA7CD45F6D" value="Persoon waarvan de gegevens zijn ingeschreven in een register." modelElement="EAID_DD72E771_1C99_4451_B9FA_30076034D0A8"/>
 		<UML:TaggedValue tag="label-nl" xmi.id="EAID_BB2076B8_F42C_494d_9C78_BCAC6130DDB1" value="GeregistreerdPersoon" modelElement="EAID_DD72E771_1C99_4451_B9FA_30076034D0A8"/>
-		<UML:TaggedValue tag="parentURI" xmi.id="EAID_9344E10C_FDC5_446b_A8FC_DAFD20369DCA" value="http://www.w3.org/ns/person#Person" modelElement="EAID_DD72E771_1C99_4451_B9FA_30076034D0A8"/>
 		<UML:TaggedValue tag="uri" xmi.id="EAID_4B2DF4BB_757E_4ae4_8A7F_A235F4A9F4FB" value="https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon" modelElement="EAID_DD72E771_1C99_4451_B9FA_30076034D0A8"/>
 		<UML:TaggedValue tag="usageNote-nl" xmi.id="EAID_720F5577_AA9E_4558_9365_9C099600277E" value="NOTE#NOTES#Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb naam en voornaam) en de Verblijfplaats vd persoon en op belangrijke levensgebeurtenissen zoals geboorte, huwelijk, overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking." modelElement="EAID_DD72E771_1C99_4451_B9FA_30076034D0A8"/>
 		<UML:TaggedValue tag="definition-nl" xmi.id="EAID_99CD6CDB_4787_4e63_A5A5_1BC5047A8918" value="Hoofdverblijfplaats van een Persoon." modelElement="EAID_E5E40E9F_7FC6_41ab_98C1_609B2D29A463"/>
