@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-07 11:41:30">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-09 09:29:59">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -20,14 +20,14 @@
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="C:\Users\vanassdy\OneDrive - Vlaamse overheid - Office 365\Documenten\OSLO\Templates\OSLOthema-template\export\OSLO-Organisatie.xml"/>
 						<UML:TaggedValue tag="lastloaddate" value="2017-03-27 22:42:52"/>
-						<UML:TaggedValue tag="lastsavedate" value="2025-10-07 11:41:30"/>
+						<UML:TaggedValue tag="lastsavedate" value="2025-10-09 09:29:59"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
 						<UML:TaggedValue tag="owner" value="vanassdy"/>
 						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
-						<UML:TaggedValue tag="tpos" value="3"/>
+						<UML:TaggedValue tag="tpos" value="4"/>
 						<UML:TaggedValue tag="packageFlags" value="Recurse=1;CRC=0;"/>
 						<UML:TaggedValue tag="batchsave" value="1"/>
 						<UML:TaggedValue tag="batchload" value="0"/>
@@ -36,7 +36,7 @@
 						<UML:TaggedValue tag="author" value="thijsge"/>
 						<UML:TaggedValue tag="complexity" value="1"/>
 						<UML:TaggedValue tag="ea_stype" value="Public"/>
-						<UML:TaggedValue tag="tpos" value="3"/>
+						<UML:TaggedValue tag="tpos" value="4"/>
 						<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
@@ -97,7 +97,6 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=-4;EX=0;EY=1;EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
@@ -127,7 +126,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{F6F2D90A-603B-4de1-9B90-3F57CFA51B36}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={3CE1F6EE-2308-409d-81F6-F51DF9AD8929}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={1590A4C3-053F-4dc7-84EA-4200A0277800}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={11353587-FF6D-4c95-8BB5-B4CF999B75CA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={1590A4C3-053F-4dc7-84EA-4200A0277800}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Splitsing" xmi.id="EAID_1C45113A_EC6F_4338_9697_81FF286C9121" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -187,7 +186,6 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=-2;EX=0;EY=1;EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
@@ -217,7 +215,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{4044CFBE-5090-4f9c-BD20-BE301DC4160D}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DC0CBC6E-C901-44cb-9A02-613A1668AD25}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={24EA6FF6-17BC-44b9-9216-77316D4C07C0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={04304BEA-316C-4c86-84F7-7279B7ADB95A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={24EA6FF6-17BC-44b9-9216-77316D4C07C0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Fusie" xmi.id="EAID_2AD2BE52_7863_4533_B2A2_37CEFE689220" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -277,7 +275,6 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=22;SY=0;EX=0;EY=7;EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
@@ -369,7 +366,6 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=-1;EX=0;EY=1;EDGE=2;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
@@ -399,7 +395,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{043A3429-16CF-4d6f-80A1-4D815868E7E8}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={62C35759-ACC8-4977-B247-ADEBFE0F45BE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={4079798E-621B-4083-B2F8-2077D78181EC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8699CAB7-D479-43c7-905C-EDCE74210C57}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={4079798E-621B-4083-B2F8-2077D78181EC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Rechtstoestandtype" xmi.id="EAID_41944AE7_4967_4112_856F_E9D12F7EA7E5" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false">
@@ -428,7 +424,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{F3629F45-6DD2-4778-8D4F-58DFA79400C8}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={06D3EA37-E1EC-49e2-9DFB-B4040E0127F4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={41944AE7-4967-4112-856F-E9D12F7EA7E5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={47282D1B-24AB-4afe-A230-59B3FB590410}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={41944AE7-4967-4112-856F-E9D12F7EA7E5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="OrganisatieStatus" xmi.id="EAID_4B8D77AF_BA67_4a28_9841_CAE1A401CC89" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false">
@@ -457,7 +453,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{E864DB0E-71F4-4691-B467-BB5B7363FFD4}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7516AFC7-BDC7-4c2b-A0EA-6761DD9B5744}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={4B8D77AF-BA67-4a28-9841-CAE1A401CC89}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={695F5149-0599-42ea-8B6F-8D963FC8C501}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={4B8D77AF-BA67-4a28-9841-CAE1A401CC89}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Hoedanigheid" xmi.id="EAID_632451AD_B9E2_4eb9_AD5C_B29FE6728636" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
@@ -585,7 +581,6 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=-5;SY=-38;EX=0;EY=0;EDGE=4;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
@@ -615,7 +610,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{9BC64828-D3C1-4e91-BA4E-02B793EA2A48}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6A1B455F-77E6-4a0f-B341-E2CE72563A00}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={7ECC8623-1882-41a9-BE30-AB983E93F2DC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={90806F9A-C51C-4d5c-A80C-8285AA9496B2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={7ECC8623-1882-41a9-BE30-AB983E93F2DC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="OrganisatieType" xmi.id="EAID_807CC9DF_7863_4fac_8349_EE3F8184E068" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false">
@@ -644,7 +639,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{F59F9C20-B584-4347-B7C3-7D657BBD2259}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8118EAE5-8D0A-4ae9-B981-BE4F74899E71}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={807CC9DF-7863-4fac-8349-EE3F8184E068}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B907ADE7-D254-4fb3-BADC-5F140CADC3ED}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={807CC9DF-7863-4fac-8349-EE3F8184E068}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Rol" xmi.id="EAID_8F48D435_72E2_4b6c_8962_892C90D5A18A" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false">
@@ -673,7 +668,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{76472854-F33D-4af7-8C78-5E3C0DAA2A2A},{0A741A2B-0B44-474f-9549-827F8A150895}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7C526F52-8C99-49ac-84F0-BD3CABA5DF81}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={8F48D435-72E2-4b6c-8962-892C90D5A18A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D24785D2-66DC-48d8-AA6B-43A064C44A7D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={8F48D435-72E2-4b6c-8962-892C90D5A18A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Class name="Rechtspersoonlijkheidtype" xmi.id="EAID_9DF7F1EA_C347_43c5_A8EA_C8A34192A49C" visibility="public" namespace="EAPK_B19FFD5D_1CE4_4bfd_AF1D_53A9721F4ED8" isRoot="false" isLeaf="false" isAbstract="false">
@@ -702,7 +697,7 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="$ea_attsclassified" value="{A4A314A2-764F-4bad-9D27-35F03B9341C5}"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F93ECA7F-CECF-4059-8DD2-601560F0512D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={9DF7F1EA-C347-43c5-A8EA-C8A34192A49C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D68215F0-CADA-4415-9453-5740B25FBABE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=enumeration;GUID={1A07A2F1-D579-4b2d-B505-9CF54E21D86D};@ENDSTEREO;$DES;$CLT={9DF7F1EA-C347-43c5-A8EA-C8A34192A49C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
 								<UML:Attribute name="natuurlijkPersoon" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">

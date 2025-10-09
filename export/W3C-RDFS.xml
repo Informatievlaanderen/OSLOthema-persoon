@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-07 11:41:33">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2025-10-09 09:30:02">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -19,14 +19,14 @@
 						<UML:TaggedValue tag="modified" value="2025-09-15 09:43:07"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="C:\Users\vanassdy\OneDrive - Vlaamse overheid - Office 365\Documenten\OSLO\Templates\OSLOthema-template\export\W3C-RDFS.xml"/>
-						<UML:TaggedValue tag="lastsavedate" value="2025-10-07 11:41:33"/>
+						<UML:TaggedValue tag="lastsavedate" value="2025-10-09 09:30:02"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
 						<UML:TaggedValue tag="owner" value="vanassdy"/>
 						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
-						<UML:TaggedValue tag="tpos" value="10"/>
+						<UML:TaggedValue tag="tpos" value="11"/>
 						<UML:TaggedValue tag="packageFlags" value="isModel=1;VICON=3;Recurse=1;CRC=0;"/>
 						<UML:TaggedValue tag="batchsave" value="1"/>
 						<UML:TaggedValue tag="batchload" value="0"/>
@@ -35,7 +35,7 @@
 						<UML:TaggedValue tag="author" value="vanassdy"/>
 						<UML:TaggedValue tag="complexity" value="1"/>
 						<UML:TaggedValue tag="ea_stype" value="Public"/>
-						<UML:TaggedValue tag="tpos" value="10"/>
+						<UML:TaggedValue tag="tpos" value="11"/>
 						<UML:TaggedValue tag="gentype" value="Java"/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
@@ -580,6 +580,43 @@
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Generalization>
+						<UML:Generalization subtype="EAID_A5E2AC54_7958_4b4e_B0AC_BD20C7F22D5F" supertype="EAID_EB475762_83B3_48ea_88F3_B04FFA86A616" xmi.id="EAID_9EB1ED80_A0A0_4924_A50B_879191176986" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Generalization"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="327"/>
+								<UML:TaggedValue tag="ea_sourceName" value="Dataset"/>
+								<UML:TaggedValue tag="ea_targetName" value="Resource"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="110"/>
+								<UML:TaggedValue tag="ea_targetID" value="105"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Generalization>
 						<UML:Generalization subtype="EAID_94259B3C_4444_4c0e_9EDD_88F476510AA4" supertype="EAID_EB475762_83B3_48ea_88F3_B04FFA86A616" xmi.id="EAID_A78039DF_5791_48cd_AA17_785795DDFFD8" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="style" value="3"/>
@@ -927,6 +964,7 @@
 		<EAStub xmi.id="EAID_FDBE57B9_19A3_420a_91C4_CA30FA1B2EBD" name="Positie" UMLType="Class"/>
 		<EAStub xmi.id="EAID_8A2A0E51_AB82_4b11_AF15_C7F432892E1A" name="Agent" UMLType="Class"/>
 		<EAStub xmi.id="EAID_FD710A86_D32C_4c8b_8136_E2F95AB5629A" name="Concept" UMLType="Class"/>
+		<EAStub xmi.id="EAID_A5E2AC54_7958_4b4e_B0AC_BD20C7F22D5F" name="Dataset" UMLType="Class"/>
 		<EAStub xmi.id="EAID_94259B3C_4444_4c0e_9EDD_88F476510AA4" name="Vestiging" UMLType="Class"/>
 		<EAStub xmi.id="EAID_C492AB28_4D43_4179_B9BB_72A0E2908385" name="Verzameling" UMLType="Class"/>
 		<EAStub xmi.id="EAID_4693E71A_5752_4994_A79D_56DB36353DEA" name="Verblijfplaats" UMLType="Class"/>
