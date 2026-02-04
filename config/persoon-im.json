@@ -11,7 +11,7 @@
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders.csv",
     "contributors-column": "Persoon",
-    "site": "site-skeleton",
+    "site": "site-skeleton/persoon-IM",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-persoon/issues"
   },
     {
@@ -26,7 +26,7 @@
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders.csv",
     "contributors-column": "Persoon",
-    "site": "site-skeleton",
+    "site": "site-skeleton/persoon-IM",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-persoon/issues"
   }
 ]
