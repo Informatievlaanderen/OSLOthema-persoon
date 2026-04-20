@@ -1,0 +1,89 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "urn:vidpenvelope:00061547618",
+  "@type": "VdipEnvelope",
+  "payload": {
+    "@id": "urn:persoon:00061547618",
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+    },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO008218"
+    },
+    "heeftGeboorte": {
+      "@id": "urn:geboorte:00061547618",
+      "@type": "Geboorte",
+      "datum": { "@value": "2000-06-15", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Miranzadeh Mahabadi" }
+    ],
+    "voornaam": [
+      { "@value": "Sana" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@id": "urn:burgerlijkeStaat:00061547618",
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+      }
+    },
+    "registratie": {
+      "@id": "urn:identificator:00061547618",
+      "@type": "Identificator",
+      "identificator": { "@value": "00061547618" }
+    },
+    "beheerder": {
+      "@id": "urn:gemeente:44021",
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerder/1"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Gent"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@id": "urn:inwonerschap:00061547618",
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@id": "urn:jurisdictie:00061547618",
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://dbpedia.org/resource/ISO_3166-2:BE",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@id": "urn:verblijfplaats:2016-09-20",
+          "@type": "Domicilie",
+          "verblijfsadres": {
+            "@id": "urn:adresvoorstelling:2016-09-20",
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "39" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Salamanderstraat nl 39 9000 Gent nl BELGIE"
+            },
+            "postcode": { "@value": "9000" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Salamanderstraat"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Gent"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        }
+      ]
+    }]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "urn:vidpenvelope:00040527291",
+  "@type": "VdipEnvelope",
+  "payload": {
+    "@id": "urn:persoon:00040527291",
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2",
+      "@type": "Geslacht"
+    },
+    "dossierstatus": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990",
+      "@type": "Dossierstatustype"
+    },
+    "creatiedatum": { "@value": "1980-11-20", "@type": "Date" },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248",
+      "@type": "Organisatie"
+    },
+    "modificatiedatum": { "@value": "1996-03-03", "@type": "Date" },
+    "heeftGeboorte": {
+      "@id": "urn:geboorte:00040527291",
+      "@type": "Geboorte",
+      "datum": { "@value": "1900-04-05", "@type": "Date" }
+    },
+    "heeftOverlijden": {
+      "@id": "urn:overlijden:00040527291",
+      "@type": "Overlijden",
+      "datum": { "@value": "1986-11-13", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Nielens" }
+    ],
+    "voornaam": [
+      { "@value": "Louise" },
+      { "@value": "Thérèse" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@id": "urn:burgerlijkeStaat:00040527291",
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/30"
+      }
+    },
+    "registratie": {
+      "@id": "urn:identificator:00040527291",
+      "@type": "Identificator",
+      "identificator": { "@value": "00040527291" }
+    },
+    "beheerder": {
+      "@id": "urn:beheerder:21011",
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerder/1"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Koelkelberg"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@id": "urn:inwonerschap:00040527291",
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@id": "urn:jurisdictie:00040527291",
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://dbpedia.org/resource/ISO_3166-2:BE",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@id": "urn:verblijfplaats:1977-02-04",
+          "@type": "Domicilie",
+          "verblijfsadres": {
+            "@id": "urn:adresvoorstelling:1977-02-04",
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "101" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Segherslaan 101 1081 Koekelberg BELGIE"
+            },
+            "postcode": { "@value": "1081" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Segherslaan"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Koekelberg"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        }
+      ]
+    }],
+    "heeftPersoonsrelatie": [
+      {
+        "@id": "urn:persoonsrelatie:00040527291-00000100000:afstamming",
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1900-04-05", "@type": "Date" },
+        "metPersoon": {
+          "@id": "urn:persoon:00000100000",
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+          },
+          "achternaam": [
+            { "@value": "Willems" }
+          ],
+          "voornaam": [
+            { "@value": "Thérèse" }
+          ]
+        }
+      },
+      {
+        "@id": "urn:persoonsrelatie:00040527291-00000199900:afstamming",
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1900-04-05", "@type": "Date" },
+        "metPersoon": {
+          "@id": "urn:persoon:00000199900",
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Nielens" }
+          ],
+          "voornaam": [
+            { "@value": "Pierre" }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "urn:vidpenvelope:29012818180",
+  "@type": "VdipEnvelope",
+  "errors": [
+    {
+      "@id": "urn:probleem:29012818180-1",
+      "@type": "ProbleemDetail",
+      "status": { "@value": 30004, "@type": "Integer" },
+      "type": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004" },
+      "titel": { "@value": "Nieuwe INSZ", "@language": "nl" },
+      "detail": { "@value": "Persoon heeft een nieuw INSZ verkregen", "@language": "nl" },
+      "instantie": { "@id": "urn:probleem:29012818180-1" }
+    }
+  ],
+  "payload": {
+    "@id": "urn:persoon:35060735122",
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+    },
+    "dossierstatus": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994"
+    },
+    "creatiedatum": { "@value": "2005-01-31", "@type": "Date" },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+    },
+    "modificatiedatum": { "@value": "2016-11-22", "@type": "Date" },
+    "heeftGeboorte": {
+      "@id": "urn:geboorte:35060735122",
+      "@type": "Geboorte",
+      "datum": { "@value": "1935-06-07", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Haentjens" }
+    ],
+    "voornaam": [
+      { "@value": "Edouard" },
+      { "@value": "Willem" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@id": "urn:burgerlijkeStaat:35060735122",
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+      }
+    },
+    "registratie": {
+      "@id": "urn:identificator:35060735122",
+      "@type": "Identificator",
+      "identificator": { "@value": "35060735122" }
+    },
+    "beheerder": {
+      "@id": "http://dbpedia.org/resource/ISO_3166-2:DEU",
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerder/2"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "DUITSLAND ( BONDSREP. )"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@id": "urn:inwonerschap:35060735122",
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@id": "urn:jurisdictie:35060735122",
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://dbpedia.org/resource/ISO_3166-2:BE",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@id": "urn:verblijfplaats:2016-11-04",
+          "@type": "VerblijfplaatsBuitenland",
+          "verblijfsadres": {
+            "@id": "urn:adresvoorstelling:2016-11-04",
+            "@type": "Adresvoorstelling",
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Jesuitengasse 41 50735 KÖLN"
+            }
+          }
+        }
+      ]
+    }]
+  }
+}

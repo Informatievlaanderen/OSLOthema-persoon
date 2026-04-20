@@ -1,0 +1,159 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "urn:vidpenvelope:54123035065",
+  "@type": "VdipEnvelope",
+  "payload": {
+    "@id": "urn:persoon:54123035065",
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+    },
+    "creatiedatum": { "@value": "1977-04-19", "@type": "Date" },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+    },
+    "modificatiedatum": { "@value": "2011-12-07", "@type": "Date" },
+    "heeftGeboorte": {
+      "@id": "urn:geboorte:54123035065",
+      "@type": "Geboorte",
+      "datum": { "@value": "1954-12-30", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Van Damme" }
+    ],
+    "voornaam": [
+      { "@value": "Lutgart" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@id": "urn:burgerlijkeStaat:54123035065",
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/20"
+      }
+    },
+    "registratie": {
+      "@id": "urn:identificator:54123035065",
+      "@type": "Identificator",
+      "identificator": { "@value": "54123035065" }
+    },
+    "beheerder": {
+      "@id": "urn:beheerder:41034",
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerder/0"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Lede"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@id": "urn:inwonerschap:54123035065",
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@id": "urn:jurisdictie:54123035065",
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://dbpedia.org/resource/ISO_3166-2:BE",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@id": "urn:verblijfplaats:1977-12-30",
+          "@type": "Domicilie",
+          "verblijfsadres": {
+            "@id": "urn:adresvoorstelling:1977-12-30",
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "16" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Stokstraat 16 9340 Lede BELGIE"
+            },
+            "postcode": { "@value": "9340" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Stokstraat"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Lede"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        }
+      ]
+    }],
+    "heeftPersoonsrelatie": [
+      {
+        "@id": "urn:persoonsrelatie:54123035065-00004100000:afstamming",
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
+        "metPersoon": {
+          "@id": "urn:persoon:00004100000",
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+          },
+          "achternaam": [
+            { "@value": "Schouppe" }
+          ],
+          "voornaam": [
+            { "@value": "Hortense" },
+            { "@value": "Maria" }
+          ]
+        }
+      },
+      {
+        "@id": "urn:persoonsrelatie:54123035065-00004199900:afstamming",
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
+        "metPersoon": {
+          "@id": "urn:persoon:00004199900",
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Van Damme" }
+          ],
+          "voornaam": [
+            { "@value": "Achiel" },
+            { "@value": "Serafien" }
+          ]
+        }
+      },
+      {
+        "@id": "urn:persoonsrelatie:54123035065-53040427171:huwelijk",
+        "@type": "Huwelijk",
+        "metPersoon": {
+          "@id": "urn:persoon:53040427171",
+          "@type": "GeregistreerdPersoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Cooman" }
+          ],
+          "voornaam": [
+            { "@value": "Johnny" }
+          ],
+          "registratie": {
+            "@id": "urn:identificator:53040427171",
+            "@type": "Identificator",
+            "identificator": { "@value": "53040427171" }
+          }
+        }
+      }
+    ]
+  }
+}
