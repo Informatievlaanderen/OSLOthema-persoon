@@ -1,6 +1,6 @@
 [
   {
-    "name": "persoon-IMVOC",
+    "name": "persoon",
     "type": "voc",
     "eap": "OSLO-Persoon-IM.eap",
     "diagram": "OSLO-Persoon-IM",
@@ -15,7 +15,7 @@
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-persoon/issues"
   },
     {
-    "name": "persoon-IM",
+    "name": "persoon",
     "type": "impl",
     "eap": "OSLO-Persoon-IM.eap",
     "diagram": "OSLO-Persoon-IM",
