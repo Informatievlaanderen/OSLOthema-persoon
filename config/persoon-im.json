@@ -1,6 +1,7 @@
 [
   {
     "name": "persoon",
+    "prefix": "magda",
     "type": "voc",
     "eap": "OSLO-Persoon-IM.eap",
     "diagram": "OSLO-Persoon-IM",
