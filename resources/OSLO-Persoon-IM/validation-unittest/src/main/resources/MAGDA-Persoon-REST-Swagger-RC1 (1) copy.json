@@ -1,0 +1,325 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MAGDA geefPersoon REST",
+    "version": "1.0.0",
+    "contact": {
+        "name": "MAGDA Helpdesk",
+        "url": "https://overheid.vlaanderen.be/magda"
+    },
+    "license": {
+        "name": "Persoon domein",
+        "url": "https://overheid.vlaanderen.be/magda"
+    }
+  },
+  "servers": [
+    {
+      "url": "api/v1/persoon",
+      "description": "Basis URL"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "GeregistereerdPersoonJsonLd": { "$ref": "components.json#/components/schemas/GeregistreerdPersoonJsonLd" }
+    }
+  },
+  "paths": {
+    "/persoon": {
+      "get": {
+        "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "operationId": "PersoonGET",
+        "parameters": [
+          {
+            "name": "X-INSZ",
+            "required": true,
+            "in": "header",
+            "description": "INSZ van een GeregistreerdPersoon object.",
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{11}$"
+            }
+          },
+          {
+            "name": "X-Correlation-Id",
+            "required": true,
+            "in": "header",
+            "description": "Correlatie ID van het request.",
+            "schema": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 36
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdPersoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": { "$ref": "components.json#/components/schemas/GeregistreerdPersoonJsonLd" }
+              }
+            },
+            "links": {
+              "Persoon.contactinfo": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "Persoon.geslacht": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "Persoon.isHoofdVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Persoon.heeftBurgerlijkeStaat": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "Persoon.heeftGeboorte": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "Persoon.heeftOverlijden": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "Persoon.inwonerschap": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "Persoon.inwonerschapdetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "Persoon.heeftRelatieMet": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoon.persoonsrelatiedetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "Persoon.isLidVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Persoon.bron": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.bron/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid data supplied.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid authorization.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "412": {
+            "description": "Pre-condition failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected Server Error.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "503": {
+            "description": "Service unavailable.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                }
+              }
+            },
+            "links": {
+              "ProbleemDetails.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

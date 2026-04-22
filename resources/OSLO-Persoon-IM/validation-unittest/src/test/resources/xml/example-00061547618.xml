@@ -1,0 +1,136 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <v02:GeefPersoonResponse xmlns:v02="http://magda.vlaanderen.be/persoon/soap/geefpersoon/v02_02">
+         <Repliek>
+            <Context>
+               <Naam>GeefPersoon</Naam>
+               <Versie>02.02.0000</Versie>
+               <Bericht>
+                  <Type>ANTWOORD</Type>
+                  <Tijdstip>
+                     <Datum>2025-03-16</Datum>
+                     <Tijd>21:12:25.128</Tijd>
+                  </Tijdstip>
+                  <Afzender>
+                     <Identificatie>vip.vlaanderen.be</Identificatie>
+                     <Naam>VIP</Naam>
+                     <Referte>8155b634-e9ff-4387-9f51-7e871163d6aa</Referte>
+                  </Afzender>
+                  <Ontvanger>
+                     <Identificatie>kb.vlaanderen.be/aiv/stress-testing-magda-aip</Identificatie>
+                     <Referte>12F172A0-C42D-4407-8045-8B6AE0B98500</Referte>
+                     <Hoedanigheid>101</Hoedanigheid>
+                  </Ontvanger>
+               </Bericht>
+            </Context>
+            <Antwoorden>
+               <Antwoord>
+                  <Referte>12F172A0-C42D-4407-8045-8B6AE0B98500</Referte>
+                  <Inhoud>
+                     <Persoon Bron="KSZ">
+                        <INSZ>00061547618</INSZ>
+                        <Naam DatumBegin="2000-06-15">
+                           <Achternamen>
+                              <Achternaam>Miranzadeh Mahabadi</Achternaam>
+                           </Achternamen>
+                           <Voornamen>
+                              <Voornaam>Sana</Voornaam>
+                           </Voornamen>
+                        </Naam>
+                        <Geslacht>
+                           <Code>2</Code>
+                           <Omschrijving>Vrouwelijk</Omschrijving>
+                        </Geslacht>
+                        <Beheerder DatumBegin="2016-09-20">
+                           <Plaats>
+                              <Gemeente>
+                                 <NISCode>44021</NISCode>
+                                 <Naam>Gent</Naam>
+                              </Gemeente>
+                              <Land>
+                                 <NISCode>150</NISCode>
+                                 <ISOCode>BEL</ISOCode>
+                                 <Naam>BELGIE</Naam>
+                              </Land>
+                           </Plaats>
+                        </Beheerder>
+                        <Register DatumBegin="2012-04-11">
+                           <Code>2</Code>
+                           <Omschrijving Taal="nl">bevolkingsregister</Omschrijving>
+                        </Register>
+                        <Nationaliteiten>
+                           <Nationaliteit DatumBegin="2012-04-11">
+                              <Code>150</Code>
+                              <Omschrijving Taal="nl">België</Omschrijving>
+                           </Nationaliteit>
+                        </Nationaliteiten>
+                        <Geboorte>
+                           <Datum>2000-06-15</Datum>
+                           <Plaats>
+                              <Gemeente>
+                                 <Naam>Isfahan</Naam>
+                              </Gemeente>
+                              <Land>
+                                 <NISCode>255</NISCode>
+                                 <ISOCode>IRN</ISOCode>
+                                 <Naam>IRAN</Naam>
+                              </Land>
+                           </Plaats>
+                        </Geboorte>
+                        <BurgerlijkeStaten>
+                           <BurgerlijkeStaat DatumBegin="2000-06-15">
+                              <Code>10</Code>
+                              <Omschrijving Taal="nl">Ongehuwd</Omschrijving>
+                           </BurgerlijkeStaat>
+                        </BurgerlijkeStaten>
+                        <Adressen>
+                           <Hoofdverblijfplaats DatumBegin="2016-09-20">
+                              <Huisnummer>39</Huisnummer>
+                              <Land>
+                                 <String>BELGIE</String>
+                                 <Taal>nl</Taal>
+                              </Land>
+                              <Postcode>9000</Postcode>
+                              <NISCodeLand>150</NISCodeLand>
+                              <ISOCodeLand>BEL</ISOCodeLand>
+                              <NISCodeGemeente>44021</NISCodeGemeente>
+                              <StraatCode>9712</StraatCode>
+                              <NietGestandaardiseerdeStraatnaam>
+                                 <String>Salamanderstraat</String>
+                                 <Taal>nl</Taal>
+                              </NietGestandaardiseerdeStraatnaam>
+                              <NietGestandaardiseerdeGemeentenaam>
+                                 <String>Gent</String>
+                                 <Taal>nl</Taal>
+                              </NietGestandaardiseerdeGemeentenaam>
+                           </Hoofdverblijfplaats>
+                        </Adressen>
+                        <WettigeVerblijven>
+                           <WettigVerblijf DatumBegin="2011-02-14" DatumEinde="2012-04-11">
+                              <Redenen>
+                                 <Reden>
+                                    <Code>01030200</Code>
+                                    <Omschrijving Taal="nl">Art. 9 bis</Omschrijving>
+                                 </Reden>
+                              </Redenen>
+                           </WettigVerblijf>
+                           <WettigVerblijf DatumBegin="2004-09-16" DatumEinde="2006-10-17">
+                              <Teksten>
+                                 <Tekst>mach BNL 5928406 t.15122004 Teheran</Tekst>
+                              </Teksten>
+                           </WettigVerblijf>
+                           <WettigVerblijf DatumBegin="2003-12-22">
+                              <Teksten>
+                                 <Tekst>pasp moeder G6865596 t.22122008 Esfahan</Tekst>
+                              </Teksten>
+                           </WettigVerblijf>
+                        </WettigeVerblijven>
+                     </Persoon>
+                  </Inhoud>
+               </Antwoord>
+            </Antwoorden>
+         </Repliek>
+      </v02:GeefPersoonResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

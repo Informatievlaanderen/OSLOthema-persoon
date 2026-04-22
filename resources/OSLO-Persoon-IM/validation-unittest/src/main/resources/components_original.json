@@ -13,10 +13,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Woonvormtype)",
+            "pattern": "^Woonvormtype$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "AdministratieveEenheidniveau": {
@@ -26,10 +32,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse AdministratieveEenheidniveau)",
+            "pattern": "^AdministratieveEenheidniveau$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "RedenAfwezigheid": {
@@ -39,10 +51,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse RedenAfwezigheid)",
+            "pattern": "^RedenAfwezigheid$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "Geslacht": {
@@ -52,10 +70,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Geslacht)",
+            "pattern": "^Geslacht$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "BurgerlijkeStaatType": {
@@ -65,10 +89,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse BurgerlijkeStaatType)",
+            "pattern": "^BurgerlijkeStaatType$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "AdministratiefBeheerdertype": {
@@ -78,10 +108,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse AdministratiefBeheerdertype)",
+            "pattern": "^AdministratiefBeheerdertype$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "Dossierstatustype": {
@@ -91,10 +127,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Dossierstatustype)",
+            "pattern": "^Dossierstatustype$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "Afstammingstype": {
@@ -104,10 +146,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Afstammingstype)",
+            "pattern": "^Afstammingstype$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "Gezinsrelatietype": {
@@ -117,10 +165,16 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Gezinsrelatietype)",
+            "pattern": "^Gezinsrelatietype$"
           }
         },
         "required": [
-          "@id"
+          "@id",
+          "@type"
         ]
       },
       "Persoon": {
@@ -276,7 +330,10 @@
           }
         },
         "required": [
-          "@type"
+          "@id",
+          "@type",
+          "creatiedatum",
+          "bron"
         ]
       },
       "Plaats": {
@@ -311,24 +368,11 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -349,26 +393,45 @@
           "gezinsrelatietype": {
             "$ref": "#/components/schemas/Gezinsrelatietype"
           },
+          "vanPersoon": {
+            "$ref": "#/components/schemas/Persoon"
+          },
           "metPersoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           }
         },
         "required": [
+          "@id",
           "@type",
+          "vanPersoon",
+          "metPersoon"
+        ]
+      },
+      "Persoonsrelatie": {
+        "title": "Persoonsrelatie",
+        "type": "object",
+        "description": "Relatie tussen twee of meer personen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Persoonsrelatie)",
+            "pattern": "^Persoonsrelatie$"
+          },
+          "vanPersoon": {
+            "$ref": "#/components/schemas/Persoon"
+          },
+          "metPersoon": {
+            "$ref": "#/components/schemas/Persoon"
+          }
+        },
+        "required": [
+          "@id",
+          "@type",
+          "vanPersoon",
           "metPersoon"
         ]
       },
@@ -405,24 +468,11 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -459,24 +509,11 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -513,31 +550,18 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
       "Huwelijk": {
         "title": "Huwelijk",
         "type": "object",
-        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
         "properties": {
           "@id": {
             "type": "string",
@@ -549,42 +573,19 @@
             "pattern": "^Huwelijk$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "vanPersoon": {
+            "$ref": "#/components/schemas/Persoon"
           },
           "metPersoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           }
         },
         "required": [
+          "@id",
           "@type",
+          "vanPersoon",
           "metPersoon"
         ]
       },
@@ -643,7 +644,10 @@
           }
         },
         "required": [
-          "@type"
+          "@id",
+          "@type",
+          "creatiedatum",
+          "bron"
         ]
       },
       "FormeleOrganisatie": {
@@ -662,6 +666,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -759,6 +764,7 @@
           }
         },
         "required": [
+          "@id",
           "@type",
           "type",
           "titel"
@@ -814,24 +820,11 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -859,14 +852,10 @@
           },
           "payload": {
             "$ref": "#/components/schemas/GeregistreerdPersoon"
-          },
-          "@context": {
-            "type": "string",
-            "description": "URI of the JSON-LD versioned context file for this response.",
-            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
+          "@id",
           "@type",
           "payload"
         ]
@@ -886,21 +875,7 @@
             "pattern": "^Inwonerschap$"
           },
           "persoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           },
           "jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
@@ -937,7 +912,9 @@
           }
         },
         "required": [
+          "@id",
           "@type",
+          "persoon",
           "jurisdictie"
         ]
       },
@@ -956,42 +933,19 @@
             "pattern": "^Samenwonen$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "vanPersoon": {
+            "$ref": "#/components/schemas/Persoon"
           },
           "metPersoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           }
         },
         "required": [
+          "@id",
           "@type",
+          "vanPersoon",
           "metPersoon"
         ]
       },
@@ -1013,7 +967,12 @@
             "$ref": "#/components/schemas/Identificator"
           },
           "dossierstatus": {
-            "$ref": "#/components/schemas/Dossierstatustype"
+            "type": "array",
+            "description": "Lijst van Dossierstatustype items.",
+            "items": {
+              "$ref": "#/components/schemas/Dossierstatustype"
+            },
+            "minItems": 1
           },
           "vorigeRegistratie": {
             "$ref": "#/components/schemas/Identificator"
@@ -1163,7 +1122,10 @@
           }
         },
         "required": [
-          "@type"
+          "@id",
+          "@type",
+          "creatiedatum",
+          "bron"
         ]
       },
       "Domicilie": {
@@ -1185,13 +1147,37 @@
           }
         },
         "required": [
+          "@id",
+          "@type"
+        ]
+      },
+      "Verblijfplaats": {
+        "title": "Verblijfplaats",
+        "type": "object",
+        "description": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Verblijfplaats)",
+            "pattern": "^Verblijfplaats$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@id",
           "@type"
         ]
       },
       "Afstamming": {
         "title": "Afstamming",
         "type": "object",
-        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
         "properties": {
           "@id": {
             "type": "string",
@@ -1223,27 +1209,38 @@
           "afstammingstype": {
             "$ref": "#/components/schemas/Afstammingstype"
           },
+          "vanPersoon": {
+            "$ref": "#/components/schemas/Persoon"
+          },
           "metPersoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           }
         },
         "required": [
+          "@id",
           "@type",
+          "vanPersoon",
           "metPersoon"
+        ]
+      },
+      "LocatiePeriodeOfJurisdictie": {
+        "title": "LocatiePeriodeOfJurisdictie",
+        "type": "object",
+        "description": "Een Locatie,Periode of Jurisdictie.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse LocatiePeriodeOfJurisdictie)",
+            "pattern": "^LocatiePeriodeOfJurisdictie$"
+          }
+        },
+        "required": [
+          "@id",
+          "@type"
         ]
       },
       "AangegevenAdres": {
@@ -1265,6 +1262,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1284,6 +1282,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1302,24 +1301,31 @@
             "pattern": "^Jurisdictie$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
+          "@type"
+        ]
+      },
+      "Agent": {
+        "title": "Agent",
+        "type": "object",
+        "description": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Agent)",
+            "pattern": "^Agent$"
+          }
+        },
+        "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1344,46 +1350,19 @@
             "$ref": "#/components/schemas/Woonvormtype"
           },
           "gezinshoofd": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
+            "$ref": "#/components/schemas/Persoon"
           },
           "gezinslid": {
             "type": "array",
             "description": "Lijst van Persoon items.",
             "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/Persoon"
-                },
-                {
-                  "$ref": "#/components/schemas/GeregistreerdPersoon"
-                }
-              ],
-              "discriminator": {
-                "propertyName": "@type",
-                "mapping": {
-                  "Persoon": "#/components/schemas/Persoon",
-                  "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-                }
-              }
+              "$ref": "#/components/schemas/Persoon"
             },
             "minItems": 1
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1406,6 +1385,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1445,6 +1425,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1467,6 +1448,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1489,6 +1471,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1511,6 +1494,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1533,6 +1517,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1555,6 +1540,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1597,6 +1583,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1615,24 +1602,11 @@
             "pattern": "^Locatie$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1877,24 +1851,11 @@
             "$ref": "#/components/schemas/BelgischAdres"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -1926,6 +1887,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       },
@@ -2026,6 +1988,7 @@
           }
         },
         "required": [
+          "@id",
           "@type"
         ]
       }
@@ -2115,10 +2078,31 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezinsrelatietype` op te halen."
       },
+      "Gezinsrelatie.vanPersoon": {
+        "operationId": "GezinsrelatieGET",
+        "parameters": {
+          "id": "$response.body#/Gezinsrelatie.vanPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+      },
       "Gezinsrelatie.metPersoon": {
         "operationId": "GezinsrelatieGET",
         "parameters": {
           "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+      },
+      "Persoonsrelatie.vanPersoon": {
+        "operationId": "PersoonsrelatieGET",
+        "parameters": {
+          "id": "$response.body#/Persoonsrelatie.vanPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+      },
+      "Persoonsrelatie.metPersoon": {
+        "operationId": "PersoonsrelatieGET",
+        "parameters": {
+          "id": "$response.body#/Persoonsrelatie.metPersoon/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
       },
@@ -2149,6 +2133,13 @@
           "id": "$response.body#/Huwelijk.plaats/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+      },
+      "Huwelijk.vanPersoon": {
+        "operationId": "HuwelijkGET",
+        "parameters": {
+          "id": "$response.body#/Huwelijk.vanPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
       },
       "Huwelijk.metPersoon": {
         "operationId": "HuwelijkGET",
@@ -2226,6 +2217,13 @@
           "id": "$response.body#/Samenwonen.plaats/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+      },
+      "Samenwonen.vanPersoon": {
+        "operationId": "SamenwonenGET",
+        "parameters": {
+          "id": "$response.body#/Samenwonen.vanPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
       },
       "Samenwonen.metPersoon": {
         "operationId": "SamenwonenGET",
@@ -2346,12 +2344,26 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
       },
+      "Verblijfplaats.verblijfsadres": {
+        "operationId": "VerblijfplaatsGET",
+        "parameters": {
+          "id": "$response.body#/Verblijfplaats.verblijfsadres/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+      },
       "Afstamming.afstammingstype": {
         "operationId": "AfstammingGET",
         "parameters": {
           "id": "$response.body#/Afstamming.afstammingstype/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Afstammingstype` op te halen."
+      },
+      "Afstamming.vanPersoon": {
+        "operationId": "AfstammingGET",
+        "parameters": {
+          "id": "$response.body#/Afstamming.vanPersoon/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
       },
       "Afstamming.metPersoon": {
         "operationId": "AfstammingGET",
