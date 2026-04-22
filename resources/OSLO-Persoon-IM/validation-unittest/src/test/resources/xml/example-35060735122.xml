@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<ns3:GeefPersoonResponse xmlns:ns3="http://magda.vlaanderen.be/persoon/soap/geefpersoon/v02_02">
+			<Repliek>
+				<Context>
+					<Naam>GeefPersoon</Naam>
+					<Versie>02.02.0000</Versie>
+					<Bericht>
+						<Type>ANTWOORD</Type>
+						<Tijdstip>
+							<Datum>2025-12-15</Datum>
+							<Tijd>17:07:03.635</Tijd>
+						</Tijdstip>
+						<Afzender>
+							<Identificatie>vip.vlaanderen.be</Identificatie>
+							<Naam>VIP</Naam>
+							<Referte>392cb7d0-e10a-415b-85fd-a420c05181ef</Referte>
+						</Afzender>
+						<Ontvanger>
+							<Identificatie>kb.vlaanderen.be/aiv/stress-testing-magda-aip</Identificatie>
+							<Referte>57CCE809-1F65-4BAA-A147-6C7341C90649</Referte>
+							<Hoedanigheid>101</Hoedanigheid>
+						</Ontvanger>
+					</Bericht>
+				</Context>
+				<Antwoorden>
+					<Antwoord>
+						<Referte>57CCE809-1F65-4BAA-A147-6C7341C90649</Referte>
+						<Inhoud>
+							<Persoon Bron="RR" DatumCreatie="2005-01-31" DatumModificatie="2016-11-22">
+								<INSZ>35060735122</INSZ>
+								<Naam DatumBegin="1935-06-17">
+									<Achternamen>
+										<Achternaam>Haentjens</Achternaam>
+									</Achternamen>
+									<Voornamen>
+										<Voornaam>Edouard</Voornaam>
+										<Voornaam>Willem</Voornaam>
+									</Voornamen>
+								</Naam>
+								<Geslacht>
+									<Code>1</Code>
+									<Omschrijving>Mannelijk</Omschrijving>
+								</Geslacht>
+								<Statussen>
+									<Status DatumBegin="2016-11-22">
+										<Code>99994</Code>
+										<Omschrijving>geannuleerd dossier.</Omschrijving>
+									</Status>
+								</Statussen>
+								<Beheerder DatumBegin="1973-07-04">
+									<Plaats>
+										<Land>
+											<NISCode>103</NISCode>
+											<ISOCode>DEU</ISOCode>
+											<Naam>DUITSLAND ( BONDSREP. )</Naam>
+										</Land>
+									</Plaats>
+									<Fusie>
+										<Code>0</Code>
+										<Omschrijving>NEEN</Omschrijving>
+									</Fusie>
+									<Taalregime>
+										<Code>2</Code>
+										<Omschrijving>Nederlands of Duits</Omschrijving>
+									</Taalregime>
+								</Beheerder>
+								<Referentiedossier DatumBegin="2016-11-22">
+									<INSZ>00004135311</INSZ>
+									<Geboortedatum>1900-00-00</Geboortedatum>
+									<Geslacht>
+										<Code>1</Code>
+										<Omschrijving>Mannelijk</Omschrijving>
+									</Geslacht>
+									<Rechtvaardiging>
+										<Code>02</Code>
+										<Omschrijving>Fout in de geboortedatum of betreffende het geslacht bij de verzameling</Omschrijving>
+									</Rechtvaardiging>
+								</Referentiedossier>
+								<Nationaliteiten>
+									<Nationaliteit DatumBegin="1935-06-07">
+										<Code>150</Code>
+										<Omschrijving>Belg</Omschrijving>
+									</Nationaliteit>
+								</Nationaliteiten>
+								<Geboorte DatumBegin="1935-06-07">
+									<Datum>1935-06-07</Datum>
+									<Plaats>
+										<Gemeente>
+											<NISCode>21001</NISCode>
+											<Naam>Anderlecht</Naam>
+										</Gemeente>
+										<Land>
+											<NISCode>150</NISCode>
+											<ISOCode>BEL</ISOCode>
+											<Naam>BELGIE</Naam>
+										</Land>
+									</Plaats>
+									<Aktenummer>00314</Aktenummer>
+								</Geboorte>
+								<BurgerlijkeStaten>
+									<BurgerlijkeStaat DatumBegin="1935-06-07">
+										<Code>10</Code>
+										<Omschrijving>Ongehuwd</Omschrijving>
+									</BurgerlijkeStaat>
+								</BurgerlijkeStaten>
+								<Adressen>
+									<VerblijfplaatsBuitenland DatumBegin="2016-11-04">
+										<DiplomatiekePost>
+											<Code>1202</Code>
+											<Omschrijving>Berlijn</Omschrijving>
+											<Land>
+												<NISCode>103</NISCode>
+												<ISOCode>DEU</ISOCode>
+												<Naam>DUITSLAND ( BONDSREP. )</Naam>
+											</Land>
+										</DiplomatiekePost>
+										<Land>
+											<NISCode>103</NISCode>
+											<ISOCode>DEU</ISOCode>
+											<Naam>DUITSLAND ( BONDSREP. )</Naam>
+										</Land>
+										<Teksten>
+											<Tekst>Jesuitengasse 41</Tekst>
+											<Tekst>50735 KÖLN</Tekst>
+										</Teksten>
+									</VerblijfplaatsBuitenland>
+								</Adressen>
+								<Identiteitsbewijzen>
+									<Identiteitsbewijs DatumBegin="2004-12-01">
+										<Type>
+											<Code>0000</Code>
+											<Omschrijving>I.K.</Omschrijving>
+										</Type>
+										<Nummer>206300458953</Nummer>
+										<Vervalgegevens>
+											<Vervaldatum>2014-11-30</Vervaldatum>
+										</Vervalgegevens>
+										<Plaats>
+											<Land>
+												<NISCode>103</NISCode>
+												<ISOCode>DEU</ISOCode>
+												<Naam>DUITSLAND ( BONDSREP. )</Naam>
+											</Land>
+										</Plaats>
+									</Identiteitsbewijs>
+								</Identiteitsbewijzen>
+							</Persoon>
+						</Inhoud>
+						<Uitzonderingen>
+							<Uitzondering>
+								<Identificatie>30004</Identificatie>
+								<Oorsprong>MAGDA</Oorsprong>
+								<Type>WAARSCHUWING</Type>
+								<Tijdstip>
+									<Datum>2025-12-15</Datum>
+									<Tijd>17:07:03.633</Tijd>
+								</Tijdstip>
+								<Diagnose>Persoon heeft een nieuw INSZ verkregen</Diagnose>
+								<Annotaties>
+									<Annotatie>
+										<Naam>Oud INSZ</Naam>
+										<Waarde>35060735122</Waarde>
+									</Annotatie>
+									<Annotatie>
+										<Naam>Nieuw INSZ</Naam>
+										<Waarde>00004135311</Waarde>
+									</Annotatie>
+								</Annotaties>
+							</Uitzondering>
+						</Uitzonderingen>
+					</Antwoord>
+				</Antwoorden>
+			</Repliek>
+		</ns3:GeefPersoonResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Unittest validatie project dat valideert of de Swagger en de datavoorbeelden matchen en valideren.
+
+### Changed
+- @id is enkel verplicht bij objecten of codelijsten die een PURI hebben, toegepast op Swagger en datavoorbeelden.
+- Kardinaliteiten aangepast van Versie.creatiedatum en Versie.bron voor filtering.
+
+### Fixed
+- Titel Vocabularium en Implementatiemodel volgen nu de syntaxregels.
+- Publicatiedatum
+- Stakeholder lijst is aangepast volgens het Implementatiemodel ipv Applicatieprofiel.
+- test.data.vlaanderen.be URIs vervangen door implementatie.data.vlaanderen.be URIs vooraleer naar productie te gaan.
+
 ## [0.0.2] - 2026-04-21
 
 ### Fixed
