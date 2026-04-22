@@ -330,7 +330,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "creatiedatum",
           "bron"
@@ -386,7 +385,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -426,7 +424,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -482,7 +479,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -537,7 +533,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -592,7 +587,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -646,7 +640,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -706,7 +699,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "creatiedatum",
           "bron"
@@ -728,7 +720,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -826,7 +817,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "type",
           "titel"
@@ -900,7 +890,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -936,7 +925,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "payload"
         ]
@@ -1007,7 +995,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "persoon",
           "jurisdictie"
@@ -1063,7 +1050,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -1236,7 +1222,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "creatiedatum",
           "bron"
@@ -1261,7 +1246,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1319,7 +1303,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -1343,7 +1326,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1363,7 +1345,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1400,7 +1381,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1465,7 +1445,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1488,7 +1467,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1528,7 +1506,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1551,7 +1528,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1574,7 +1550,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1597,7 +1572,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1620,7 +1594,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1643,7 +1616,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1686,7 +1658,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1723,7 +1694,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1986,7 +1956,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -2018,7 +1987,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -2119,7 +2087,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       }
