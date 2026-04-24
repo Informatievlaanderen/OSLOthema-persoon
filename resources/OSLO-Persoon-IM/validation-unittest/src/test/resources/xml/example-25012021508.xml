@@ -1,0 +1,230 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<v02:GeefPersoonResponse xmlns:v02="http://magda.vlaanderen.be/persoon/soap/geefpersoon/v02_02">
+			<Repliek>
+				<Context>
+					<Naam>GeefPersoon</Naam>
+					<Versie>02.02.0000</Versie>
+					<Bericht>
+						<Type>ANTWOORD</Type>
+						<Tijdstip>
+							<Datum>2025-03-17</Datum>
+							<Tijd>21:06:02.436</Tijd>
+						</Tijdstip>
+						<Afzender>
+							<Identificatie>vip.vlaanderen.be</Identificatie>
+							<Naam>VIP</Naam>
+							<Referte>3a083a9f-6a34-4609-b196-7e4cb4339d2b</Referte>
+						</Afzender>
+						<Ontvanger>
+							<Identificatie>kb.vlaanderen.be/aiv/stress-testing-magda-aip</Identificatie>
+							<Referte>618198ED-D8C3-4034-AFE9-5732D9116BBD</Referte>
+							<Hoedanigheid>101</Hoedanigheid>
+						</Ontvanger>
+					</Bericht>
+				</Context>
+				<Antwoorden>
+					<Antwoord>
+						<Referte>618198ED-D8C3-4034-AFE9-5732D9116BBD</Referte>
+						<Inhoud>
+							<Persoon Bron="RR" DatumCreatie="1972-01-27" DatumModificatie="2003-10-04">
+								<INSZ>25012021508</INSZ>
+								<Naam DatumBegin="1925-01-20">
+									<Achternamen>
+										<Achternaam>Pardo</Achternaam>
+										<Achternaam>Cols</Achternaam>
+									</Achternamen>
+									<Voornamen>
+										<Voornaam>Francisco</Voornaam>
+									</Voornamen>
+								</Naam>
+								<Geslacht>
+									<Code>1</Code>
+									<Omschrijving>Mannelijk</Omschrijving>
+								</Geslacht>
+								<VerklaringInschrijving DatumBegin="1991-07-02">
+									<GemeenteVertrek>
+										<Code>62118</Code>
+										<Omschrijving>Grâce-Hollogne</Omschrijving>
+									</GemeenteVertrek>
+								</VerklaringInschrijving>
+								<Statussen>
+									<Status DatumBegin="2001-01-01">
+										<Code>99990</Code>
+										<Omschrijving>overleden</Omschrijving>
+									</Status>
+								</Statussen>
+								<Beheerder DatumBegin="2000-01-01">
+									<Plaats>
+										<Land>
+											<NISCode>109</NISCode>
+											<ISOCode>ESP</ISOCode>
+											<Naam>SPANJE</Naam>
+										</Land>
+									</Plaats>
+									<Fusie>
+										<Code>0</Code>
+										<Omschrijving>NEEN</Omschrijving>
+									</Fusie>
+									<Taalregime>
+										<Code>2</Code>
+										<Omschrijving>Nederlands of Duits</Omschrijving>
+									</Taalregime>
+								</Beheerder>
+								<Register DatumBegin="1976-05-24">
+									<Code>2</Code>
+									<Omschrijving>B.R.</Omschrijving>
+								</Register>
+								<Nationaliteiten>
+									<Nationaliteit DatumBegin="1925-01-20">
+										<Code>109</Code>
+										<Omschrijving>Spanje</Omschrijving>
+									</Nationaliteit>
+								</Nationaliteiten>
+								<Geboorte DatumBegin="1925-01-20">
+									<Datum>1925-01-20</Datum>
+									<Plaats>
+										<Gemeente>
+											<Naam>BARCELONE</Naam>
+										</Gemeente>
+										<Land>
+											<NISCode>109</NISCode>
+											<ISOCode>ESP</ISOCode>
+											<Naam>SPANJE</Naam>
+										</Land>
+									</Plaats>
+									<Aktenummer>00000</Aktenummer>
+								</Geboorte>
+								<Overlijden DatumBegin="2001-01-01">
+									<Datum>2001-01-01</Datum>
+									<Plaats>
+										<Gemeente>
+											<Naam>AAAAAAAAAA</Naam>
+										</Gemeente>
+										<Land>
+											<NISCode>109</NISCode>
+											<ISOCode>ESP</ISOCode>
+											<Naam>SPANJE</Naam>
+										</Land>
+									</Plaats>
+									<Aktenummer>0000</Aktenummer>
+								</Overlijden>
+								<Adressen>
+									<Hoofdverblijfplaats DatumBegin="1995-02-22">
+										<Huisnummer>110</Huisnummer>
+										<Land>
+											<String>BELGIE</String>
+											<Taal>nl</Taal>
+										</Land>
+										<Postcode>4357</Postcode>
+										<NISCodeLand>150</NISCodeLand>
+										<ISOCodeLand>BEL</ISOCodeLand>
+										<StraatCode>3015</StraatCode>
+										<NietGestandaardiseerdeStraatnaam>
+											<String>Rue du Ruisseau</String>
+										</NietGestandaardiseerdeStraatnaam>
+									</Hoofdverblijfplaats>
+									<AangifteAdresBuitenland DatumBegin="2000-01-01">
+										<Datum>2000-01-01</Datum>
+										<Land>
+											<NISCode>109</NISCode>
+											<ISOCode>ESP</ISOCode>
+											<Naam>SPANJE</Naam>
+										</Land>
+										<Teksten>
+											<Tekst>PLAYA</Tekst>
+											<Tekst>DEL</Tekst>
+											<Tekst>SOL</Tekst>
+										</Teksten>
+									</AangifteAdresBuitenland>
+								</Adressen>
+								<Afstammingen>
+									<Afstamming DatumBegin="1925-01-20">
+										<Type>
+											<Code>00</Code>
+											<Omschrijving>Kind</Omschrijving>
+										</Type>
+										<Ouders>
+											<Ouder>
+												<INSZ>00000199900</INSZ>
+												<Naam>
+													<Achternamen>
+														<Achternaam>Pardo</Achternaam>
+														<Achternaam>Pardo</Achternaam>
+													</Achternamen>
+													<Voornamen>
+														<Voornaam>Buenaventura</Voornaam>
+													</Voornamen>
+												</Naam>
+												<Geslacht>
+													<Code>1</Code>
+													<Omschrijving>Mannelijk</Omschrijving>
+												</Geslacht>
+												<Geboortedatum>0000-00-01</Geboortedatum>
+											</Ouder>
+											<Ouder>
+												<INSZ>00000100000</INSZ>
+												<Naam>
+													<Achternamen>
+														<Achternaam>Cols</Achternaam>
+														<Achternaam>Ferrer</Achternaam>
+													</Achternamen>
+													<Voornamen>
+														<Voornaam>Elvira</Voornaam>
+													</Voornamen>
+												</Naam>
+												<Geslacht>
+													<Code>2</Code>
+													<Omschrijving>Vrouwelijk</Omschrijving>
+												</Geslacht>
+												<Geboortedatum>0000-00-01</Geboortedatum>
+											</Ouder>
+										</Ouders>
+									</Afstamming>
+								</Afstammingen>
+								<Identiteitsbewijzen>
+									<Identiteitsbewijs DatumBegin="1996-05-20">
+										<Type>
+											<Code>0040</Code>
+											<Omschrijving>K. EEG</Omschrijving>
+										</Type>
+										<Nummer>FLB494997</Nummer>
+										<Vervalgegevens>
+											<Vervaldatum>1901-05-21</Vervaldatum>
+										</Vervalgegevens>
+										<Plaats>
+											<Gemeente>
+												<NISCode>64023</NISCode>
+												<Naam>Donceel</Naam>
+											</Gemeente>
+											<Land>
+												<NISCode>150</NISCode>
+												<ISOCode>BEL</ISOCode>
+												<Naam>BELGIE</Naam>
+											</Land>
+										</Plaats>
+									</Identiteitsbewijs>
+								</Identiteitsbewijzen>
+								<Arbeidskaarten>
+									<Arbeidskaart DatumBegin="1968-01-23">
+										<Nummer>A 428673</Nummer>
+										<Vervalgegevens>
+											<Vervaldatum>1998-11-30</Vervaldatum>
+											<Tekst>onbepaalde datum</Tekst>
+										</Vervalgegevens>
+									</Arbeidskaart>
+								</Arbeidskaarten>
+								<NummersDienstVreemdelingenzaken>
+									<NummerDienstVreemdelingenzaken DatumBegin="1972-01-01" DatumEinde="1980-01-01">
+										<NummerDienstVreemdelingenzaken>02730231</NummerDienstVreemdelingenzaken>
+									</NummerDienstVreemdelingenzaken>
+								</NummersDienstVreemdelingenzaken>
+							</Persoon>
+						</Inhoud>
+					</Antwoord>
+				</Antwoorden>
+			</Repliek>
+		</v02:GeefPersoonResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
