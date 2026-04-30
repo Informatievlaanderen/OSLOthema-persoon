@@ -50,6 +50,52 @@
               "minLength": 10,
               "maxLength": 36
             }
+          },
+          {
+            "name": "X-Bron",
+            "required": false,
+            "in": "header",
+            "description": "Bron die geraadpleegd moet worden om de Persoon op te vragen. Indien niet meegegeven zal er altijd naar het Rijkregister verwezen worden.",
+            "schema": {
+              "type": "string",
+              "pattern": "^https:\\/\\/data\\.vlaanderen\\.be\\/id\\/organisatie\\/OVO\\d{6}$"
+            },
+            "examples": {
+              "RR": {
+                "summary": "Rijkregister (RR)",
+                "value": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+              },
+              "KSZ": {
+                "summary": "Kruispuntbank van de Sociale Zekerheid (KSZ)",
+                "value": "https://data.vlaanderen.be/id/organisatie/OVO008218"
+              }
+            }
+          },
+          {
+            "name": "X-ExtraIT",
+            "required": false,
+            "in": "header",
+            "description": "Extra ITs die moeten worden opgevraagd die niet standaard bij de bron worden meegegeven. Indien niet meegegeven zal deze extra informatie niet in het antwoord zitten.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "examples": {
+              "IT110": {
+                "summary": "Afstamming (IT 110)",
+                "value": ["Afstamming"]
+              },
+              "IT114": {
+                "summary": "Afstamming in dalende lijn (IT 114)",
+                "value": ["AfstammingDalendeLijn"]
+              },
+              "IT110-IT114": {
+                "summary": "Afstamming (IT 110) en Afstamming in dalende lijn (IT 114)",
+                "value": ["Afstamming", "AfstammingDalendeLijn"]
+              }
+            }
           }
         ],
         "responses": {
