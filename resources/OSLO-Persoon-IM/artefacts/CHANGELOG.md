@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2026-04-30
+
 ### Added
 - Optionele HTTP header `X-Bron` in Swagger om de afnemer te laten kiezen tussen Rijkregister of KSZ als databron.
 - Optionele HTTP header `X-ExtraIT` in Swagger om afnemer extra data te laten ophalen. Bijvoorbeeld: Afstamming bij KSZ.
@@ -14,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Release artefacts zijn nu beschikbaar in [resources/OSLO-Persoon-IM/artefacts](resources/OSLO-Persoon-IM/artefacts) om te kunnen versioneren.
 
-## [0.0.3] - 2026-04-30
+## [0.0.3] - 2026-04-22
 
 ### Added
 - Unittest validatie project dat valideert of de Swagger en de datavoorbeelden matchen en valideren.
