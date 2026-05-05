@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Persoonsrelatie en Inwonerschap associatieklasse URIs aangepast zodat ze herbruik zijn.
 - Alle afkortingen zijn ge-expandeerd in de definities en gebruiksnotas voor een hogere leesbaarheid.
 - Validation unittest gegeneerde bestanden uit de repository gehaald.
+- URI van superklasse LocatiePeriodeOfJurisdictie gecorigeerd.
 
 ## [0.0.4] - 2026-04-30
 
