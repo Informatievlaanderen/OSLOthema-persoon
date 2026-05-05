@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- EAP bestand heeft nu een aangepaste naam met het oog op andere implementatiemodellen.
+
+### Fixed
+- VOCAB BIO URIs aangepast naar eigen URIs die al reeds beschikbaar waren in het Vocabularium Persoon.
+- Persoonsrelatie en Inwonerschap associatieklasse URIs aangepast zodat ze herbruik zijn.
+- Alle afkortingen zijn ge-expandeerd in de definities en gebruiksnotas voor een hogere leesbaarheid.
+- Validation unittest gegeneerde bestanden uit de repository gehaald.
+
 ## [0.0.4] - 2026-04-30
 
 ### Added
