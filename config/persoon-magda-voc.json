@@ -12,7 +12,7 @@
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders-MAGDA.csv",
     "contributors-column": "Persoon",
-    "site": "site-skeleton/persoon-IM",
+    "site": "site-skeleton/OSLO-Persoon-MAGDA-IM",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-persoon/issues"
   }
 ]
