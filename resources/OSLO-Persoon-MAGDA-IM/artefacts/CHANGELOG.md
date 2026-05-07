@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Alle afkortingen zijn ge-expandeerd in de definities en gebruiksnotas voor een hogere leesbaarheid.
 - Validation unittest gegeneerde bestanden uit de repository gehaald.
 - URI van superklasse LocatiePeriodeOfJurisdictie gecorigeerd.
+- URIs die uit Persoon vocabulary moeten komen aangepast door verhuis naar implementatie.data.vlaanderen.be
+- Codelijsten gelinkt in HTML spec.
 
 ## [0.0.4] - 2026-04-30
 
