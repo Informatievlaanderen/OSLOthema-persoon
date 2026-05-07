@@ -1,0 +1,5 @@
+@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,broader,
+https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus,http://www.w3.org/2004/02/skos/core#ConceptScheme,Dossierstatus,Codelijst IT001 Dossierstatus types,Codelijst van de dossierstatus types in Informatie Type 001 'Gemeente van verblijf'.,https://data.vlaanderen.be/id/conceptscheme/IT001,https://data.vlaanderen.be/id/conceptscheme/IT001,,
+https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype,http://www.w3.org/2004/02/skos/core#ConceptScheme,AdministratiefBeheerdertype,Codelijst IT001 Dossierstatus types,Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'.,https://data.vlaanderen.be/id/conceptscheme/IT001,https://data.vlaanderen.be/id/conceptscheme/IT001,,
+https://data.vlaanderen.be/id/conceptscheme/IT001,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT001,Codelijst IT001,Codelijst van Informatie Type 001 'Gemeente van verblijf'.,,,,
+,,,,,,,,

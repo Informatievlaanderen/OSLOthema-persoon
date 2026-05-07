@@ -1,0 +1,4 @@
+<https://data.vlaanderen.be/id/conceptscheme/IT110-IT114> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110-IT114"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 110 'Afstamming' en Informatie Type 114 'Afstamming dalende lijn'."@nl;
+    <http://www.w3.org/2004/02/skos/core#notation> "IT110-IT114".

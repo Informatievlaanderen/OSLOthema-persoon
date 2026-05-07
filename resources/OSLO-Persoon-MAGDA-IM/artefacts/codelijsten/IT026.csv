@@ -1,0 +1,4 @@
+@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,broader,remarks,
+https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid,http://www.w3.org/2004/02/skos/core#ConceptScheme,RedenAfwezigheid,Reden afwezigheid,Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'.,https://data.vlaanderen.be/id/conceptscheme/IT026,https://data.vlaanderen.be/id/conceptscheme/IT026,,,
+https://data.vlaanderen.be/id/conceptscheme/IT026,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT026,Codelijst IT026,Codelijst van Informatie Type 026 'Tijdelijke Afwezigheid'.,,,,,
+,,,,,,,,,
