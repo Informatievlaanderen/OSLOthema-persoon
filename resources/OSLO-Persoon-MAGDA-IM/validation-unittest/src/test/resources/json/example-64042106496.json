@@ -34,10 +34,10 @@
       "identificator": { "@value": "64042106496" }
     },
     "beheerder": {
-      "@id": "http://dbpedia.org/resource/ISO_3166-2:FRA",
+      "@id": "http://publications.europa.eu/resource/authority/country/FRA",
       "@type": "AdministratiefBeheerder",
       "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerder/2"
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
       },
       "voorkeursnaam": {
         "@language": "nl",
@@ -49,7 +49,7 @@
       "jurisdictie": {
         "@type": "Jurisdictie",
         "plaats": {
-          "@id": "http://dbpedia.org/resource/ISO_3166-2:BE",
+          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
           "@type": "Plaats"
         }
       },

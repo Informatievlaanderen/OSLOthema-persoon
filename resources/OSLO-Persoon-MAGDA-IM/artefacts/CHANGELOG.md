@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - EAP bestand heeft nu een aangepaste naam met het oog op andere implementatiemodellen.
 - landcode is nu onderdeel van Plaats, dit was onnodig opgesplitst naar AdministratieveEenheid.
 - AdministratieveEenheid is niet meer nodig en werd uit het model gehaald.
+- Datavoorbeelden bijgewerkt voor codelijsten AdministratiefBeheerdertype en ISO land codes.
 
 ### Fixed
 - VOCAB BIO URIs aangepast naar eigen URIs die al reeds beschikbaar waren in het Vocabularium Persoon.
