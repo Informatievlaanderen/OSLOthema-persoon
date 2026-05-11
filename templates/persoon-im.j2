@@ -7,6 +7,10 @@
         <dd>
            <a href="{{ data.metadata.repositoryurl }}">{{ data.metadata.repositoryurl }}</a>
         </dd>
+        <dt>Metadata</dt>
+        <dd>
+           <pre>{{ data.metadata | tojson(indent=2) }}</pre>
+        </dd>
         <dt>Changelog</dt>
         <dd>
            <a href="https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/refs/heads/release-v0.0.5/resources/OSLO-Persoon-MAGDA-IM/artefacts/CHANGELOG.md">https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/refs/heads/release-v0.0.5/resources/OSLO-Persoon-MAGDA-IM/artefacts/CHANGELOG.md</a>
