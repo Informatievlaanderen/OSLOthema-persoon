@@ -1,5 +1,37 @@
 {% extends "impl.j2" %}
 
+{% block metainfo %}
+<div class="head" role="metainfo" id="metainfo">
+     <dl>
+        <dt>Brondata</dt>
+        <dd>
+           <a href="{{ data.metadata.repositoryurl }}">{{ data.metadata.repositoryurl }}</a>
+        </dd>
+        <dt>Changelog</dt>
+        <dd>
+           <a href="https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/refs/heads/release-v0.0.5/resources/OSLO-Persoon-MAGDA-IM/artefacts/CHANGELOG.md">https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-persoon/refs/heads/release-v0.0.5/resources/OSLO-Persoon-MAGDA-IM/artefacts/CHANGELOG.md</a>
+        </dd>
+        <dt>Opmerkingen en feedback</dt>
+        <dd>
+           <a href="{{ data.metadata.feedbackurl }}">{{ data.metadata.feedbackurl }}</a>
+        </dd>
+        <dd>
+           <a href="{{ data.metadata.standaardregisterurl }}">{{ data.metadata.standaardregisterurl }}</a>
+        </dd>
+        {% if data.metadata.dependencies %}
+           <dt>Afhankelijkheden</dt>
+           <dd>
+              {% for dep in metadata.dependencies %}
+                 <a href="{{ dep.packageurl }}">{{ dep.packagelabel }}</a>
+              {% endfor %}
+           </dd>
+        {% endif %}
+     </dl>
+</div>
+
+{% endblock %}
+
+
 {% block summary %}
 <p></p>
 {% endblock %}
