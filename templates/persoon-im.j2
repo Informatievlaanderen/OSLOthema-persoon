@@ -9,7 +9,7 @@
         </dd>
         <dt>Metadata</dt>
         <dd>
-           <pre>{{ data.metadata | tojson(indent=2) }}</pre>
+           <pre>{{ data.metadata | dump| safe }}</pre>
         </dd>
         <dt>Changelog</dt>
         <dd>
