@@ -1,4 +1,4 @@
-@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,broader
+@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,
 https://data.vlaanderen.be/id/conceptscheme/IT110-IT114,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT110-IT114,Codelijst IT110-IT114,Codelijst van Informatie Type 110 'Afstamming' en Informatie Type 114 'Afstamming dalende lijn'.,,,
 https://data.vlaanderen.be/id/conceptscheme/IT110,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT110,Codelijst IT110,Codelijst van Informatie Type 110 'Afstamming'.,https://data.vlaanderen.be/id/conceptscheme/IT110-IT114,https://data.vlaanderen.be/id/conceptscheme/IT110-IT114,
 https://data.vlaanderen.be/id/conceptscheme/IT114,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT114,Codelijst IT114,Codelijst van Informatie Type 114 'Afstamming dalende lijn'.,https://data.vlaanderen.be/id/conceptscheme/IT110-IT114,https://data.vlaanderen.be/id/conceptscheme/IT110-IT114,
