@@ -7,6 +7,8 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT000> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT000"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 000 'Identificatienummer'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     <http://www.w3.org/2004/02/skos/core#notation> "IT000".
 <https://data.vlaanderen.be/id/concept/IT000/Geslacht/0> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekend"@nl;
@@ -26,3 +28,7 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
     <http://www.w3.org/2004/02/skos/core#notation> "2".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".

@@ -14,3 +14,9 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
     <http://www.w3.org/2004/02/skos/core#notation> "Uitzonderingen".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
+    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
