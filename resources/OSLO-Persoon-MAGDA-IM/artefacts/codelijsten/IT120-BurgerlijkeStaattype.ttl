@@ -1,0 +1,87 @@
+<https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Burgerlijke Staat types"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de burgerlijke staat types in Informatie Type 120 'Burgerlijke Staat'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    <http://www.w3.org/2004/02/skos/core#notation> "BurgerlijkeStaattype".
+<https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Burgerlijke Staat types"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de burgerlijke staat types in Informatie Type 120 'Burgerlijke Staat'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120>;
+    <http://www.w3.org/2004/02/skos/core#notation> "BurgerlijkeStaattype".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/10> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Ongehuwd"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "10".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/20> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gehuwd"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "20".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/25> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Nietigverklaring van het huwelijk"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "25".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/26> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Putatief huwelijk"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "26".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/30> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Weduwnaar (weduwe)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "30".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/40> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gescheiden"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "40".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/41> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Echtscheiding uitgesproken met toepassing van de wet van 30 juni 1994"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "41".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/50> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Scheiding van tafel en bed en van goederen"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "50".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/51> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "scheiding van tafel en bed en van goederen uitgesproken met toepassing van de wet van 30 juni 1994"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "51".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/60> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontbinding van het huwelijk op een bijzondere wijze"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "60".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/80> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Partnerschap"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "80".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/81> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Beëindiging  partnerschap"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "81".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/90> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbepaald"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "90".
+<https://data.vlaanderen.be/id/conceptscheme/IT120> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT120"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 120 'Burgerlijke staat'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    <http://www.w3.org/2004/02/skos/core#notation> "IT120".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".

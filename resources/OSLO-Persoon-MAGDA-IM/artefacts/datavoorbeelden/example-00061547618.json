@@ -1,0 +1,80 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@type": "VdipEnvelope",
+  "payload": {
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+    },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO008218",
+      "@type": "Organisatie"
+    },
+    "heeftGeboorte": {
+      "@type": "Geboorte",
+      "datum": { "@value": "2000-06-15", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Miranzadeh Mahabadi" }
+    ],
+    "voornaam": [
+      { "@value": "Sana" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+      }
+    },
+    "registratie": {
+      "@type": "Identificator",
+      "identificator": { "@value": "00061547618" }
+    },
+    "beheerder": {
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Gent"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@type": "Domicilie",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "39" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Salamanderstraat nl 39 9000 Gent nl BELGIE"
+            },
+            "postcode": { "@value": "9000" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Salamanderstraat"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Gent"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        }
+      ]
+    }]
+  }
+}

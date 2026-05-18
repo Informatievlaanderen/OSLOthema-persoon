@@ -1,5 +1,42 @@
 {% extends "impl.j2" %}
 
+{% block metainfo %}
+<div class="head" role="metainfo" id="metainfo">
+     <dl>
+        <dt>Brondata</dt>
+        <dd>
+           <a href="https://github.com/Informatievlaanderen/OSLOthema-persoon/tags/{{ data.metadata.branchtag }}">https://github.com/Informatievlaanderen/OSLOthema-persoon/tags/{{ data.metadata.branchtag }}</a>
+        </dd>
+        <dt>Changelog</dt>
+        <dd>
+           <a href="https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/artefacts/CHANGELOG.md">https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/artefacts/CHANGELOG.md</a>
+        </dd>
+        <dt>Opmerkingen en feedback</dt>
+        <dd>
+           <a href="{{ data.metadata.feedbackurl }}">{{ data.metadata.feedbackurl }}</a>
+        </dd>
+        <dd>
+           <a href="{{ data.metadata.standaardregisterurl }}">{{ data.metadata.standaardregisterurl }}</a>
+        </dd>
+        {% if data.metadata.dependencies %}
+           <dt>Afhankelijkheden</dt>
+           <dd>
+              {% for dep in metadata.dependencies %}
+                 <a href="{{ dep.packageurl }}">{{ dep.packagelabel }}</a>
+              {% endfor %}
+           </dd>
+        {% endif %}
+     </dl>
+</div>
+
+{% endblock %}
+
+
 {% block summary %}
-<p></p>
+<p>
+Het Implementatiemodel MAGDA-Persoon is gebaseerd op het <a href=""https://data.vlaanderen.be/doc/applicatieprofiel/persoon-basis/>Applicatieprofiel OSLO Persoon</a> om de <a href="https://vlaamseoverheid.atlassian.net/wiki/spaces/MG/pages/1093927442/Persoon.GeefPersoon-02.02">persoonsdiensten van MAGDA</a> to omsluiten volgens deze OSLO datastandaard.
+</p>
+<p>
+De persoonsdiensten laat de afnemer toe de actuele gegevens van een persoon op te halen, dit op basis van het INSZ-nummer van deze persoon. Eens de afnemer de request gelanceerd heeft, wordt de vraag doorgestuurd naar het Rijksregister of de Kruispuntbank van de Sociale Zekerheid (KSZ). Dit is afhankelijk van de machtigingen van de afnemer en de bronkeuze in de vraag.
+</p>
 {% endblock %}

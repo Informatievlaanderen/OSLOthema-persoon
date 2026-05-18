@@ -1,0 +1,4 @@
+﻿@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,,
+https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht,http://www.w3.org/2004/02/skos/core#ConceptScheme,Geslacht,Codelijst IT000 Geslacht,Codelijst van geslacht in Informatie Type 001 'Identificatienummer'.,https://data.vlaanderen.be/id/conceptscheme/IT000,https://data.vlaanderen.be/id/conceptscheme/IT000,,
+https://data.vlaanderen.be/id/conceptscheme/IT000,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT000,Codelijst IT000,Codelijst van Informatie Type 000 'Identificatienummer'.,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,,
+https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,http://www.w3.org/2004/02/skos/core#ConceptScheme,MAGDA-Persoon,Codelijsten Implementatiemodel MAGDA Persoon,Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon.,,,,

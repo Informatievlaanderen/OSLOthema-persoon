@@ -1,0 +1,251 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@type": "VdipEnvelope",
+  "payload": {
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+    },
+    "dossierstatus": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+    },
+    "creatiedatum": { "@value": "1971-03-19", "@type": "Date" },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248",
+      "@type": "Organisatie"
+    },
+    "modificatiedatum": { "@value": "2017-03-15", "@type": "Date" },
+    "heeftGeboorte": {
+      "@type": "Geboorte",
+      "datum": { "@value": "1929-01-28", "@type": "Date" }
+    },
+    "heeftOverlijden": {
+      "@type": "Overlijden",
+      "datum": { "@value": "2017-02-28", "@type": "Date" }
+    },
+    "achternaam": [
+      { "@value": "Bataille" }
+    ],
+    "voornaam": [
+      { "@value": "Fernand" },
+      { "@value": "Ghislain" },
+      { "@value": "Gérard" },
+      { "@value": "Joseph" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/20"
+      }
+    },
+    "registratie": {
+      "@type": "Identificator",
+      "identificator": { "@value": "29012818180" }
+    },
+    "beheerder": {
+      "@id": "http://publications.europa.eu/resource/authority/country/FRA",
+      "@type": "AdministratiefBeheerder",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+      },
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "FRANKRIJK"
+      }
+    },
+    "heeftInwonerschap": [{
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@type": "Domicilie",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "15" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 BELGIE"
+            },
+            "postcode": { "@value": "6941" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy)"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        },
+        {
+          "@type": "WettelijkVerblijf",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "¨Le Village¨ St Trinit 84390 Sault"
+            }
+          }
+        },
+        {
+          "@type": "VerblijfplaatsBuitenland",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Les Beylons 84220 MURS FRANCE"
+            }
+          }
+        }
+      ]
+    }],
+    "heeftPersoonsrelatie": [
+      {
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1929-01-28", "@type": "Date" },
+        "metPersoon": {
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+          },
+          "achternaam": [
+            { "@value": "Fontaine" }
+          ],
+          "voornaam": [
+            { "@value": "Jeanne" },
+            { "@value": "Palmyre" }
+          ]
+        }
+      },
+      {
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1929-01-28", "@type": "Date" },
+        "metPersoon": {
+          "@type": "Persoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Bataille" }
+          ],
+          "voornaam": [
+            { "@value": "Fernand" }
+          ]
+        }
+      },
+      {
+        "@type": "Gezinsrelatie",
+        "gezinsrelatietype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/02"
+        },
+        "metPersoon": {
+          "@type": "GeregistreerdPersoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+          },
+          "achternaam": [
+            { "@value": "Janssens" }
+          ],
+          "voornaam": [
+            { "@value": "Emilie" },
+            { "@value": "Florence" },
+            { "@value": "Françoise" },
+            { "@value": "Maria" }
+          ],
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": { "@value": "28110813202" }
+          }
+        }
+      },
+      {
+        "@type": "Huwelijk",
+        "metPersoon": {
+          "@type": "GeregistreerdPersoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+          },
+          "achternaam": [
+            { "@value": "Janssens" }
+          ],
+          "voornaam": [
+            { "@value": "Emilie" },
+            { "@value": "Florence" },
+            { "@value": "Françoise" },
+            { "@value": "Maria" }
+          ],
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": { "@value": "28110813202" }
+          }
+        }
+      },
+      {
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1952-02-19", "@type": "Date" },
+        "metPersoon": {
+          "@type": "GeregistreerdPersoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Bataille" }
+          ],
+          "voornaam": [
+            { "@value": "Claude" },
+            { "@value": "Ghislain" },
+            { "@value": "Marie" },
+            { "@value": "Pierre" },
+            { "@value": "Vincent" }
+          ],
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": { "@value": "52021916184" }
+          }
+        }
+      },
+      {
+        "@type": "Afstamming",
+        "afstammingstype": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/00"
+        },
+        "datumVanAfstamming": { "@value": "1953-01-07", "@type": "Date" },
+        "metPersoon": {
+          "@type": "GeregistreerdPersoon",
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Bataille" }
+          ],
+          "voornaam": [
+            { "@value": "Fernand" },
+            { "@value": "Ghislain" },
+            { "@value": "Marie" },
+            { "@value": "Monique" },
+            { "@value": "Thierry" }
+          ],
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": { "@value": "53010737550" }
+          }
+        }
+      }
+    ]
+  }
+}
