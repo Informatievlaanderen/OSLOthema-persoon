@@ -1,40 +1,16 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "Components of Persoon",
-    "version": "1.0.0"
+    "title": "Components of MAGDA Persoon REST API",
+    "description": "Persoondiensten omsloten volgens REST en OSLO.",
+    "version": "0.0.5"
   },
   "components": {
     "schemas": {
-      "Woonvormtype": {
-        "title": "Woonvormtype",
+      "Afstammingstype": {
+        "title": "Afstammingstype",
         "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "AdministratieveEenheidniveau": {
-        "title": "AdministratieveEenheidniveau",
-        "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "RedenAfwezigheid": {
-        "title": "RedenAfwezigheid",
-        "type": "object",
+        "description": "Enumeratie van Afstammingstype",
         "properties": {
           "@id": {
             "type": "string",
@@ -48,58 +24,7 @@
       "Geslacht": {
         "title": "Geslacht",
         "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "BurgerlijkeStaatType": {
-        "title": "BurgerlijkeStaatType",
-        "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "AdministratiefBeheerdertype": {
-        "title": "AdministratiefBeheerdertype",
-        "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "Dossierstatustype": {
-        "title": "Dossierstatustype",
-        "type": "object",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "Afstammingstype": {
-        "title": "Afstammingstype",
-        "type": "object",
+        "description": "Enumeratie van Geslacht",
         "properties": {
           "@id": {
             "type": "string",
@@ -113,6 +38,77 @@
       "Gezinsrelatietype": {
         "title": "Gezinsrelatietype",
         "type": "object",
+        "description": "Enumeratie van Gezinsrelatietype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "BurgerlijkeStaatType": {
+        "title": "BurgerlijkeStaatType",
+        "type": "object",
+        "description": "Enumeratie van BurgerlijkeStaatType",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "AdministratiefBeheerdertype": {
+        "title": "AdministratiefBeheerdertype",
+        "type": "object",
+        "description": "Enumeratie van AdministratiefBeheerdertype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Woonvormtype": {
+        "title": "Woonvormtype",
+        "type": "object",
+        "description": "Enumeratie van Woonvormtype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Dossierstatus": {
+        "title": "Dossierstatus",
+        "type": "object",
+        "description": "Enumeratie van Dossierstatus",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "RedenAfwezigheid": {
+        "title": "RedenAfwezigheid",
+        "type": "object",
+        "description": "Enumeratie van RedenAfwezigheid",
         "properties": {
           "@id": {
             "type": "string",
@@ -310,22 +306,17 @@
               "@language"
             ]
           },
-          "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
+          "land": {
+            "type": "object",
+            "description": "Land waartoe de administratieveeenheid behoort.",
+            "properties": {
+              "@value": {
+                "type": "string"
               }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            },
+            "required": [
+              "@value"
+            ]
           }
         },
         "required": [
@@ -405,21 +396,7 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
@@ -429,7 +406,7 @@
       "Persoonsgebeurtenis": {
         "title": "Persoonsgebeurtenis",
         "type": "object",
-        "description": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "description": "Belangrijke gebeurtenis in het leven van een Persoon.",
         "properties": {
           "@id": {
             "type": "string",
@@ -459,21 +436,7 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
@@ -513,21 +476,7 @@
             ]
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
@@ -537,7 +486,7 @@
       "Huwelijk": {
         "title": "Huwelijk",
         "type": "object",
-        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
         "properties": {
           "@id": {
             "type": "string",
@@ -549,21 +498,7 @@
             "pattern": "^Huwelijk$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           },
           "metPersoon": {
             "oneOf": [
@@ -711,7 +646,7 @@
           },
           "status": {
             "type": "object",
-            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
+            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".",
             "properties": {
               "@value": {
                 "type": "number",
@@ -746,7 +681,7 @@
           },
           "instantie": {
             "type": "object",
-            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
+            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.",
             "properties": {
               "@id": {
                 "type": "string",
@@ -764,79 +699,8 @@
           "titel"
         ]
       },
-      "AdministratieveEenheid": {
-        "title": "AdministratieveEenheid",
-        "type": "object",
-        "description": "Bestuurlijke eenheid waar een lidstaat rechtsbevoegdheid heeft en/of uitoefent,in het kader van lokaal,regionaal of nationaal bestuur.",
-        "properties": {
-          "@id": {
-            "type": "string",
-            "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse AdministratieveEenheid)",
-            "pattern": "^AdministratieveEenheid$"
-          },
-          "land": {
-            "type": "object",
-            "description": "Land waartoe de administratieveeenheid behoort.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "@value"
-            ]
-          },
-          "identificator": {
-            "$ref": "#/components/schemas/Identificator"
-          },
-          "niveau": {
-            "$ref": "#/components/schemas/AdministratieveEenheidniveau"
-          },
-          "plaatsnaam": {
-            "type": "object",
-            "description": "Naam van de plaats of van het gebied.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              },
-              "@language": {
-                "type": "string",
-                "pattern": "^nl$"
-              }
-            },
-            "required": [
-              "@value",
-              "@language"
-            ]
-          },
-          "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
-          }
-        },
-        "required": [
-          "@type"
-        ]
-      },
-      "VdipEnvelope": {
-        "title": "VdipEnvelope",
+      "VdipEnvelop": {
+        "title": "VdipEnvelop",
         "type": "object",
         "description": "Vlaams Data Integratieplatform (VDIP) data enveloppe volgens de REST richtlijnen.",
         "properties": {
@@ -846,10 +710,10 @@
           },
           "@type": {
             "type": "string",
-            "description": "Object type (klasse VdipEnvelope)",
-            "pattern": "^VdipEnvelope$"
+            "description": "Object type (klasse VdipEnvelop)",
+            "pattern": "^VdipEnvelop$"
           },
-          "errors": {
+          "warning": {
             "type": "array",
             "description": "Lijst van Probleemdetail items.",
             "items": {
@@ -857,18 +721,18 @@
             },
             "minItems": 1
           },
-          "payload": {
+          "data": {
             "$ref": "#/components/schemas/GeregistreerdPersoon"
           },
           "@context": {
             "type": "string",
             "description": "URI of the JSON-LD versioned context file for this response.",
-            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+            "pattern": "^https:\\/\\/implementatie.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/v0.0.5\\/context\\/persoon.jsonld$"
           }
         },
         "required": [
           "@type",
-          "payload"
+          "data"
         ]
       },
       "Inwonerschap": {
@@ -884,23 +748,6 @@
             "type": "string",
             "description": "Object type (klasse Inwonerschap)",
             "pattern": "^Inwonerschap$"
-          },
-          "persoon": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Persoon"
-              },
-              {
-                "$ref": "#/components/schemas/GeregistreerdPersoon"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Persoon": "#/components/schemas/Persoon",
-                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
-              }
-            }
           },
           "jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
@@ -956,21 +803,7 @@
             "pattern": "^Samenwonen$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           },
           "metPersoon": {
             "oneOf": [
@@ -1013,7 +846,7 @@
             "$ref": "#/components/schemas/Identificator"
           },
           "dossierstatus": {
-            "$ref": "#/components/schemas/Dossierstatustype"
+            "$ref": "#/components/schemas/Dossierstatus"
           },
           "vorigeRegistratie": {
             "$ref": "#/components/schemas/Identificator"
@@ -1191,7 +1024,7 @@
       "Afstamming": {
         "title": "Afstamming",
         "type": "object",
-        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
         "properties": {
           "@id": {
             "type": "string",
@@ -1271,7 +1104,7 @@
       "BelgischAdres": {
         "title": "BelgischAdres",
         "type": "object",
-        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid, een ligplaats, een standplaats of een perceel op basis van een gemeentenaam, een straatnaam, een huisnummer en eventueel een busnummer en een postcode.",
         "properties": {
           "@id": {
             "type": "string",
@@ -1302,21 +1135,7 @@
             "pattern": "^Jurisdictie$"
           },
           "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
+            "$ref": "#/components/schemas/Plaats"
           }
         },
         "required": [
@@ -1613,23 +1432,6 @@
             "type": "string",
             "description": "Object type (klasse Locatie)",
             "pattern": "^Locatie$"
-          },
-          "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
           }
         },
         "required": [
@@ -1686,7 +1488,7 @@
           },
           "adresgebied": {
             "type": "object",
-            "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres ligt.",
+            "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bijvoorbeeld: de naam van het gehucht waarin het adres ligt.",
             "properties": {
               "@value": {
                 "type": "string"
@@ -1732,7 +1534,7 @@
           },
           "huisnummer": {
             "type": "object",
-            "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
+            "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
             "properties": {
               "@value": {
                 "type": "string"
@@ -1875,23 +1677,6 @@
           },
           "verwijstNaar": {
             "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "plaats": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/Plaats"
-              },
-              {
-                "$ref": "#/components/schemas/AdministratieveEenheid"
-              }
-            ],
-            "discriminator": {
-              "propertyName": "@type",
-              "mapping": {
-                "Plaats": "#/components/schemas/Plaats",
-                "AdministratieveEenheid": "#/components/schemas/AdministratieveEenheid"
-              }
-            }
           }
         },
         "required": [
@@ -1914,7 +1699,7 @@
           },
           "identificator": {
             "type": "object",
-            "description": "String gebruikt om het object uniek te identificeren. Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
+            "description": "String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.",
             "properties": {
               "@value": {
                 "type": "string"
@@ -2101,13 +1886,6 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
       },
-      "Plaats.plaats": {
-        "operationId": "PlaatsGET",
-        "parameters": {
-          "id": "$response.body#/Plaats.plaats/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
-      },
       "Gezinsrelatie.gezinsrelatietype": {
         "operationId": "GezinsrelatieGET",
         "parameters": {
@@ -2164,38 +1942,17 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
       },
-      "AdministratieveEenheid.identificator": {
-        "operationId": "AdministratieveEenheidGET",
+      "VdipEnvelop.warning": {
+        "operationId": "VdipEnvelopGET",
         "parameters": {
-          "id": "$response.body#/AdministratieveEenheid.identificator/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
-      },
-      "AdministratieveEenheid.niveau": {
-        "operationId": "AdministratieveEenheidGET",
-        "parameters": {
-          "id": "$response.body#/AdministratieveEenheid.niveau/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratieveEenheidniveau` op te halen."
-      },
-      "AdministratieveEenheid.plaats": {
-        "operationId": "AdministratieveEenheidGET",
-        "parameters": {
-          "id": "$response.body#/AdministratieveEenheid.plaats/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
-      },
-      "VdipEnvelope.errors": {
-        "operationId": "VdipEnvelopeGET",
-        "parameters": {
-          "id": "$response.body#/VdipEnvelope.errors/@id"
+          "id": "$response.body#/VdipEnvelop.warning/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Probleemdetail` op te halen."
       },
-      "VdipEnvelope.payload": {
-        "operationId": "VdipEnvelopeGET",
+      "VdipEnvelop.data": {
+        "operationId": "VdipEnvelopGET",
         "parameters": {
-          "id": "$response.body#/VdipEnvelope.payload/@id"
+          "id": "$response.body#/VdipEnvelop.data/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
       },
@@ -2246,7 +2003,7 @@
         "parameters": {
           "id": "$response.body#/GeregistreerdPersoon.dossierstatus/@id"
         },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Dossierstatustype` op te halen."
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Dossierstatus` op te halen."
       },
       "GeregistreerdPersoon.vorigeRegistratie": {
         "operationId": "GeregistreerdPersoonGET",
