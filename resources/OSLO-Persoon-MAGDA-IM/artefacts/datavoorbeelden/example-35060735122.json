@@ -1,6 +1,6 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
-  "@type": "VdipEnvelope",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
+  "@type": "VdipEnvelop",
   "warning": [
     {
       "@type": "Probleemdetail",

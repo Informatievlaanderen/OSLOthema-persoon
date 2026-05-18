@@ -96,7 +96,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/MAGDA-Persoon-REST-Swagger-RC1 (1).json</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/MAGDA-Persoon-REST-Swagger.json</inputSpec>
                             <generatorName>spring</generatorName>
                             <apiPackage>be.vlaanderen.pocs.oslopersoon.api</apiPackage>
                             <modelPackage>be.vlaanderen.pocs.oslopersoon.model</modelPackage>

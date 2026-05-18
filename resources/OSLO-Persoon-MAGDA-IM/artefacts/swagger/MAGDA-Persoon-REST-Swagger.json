@@ -20,7 +20,7 @@
   ],
   "components": {
     "schemas": {
-      "VdipEnvelope": { "$ref": "components.json#/components/schemas/VdipEnvelope" }
+      "VdipEnvelope": { "$ref": "components.json#/components/schemas/VdipEnvelop" }
     }
   },
   "paths": {

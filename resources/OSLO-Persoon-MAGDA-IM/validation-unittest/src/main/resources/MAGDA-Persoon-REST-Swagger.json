@@ -20,7 +20,7 @@
   ],
   "components": {
     "schemas": {
-      "GeregistereerdPersoonJsonLd": { "$ref": "components.json#/components/schemas/GeregistreerdPersoonJsonLd" }
+      "VdipEnvelope": { "$ref": "./components.json#/components/schemas/VdipEnvelop" }
     }
   },
   "paths": {
@@ -50,6 +50,52 @@
               "minLength": 10,
               "maxLength": 36
             }
+          },
+          {
+            "name": "X-Bron",
+            "required": false,
+            "in": "header",
+            "description": "Bron die geraadpleegd moet worden om de Persoon op te vragen. Indien niet meegegeven zal er altijd naar het Rijkregister verwezen worden.",
+            "schema": {
+              "type": "string",
+              "pattern": "^https:\\/\\/data\\.vlaanderen\\.be\\/id\\/organisatie\\/OVO\\d{6}$"
+            },
+            "examples": {
+              "RR": {
+                "summary": "Rijkregister (RR)",
+                "value": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+              },
+              "KSZ": {
+                "summary": "Kruispuntbank van de Sociale Zekerheid (KSZ)",
+                "value": "https://data.vlaanderen.be/id/organisatie/OVO008218"
+              }
+            }
+          },
+          {
+            "name": "X-ExtraIT",
+            "required": false,
+            "in": "header",
+            "description": "Extra ITs die moeten worden opgevraagd die niet standaard bij de bron worden meegegeven. Indien niet meegegeven zal deze extra informatie niet in het antwoord zitten.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "examples": {
+              "IT110": {
+                "summary": "Afstamming (IT 110)",
+                "value": ["Afstamming"]
+              },
+              "IT114": {
+                "summary": "Afstamming in dalende lijn (IT 114)",
+                "value": ["AfstammingDalendeLijn"]
+              },
+              "IT110-IT114": {
+                "summary": "Afstamming (IT 110) en Afstamming in dalende lijn (IT 114)",
+                "value": ["Afstamming", "AfstammingDalendeLijn"]
+              }
+            }
           }
         ],
         "responses": {
@@ -57,93 +103,7 @@
             "description": "GeregistreerdPersoon object gevonden.",
             "content": {
               "application/ld+json": {
-                "schema": { "$ref": "components.json#/components/schemas/GeregistreerdPersoonJsonLd" }
-              }
-            },
-            "links": {
-              "Persoon.contactinfo": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.contactinfo/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
-              },
-              "Persoon.geslacht": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.geslacht/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
-              },
-              "Persoon.isHoofdVan": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.isHoofdVan/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
-              },
-              "Persoon.heeftBurgerlijkeStaat": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.heeftBurgerlijkeStaat/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
-              },
-              "Persoon.heeftGeboorte": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.heeftGeboorte/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
-              },
-              "Persoon.heeftOverlijden": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.heeftOverlijden/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
-              },
-              "Persoon.inwonerschap": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.inwonerschap/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
-              },
-              "Persoon.inwonerschapdetail": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.inwonerschapdetail/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
-              },
-              "Persoon.heeftRelatieMet": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.heeftRelatieMet/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
-              },
-              "Persoon.persoonsrelatiedetail": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.persoonsrelatiedetail/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
-              },
-              "Persoon.isLidVan": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.isLidVan/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
-              },
-              "Persoon.bron": {
-                "operationId": "PersoonGET",
-                "parameters": {
-                  "id": "$response.body#/Persoon.bron/@id"
-                },
-                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
+                "schema": { "$ref": "components.json#/components/schemas/VdipEnvelop" }
               }
             }
           },
@@ -152,12 +112,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -171,12 +131,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -190,12 +150,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -209,12 +169,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -228,12 +188,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -247,12 +207,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -266,12 +226,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -285,12 +245,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -304,12 +264,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/ProbleemDetails"
+                  "$ref": "components.json#/components/schemas/Probleemdetail"
                 }
               }
             },
             "links": {
-              "ProbleemDetails.type": {
+              "Probleemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"

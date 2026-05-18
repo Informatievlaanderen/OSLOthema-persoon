@@ -1,7 +1,7 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
-  "@type": "VdipEnvelope",
-  "payload": {
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
+  "@type": "VdipEnvelop",
+  "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"

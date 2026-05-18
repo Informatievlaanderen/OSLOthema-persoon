@@ -1,7 +1,7 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
-  "@type": "VdipEnvelope",
-  "errors": [
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
+  "@type": "VdipEnvelop",
+  "warning": [
     {
       "@type": "Probleemdetail",
       "status": { "@value": 30004, "@type": "Integer" },
@@ -11,7 +11,7 @@
       "instantie": { "@id": "urn:probleem:29012818180-1" }
     }
   ],
-  "payload": {
+  "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
