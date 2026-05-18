@@ -1,11 +1,11 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 administratief beheerder types (v1)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Administratief beheerder types (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
     <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
 <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 administratief beheerder types"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Administratief beheerder types"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001>;

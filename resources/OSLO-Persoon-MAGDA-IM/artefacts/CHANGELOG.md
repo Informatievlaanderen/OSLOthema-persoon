@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Laatste codelijsten ook voorzien van versionering
+
+## [0.0.5] - 2026-05-19
+
 ### Changed
 - EAP bestand heeft nu een aangepaste naam met het oog op andere implementatiemodellen.
 - landcode is nu onderdeel van Plaats, dit was onnodig opgesplitst naar AdministratieveEenheid.
