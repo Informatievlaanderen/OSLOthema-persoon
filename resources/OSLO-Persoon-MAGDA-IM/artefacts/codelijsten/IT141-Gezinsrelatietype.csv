@@ -1,4 +1,4 @@
-@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,,,
+﻿@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,,,
 https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/v1/01,http://www.w3.org/2004/02/skos/core#Concept,01,Alleenstaande,,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,,,
 https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/v1/02,http://www.w3.org/2004/02/skos/core#Concept,02,Echtgenoot/Echtgenote,,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,,,
 https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/v1/03,http://www.w3.org/2004/02/skos/core#Concept,03,Zoon/Dochter,,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1,,,

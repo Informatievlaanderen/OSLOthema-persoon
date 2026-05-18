@@ -51,7 +51,7 @@
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "17".
 <https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/v1/18> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Buitenlandse opdracht - Co�peratie"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Buitenlandse opdracht - Coöperatie"@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "18".

@@ -171,12 +171,12 @@
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "31".
 <https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/40> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekra�ne)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne)"@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "40".
 <https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/41> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekra�ne)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne)"@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "41".

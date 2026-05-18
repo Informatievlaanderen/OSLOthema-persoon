@@ -1,4 +1,4 @@
-@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,remarks,,
+﻿@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,remarks,,
 https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/13202,http://www.w3.org/2004/02/skos/core#Concept,13202,Niet opvraagbaar,"Gegevens niet opvraagbaar, geen persoonsdossier geregistreerd.",https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,,,
 https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/16018,http://www.w3.org/2004/02/skos/core#Concept,16018,Niet beschikbaar,Gegevens uit externe bron zijn niet beschikbaar.,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,,,
 https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/20002,http://www.w3.org/2004/02/skos/core#Concept,20002,Ongeldig INSZ formaat,INSZ in de vraag heeft een ongeldige structuur.,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1,,,

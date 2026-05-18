@@ -18,7 +18,7 @@
     <http://www.w3.org/2004/02/skos/core#notation> "00".
 <https://data.vlaanderen.be/id/concept/IT141/Woonvorm/v1/01> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Zorgwonen (Vlaams Gewest)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Zorgwonen in het Vlaams Gewest is het cre�ren van een kleinere woongelegenheid in of bij een bestaande woning zodat maximaal twee oudere of hulpbehoevende personen kunnen inwonen. Om een zorgwoning te cre�ren moet de eigendom, of ten minste de blote eigendom van de hoofd- en de ondergeschikte wooneenheid aan dezelfde eigenaar toebehoren."@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Zorgwonen in het Vlaams Gewest is het creëren van een kleinere woongelegenheid in of bij een bestaande woning zodat maximaal twee oudere of hulpbehoevende personen kunnen inwonen. Om een zorgwoning te creëren moet de eigendom, of ten minste de blote eigendom van de hoofd- en de ondergeschikte wooneenheid aan dezelfde eigenaar toebehoren."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "01".

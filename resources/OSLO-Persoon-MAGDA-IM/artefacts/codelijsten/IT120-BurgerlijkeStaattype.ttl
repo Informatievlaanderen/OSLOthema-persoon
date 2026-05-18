@@ -66,7 +66,7 @@
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "80".
 <https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/81> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Be�indiging  partnerschap"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Beëindiging  partnerschap"@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "81".

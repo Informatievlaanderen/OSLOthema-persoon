@@ -66,7 +66,7 @@
     <http://www.w3.org/2004/02/skos/core#notation> "99994-01".
 <https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/v1/99994-02> a <http://www.w3.org/2004/02/skos/core#Concept>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Geannuleerd dossier - Fout in geboortedatum of geslacht"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Dossier geannuleerd door fout in de geboortedatum of betreffende het geslacht bij de verzameling (geblokkeerd 07.04.2020 � zie codes 08, 09 of 10)"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Dossier geannuleerd door fout in de geboortedatum of betreffende het geslacht bij de verzameling (geblokkeerd 07.04.2020 – zie codes 08, 09 of 10)"@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "99994-02".

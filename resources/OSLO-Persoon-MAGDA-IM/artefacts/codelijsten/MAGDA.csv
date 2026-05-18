@@ -1,4 +1,4 @@
-@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,broader,remarks,
+﻿@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,broader,remarks,
 https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid,http://www.w3.org/2004/02/skos/core#ConceptScheme,Omstandigheid,Codelijst MAGDA Omstandigheden,Codelijst van alle omstandigheden van de MAGDA diensten.,https://data.vlaanderen.be/id/conceptscheme/MAGDA,https://data.vlaanderen.be/id/conceptscheme/MAGDA,,,
 https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering,http://www.w3.org/2004/02/skos/core#ConceptScheme,Uitzonderingen,Codelijst MAGDA Uitzonderingen,Codelijst van alle uitzonderingen van de MAGDA diensten.,https://data.vlaanderen.be/id/conceptscheme/MAGDA,https://data.vlaanderen.be/id/conceptscheme/MAGDA,,,
 https://data.vlaanderen.be/id/conceptscheme/MAGDA,http://www.w3.org/2004/02/skos/core#ConceptScheme,MAGDA,MAGDA codelijsten,Alle codelijsten die specifiek zijn voor de MAGDA diensten.,,,,,
