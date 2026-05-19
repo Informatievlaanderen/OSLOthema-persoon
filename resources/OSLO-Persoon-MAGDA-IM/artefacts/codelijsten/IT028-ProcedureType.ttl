@@ -1,11 +1,11 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT028 Procedure types (v1)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
-    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType".
+    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT028 Procedure types"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
@@ -30,6 +30,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "4".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT028> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;

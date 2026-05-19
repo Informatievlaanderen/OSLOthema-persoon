@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Hoofdcodelijst /MAGDA/Persoon die als root dient voor alle gebruikte codelijsten.
+- Uitzonderingscode per codelijst voor onbekende broncodes op te vangen.
+
 ## [0.0.6] - 2026-05-19
 
 ### Fixed

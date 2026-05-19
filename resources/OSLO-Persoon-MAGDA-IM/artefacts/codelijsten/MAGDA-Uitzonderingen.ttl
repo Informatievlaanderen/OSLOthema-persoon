@@ -3,7 +3,7 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van alle uitzonderingen van de MAGDA diensten."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Uitzonderingen".
+    <http://www.w3.org/2004/02/skos/core#notation> "Uitzonderingen-v1".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst MAGDA Uitzonderingen"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van alle uitzonderingen van de MAGDA diensten."@nl;
@@ -166,6 +166,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "60013".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGDA codelijsten"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;

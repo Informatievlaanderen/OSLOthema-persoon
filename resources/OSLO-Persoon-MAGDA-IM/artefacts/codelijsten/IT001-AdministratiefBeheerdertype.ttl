@@ -3,7 +3,7 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
-    <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
+    <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Administratief beheerder types"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
@@ -28,6 +28,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "DienstVreemdelingenzaken".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT001> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 001 'Gemeente van verblijf'."@nl;

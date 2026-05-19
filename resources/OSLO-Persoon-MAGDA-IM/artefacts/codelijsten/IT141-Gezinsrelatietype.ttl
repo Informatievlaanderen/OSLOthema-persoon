@@ -3,7 +3,7 @@
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van gezinsrelaties uit Informatie Type 141 'Gezinslid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Gezinsrelatietype".
+    <http://www.w3.org/2004/02/skos/core#notation> "Gezinsrelatietype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT141 Gezinsrelatietype"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van gezinsrelaties uit Informatie Type 141 'Gezinslid'."@nl;
@@ -115,6 +115,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "23".
+<https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT141> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT141"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 141 'Gezinslid'."@nl;

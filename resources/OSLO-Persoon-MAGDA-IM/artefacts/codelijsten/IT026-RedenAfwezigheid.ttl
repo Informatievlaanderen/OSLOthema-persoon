@@ -1,11 +1,11 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT026 Reden tijdelijke afwezigheid (v1)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT026 Reden tijdelijke afwezigheid (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
-    <http://www.w3.org/2004/02/skos/core#notation> "RedenAfwezigheid".
+    <http://www.w3.org/2004/02/skos/core#notation> "RedenAfwezigheid-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT026 Reden tijdelijke afwezigheid"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT026 Reden tijdelijke afwezigheid"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT026>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026>;
@@ -70,6 +70,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "21".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT026> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT026"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;

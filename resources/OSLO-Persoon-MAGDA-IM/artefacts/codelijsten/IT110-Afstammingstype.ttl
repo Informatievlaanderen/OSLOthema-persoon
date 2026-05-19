@@ -1,11 +1,11 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT110 Afstammingstype (v1)"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110 Afstammingstype (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de afstamming types in Informatie Type 110 'Afstamming'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype".
+    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT110 Afstammingstype"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110 Afstammingstype"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de afstamming types in Informatie Type 110 'Afstamming'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110>;
@@ -180,6 +180,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "41".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT110> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 110 'Afstamming'."@nl;

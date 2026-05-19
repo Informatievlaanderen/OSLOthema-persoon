@@ -1,5 +1,5 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT028/RedenAfwezigheid> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "IT028 Procedure Type"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
