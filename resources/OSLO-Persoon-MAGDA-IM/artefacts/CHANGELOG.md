@@ -7,16 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2026-05-19
+
 ### Added
 - Hoofdcodelijst /MAGDA/Persoon die als root dient voor alle gebruikte codelijsten.
 - Uitzonderingscode per codelijst voor onbekende broncodes op te vangen.
 
-## [0.0.6] - 2026-05-19
+## [0.0.6] - 2026-05-18
 
 ### Fixed
 - Laatste codelijsten ook voorzien van versionering
 
-## [0.0.5] - 2026-05-19
+## [0.0.5] - 2026-05-18
 
 ### Changed
 - EAP bestand heeft nu een aangepaste naam met het oog op andere implementatiemodellen.
