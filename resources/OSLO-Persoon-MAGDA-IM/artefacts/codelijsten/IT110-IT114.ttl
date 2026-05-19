@@ -1,5 +1,5 @@
 <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110-IT114"@nl;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten IT110-IT114"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 110 'Afstamming' en Informatie Type 114 'Afstamming dalende lijn'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
@@ -8,6 +8,358 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
     <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/00> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Wettig kind (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "00".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/01> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gewettigd kind (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "01".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/02> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Niet erkend natuurlijk kind (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "02".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/03> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erkend natuurlijk kind (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "03".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/04> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Geadopteerd kind (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "04".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/05> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gewettigd kind ingevolgde adoptie (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "05".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/06> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vondeling (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "06".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/07> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Natuurlijk kind ingevolge ontkenning (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "07".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/08> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende afstamming (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "08".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/09> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbepaalde afstamming (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "09".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/10> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kind geboren uit het huwelijk (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "10".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/11> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met erkenning door de vader bij de geboorte (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "11".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/12> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met vermelding in de akte van geboorte  (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "12".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/13> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde door erkenning (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "13".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/14> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Adoptie (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "14".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/15> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Volle adoptie (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "15".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/16> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vondeling (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "16".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/17> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde ingevolge de nietigverklaring van de afstamming van vaderszijde (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "17".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/18> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende afstamming (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "18".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/19> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbepaalde afstamming (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "19".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/20> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door erkenning (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "20".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/21> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moeders- en/of vaderszijde door vonnis (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "21".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/22> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door nietigverklaring van de afstamming van moederszijde (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "22".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/23> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Nietigverklaring van de afstamming van moeders- en/of vaderszijde (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "23".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/24> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Herroeping adoptie (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "24".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/25> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kind geboren uit het huwelijk van twee vrouwen (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "25".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/26> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met erkenning van de meemoeder bij de geboorte (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "26".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/27> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van meemoederszijde door erkenning (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "27".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/28> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van meemoederszijde en/of moederszijde door vonnis (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "28".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/29> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde door nietigverklaring van de afstamming van meemoederszijde (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "29".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/30> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door nietigverklaring van de afstamming van meemoederszijde (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "30".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/31> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Herziening adoptie (dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "31".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/40> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne, dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "40".
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/41> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne, dalende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "41".
+<https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/00> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Wettig kind (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "00".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/01> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gewettigd kind (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "01".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/02> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Niet erkend natuurlijk kind (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "02".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/03> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erkend natuurlijk kind (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "03".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/04> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Geadopteerd kind (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "04".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/05> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gewettigd kind ingevolgde adoptie (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "05".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/06> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vondeling (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "06".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/07> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Natuurlijk kind ingevolge ontkenning (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "07".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/08> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende afstamming (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "08".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/09> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbepaalde afstamming (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "09".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/10> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kind geboren uit het huwelijk (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "10".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/11> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met erkenning door de vader bij de geboorte (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "11".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/12> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met vermelding in de akte van geboorte  (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "12".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/13> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde door erkenning (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "13".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/14> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Adoptie (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "14".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/15> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Volle adoptie (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "15".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/16> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vondeling (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "16".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/17> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde ingevolge de nietigverklaring van de afstamming van vaderszijde (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "17".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/18> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende afstamming (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "18".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/19> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbepaalde afstamming (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "19".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/20> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door erkenning (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "20".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/21> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moeders- en/of vaderszijde door vonnis (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "21".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/22> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door nietigverklaring van de afstamming van moederszijde (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "22".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/23> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Nietigverklaring van de afstamming van moeders- en/of vaderszijde (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "23".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/24> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Herroeping adoptie (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "24".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/25> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kind geboren uit het huwelijk van twee vrouwen (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "25".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/26> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde met erkenning van de meemoeder bij de geboorte (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "26".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/27> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van meemoederszijde door erkenning (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "27".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/28> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van meemoederszijde en/of moederszijde door vonnis (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "28".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/29> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van moederszijde door nietigverklaring van de afstamming van meemoederszijde (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "29".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/30> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming van vaderszijde door nietigverklaring van de afstamming van meemoederszijde (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "30".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/31> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Herziening adoptie (stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "31".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/40> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne, stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "40".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/41> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Afstamming op verklaring (Oekraïne, stijgende lijn)"@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "41".
+<https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
+    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/IT110> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 110 'Afstamming'."@nl;

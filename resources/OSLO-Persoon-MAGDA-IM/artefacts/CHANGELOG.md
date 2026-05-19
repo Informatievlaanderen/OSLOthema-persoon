@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.8] - 2026-05-19
+
+### Added
+- Hoofdcodelijst met versie
+
+### Fixed
+- Associatie van codelijsten met hoofdcodelijst
+
 ## [0.0.7] - 2026-05-19
 
 ### Added
