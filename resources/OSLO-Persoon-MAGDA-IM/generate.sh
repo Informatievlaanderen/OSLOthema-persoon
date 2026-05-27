@@ -1,5 +1,6 @@
 #!/bin/sh
 
+cd artefacts/codelijsten
 for file in *.csv; do
     if [ -f "$file" ]; then
         echo "$file"

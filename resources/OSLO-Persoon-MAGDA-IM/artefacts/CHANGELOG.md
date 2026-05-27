@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-05-27
+
+### Added
+- Voorlopige inschrijving (IT028) bij Domicilie toegevoegd.
+- Niet Mededeelbaar Adres (IT252) bij Domicilie op een generieke manier.
+- Domicilie status voor verhuis (IT020).
+
+### Changed
+- Meerdere beheerders toegelaten bij Geregistreerd Persoon voor verhuis en buitenlandse addressen.
+
 ## [0.0.8] - 2026-05-19
 
 ### Added
