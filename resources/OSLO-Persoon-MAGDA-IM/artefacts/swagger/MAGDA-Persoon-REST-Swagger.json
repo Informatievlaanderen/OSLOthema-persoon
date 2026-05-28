@@ -2,7 +2,7 @@
   "openapi": "3.0.4",
   "info": {
     "title": "MAGDA geefPersoon REST",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "contact": {
         "name": "MAGDA Service Desk",
         "url": "https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038"
