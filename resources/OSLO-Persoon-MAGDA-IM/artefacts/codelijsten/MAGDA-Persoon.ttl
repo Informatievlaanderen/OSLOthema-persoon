@@ -22,6 +22,12 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
+<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT020 Domicilie status"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    <http://www.w3.org/2004/02/skos/core#notation> "DomicilieStatus".
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT026 Reden tijdelijke afwezigheid"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;
@@ -88,48 +94,54 @@
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
+<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT020 Domicilie status (v1)"@nl;
+    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
+    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    <http://www.w3.org/2004/02/skos/core#notation> "DomicilieStatus-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT026 Reden tijdelijke afwezigheid (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "RedenAfwezigheid".
+    <http://www.w3.org/2004/02/skos/core#notation> "RedenAfwezigheid-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType".
+    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT110/Afstammingstype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT110 Afstammingstype (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de afstamming types in Informatie Type 110 'Afstamming'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype".
+    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT114 Afstammingstype (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de afstamming types in Informatie Type 114 'Afstamming dalende lijn'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype".
+    <http://www.w3.org/2004/02/skos/core#notation> "Afstammingstype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT120 Burgerlijke Staat types (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de burgerlijke staat types in Informatie Type 120 'Burgerlijke Staat'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "BurgerlijkeStaattype".
+    <http://www.w3.org/2004/02/skos/core#notation> "BurgerlijkeStaattype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT141 Woonvorm (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van woonvormen uit Informatie Type 141 'Gezinslid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Woonvorm".
+    <http://www.w3.org/2004/02/skos/core#notation> "Woonvorm-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT141/Gezinsrelatietype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT141 Gezinsrelatietype (v1)"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van gezinsrelaties uit Informatie Type 141 'Gezinslid'."@nl;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Gezinsrelatietype".
+    <http://www.w3.org/2004/02/skos/core#notation> "Gezinsrelatietype-v1".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGDA codelijsten"@nl;
     <http://www.w3.org/2004/02/skos/core#definition> "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;

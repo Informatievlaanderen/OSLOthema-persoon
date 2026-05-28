@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-28
+
+### Fixed
+- Gebruik components.json van de gebundelde versie.
+- Codelijst IT020 is nu volledig beschikbaar.
+- Release tag link op de HTML pagina bevatte een typfout waardoor deze niet werkte, opgelost.
+
 ## [0.1.0] - 2026-05-28
 
 ### Added
