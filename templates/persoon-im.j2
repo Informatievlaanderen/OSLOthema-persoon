@@ -5,15 +5,15 @@
      <dl>
         <dt>Brondata</dt>
         <dd>
-           <a href="https://github.com/Informatievlaanderen/OSLOthema-persoon/tags/{{ data.metadata.branchtag }}">https://github.com/Informatievlaanderen/OSLOthema-persoon/tags/{{ data.metadata.branchtag }}</a>
+           <a href="https://github.com/Informatievlaanderen/OSLOthema-persoon/releases/tags/{{ data.metadata.branchtag }}">https://github.com/Informatievlaanderen/OSLOthema-persoon/tags/{{ data.metadata.branchtag }}</a>
         </dd>
         <dt>Changelog</dt>
         <dd>
-           <a href="https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/artefacts/CHANGELOG.md">https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/artefacts/CHANGELOG.md</a>
+           <a href="https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/artefacts/CHANGELOG.md">https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/{{ data.metadata.branchtag }}/resources/CHANGELOG.md</a>
         </dd>
         <dt>Opmerkingen en feedback</dt>
         <dd>
-           <a href="{{ data.metadata.feedbackurl }}">{{ data.metadata.feedbackurl }}</a>
+           <a href="https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038">MAGDA Service Desk</a>
         </dd>
         <dd>
            <a href="{{ data.metadata.standaardregisterurl }}">{{ data.metadata.standaardregisterurl }}</a>
@@ -38,5 +38,16 @@ Het Implementatiemodel MAGDA-Persoon is gebaseerd op het <a href=""https://data.
 </p>
 <p>
 De persoonsdiensten laat de afnemer toe de actuele gegevens van een persoon op te halen, dit op basis van het INSZ-nummer van deze persoon. Eens de afnemer de request gelanceerd heeft, wordt de vraag doorgestuurd naar het Rijksregister of de Kruispuntbank van de Sociale Zekerheid (KSZ). Dit is afhankelijk van de machtigingen van de afnemer en de bronkeuze in de vraag.
+</p>
+{% endblock %}
+
+{% block swagger %}
+<p>
+Een set van herbruikbare Swagger OpenAPI componenten voor dit implementatiemodel is terug te vinden op:
+<a href="{{ data.metadata.documentroot }}/resources/swagger/components.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/components.json</a>
+</p>
+<p>
+Deze componenten zijn gebruikt in de MAGDA OpenAPI beschrijving van de Persoon REST dienst, die hier terug te vinden is:
+<a href="{{ data.metadata.documentroot }}/resources/swagger/MAGDA-Persoon-REST-Swagger.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/MAGDA-Persoon-REST-Swagger.json</a>
 </p>
 {% endblock %}
