@@ -1,46 +1,49 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types (v1)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
-    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType-v1".
-<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
-    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType".
-<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/1> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Voorlopige inschrijving"@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "1".
-<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/2> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Juridische of administratieve actie"@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "2".
-<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/3> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Juridische of administratieve actie die verwijdering oplegt"@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "3".
-<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/4> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Juridische of administratieve beslissing die toelating geeft om te blijven"@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "4".
-<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
-<https://data.vlaanderen.be/id/conceptscheme/IT028> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT028".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT028 Procedure types (v1)"@nl;
+    skos:definition "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "ProcedureType-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT028 Procedure types"@nl;
+    skos:definition "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028>;
+    skos:notation "ProcedureType".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/1> a skos:Concept;
+    skos:prefLabel "Voorlopige inschrijving"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:notation "1".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/2> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve actie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:notation "2".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/3> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve actie die verwijdering oplegt"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:notation "3".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/4> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve beslissing die toelating geeft om te blijven"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:notation "4".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/IT028> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT028"@nl;
+    skos:definition "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;
+    skos:notation "IT028".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".

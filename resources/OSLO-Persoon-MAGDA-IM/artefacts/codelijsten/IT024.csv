@@ -1,0 +1,4 @@
+﻿@id,@type,notation,prefLabel,definition,inScheme,topConceptOf,,,
+https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie,http://www.w3.org/2004/02/skos/core#ConceptScheme,Situatie,Codelijst IT024 Situatie,Codelijst van de situaties in Informatie Type 024 'Referentieadres'.,https://data.vlaanderen.be/id/conceptscheme/IT024,https://data.vlaanderen.be/id/conceptscheme/IT024,,,
+https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie,http://www.w3.org/2004/02/skos/core#ConceptScheme,IT024,Codelijst IT024,Codelijst van Informatie Type 024 'Referentieadres'.,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,,,
+https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon,http://www.w3.org/2004/02/skos/core#ConceptScheme,MAGDA-Persoon,Codelijsten Implementatiemodel MAGDA Persoon,Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon.,,,,,

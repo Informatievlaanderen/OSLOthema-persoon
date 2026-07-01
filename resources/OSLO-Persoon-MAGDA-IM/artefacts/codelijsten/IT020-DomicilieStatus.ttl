@@ -1,40 +1,43 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT020 Domicilie status (v1)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
-    <http://www.w3.org/2004/02/skos/core#notation> "DomicilieStatus-v1".
-<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT020 Domicilie status"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT020>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT020>;
-    <http://www.w3.org/2004/02/skos/core#notation> "DomicilieStatus".
-<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/Bevestigd> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bevestigd domicilieadres"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Domicilieadres is bevestigd door de wijkagent."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Bevestigd".
-<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/Aangifte> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Aangegeven domicilieadres"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Domicilieadres is aangegeven door de persoon bij de gemeente."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Aangifte".
-<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
-<https://data.vlaanderen.be/id/conceptscheme/IT020> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT020"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT020".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT020 Domicilie status (v1)"@nl;
+    skos:definition "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:notation "DomicilieStatus-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT020 Domicilie status"@nl;
+    skos:definition "Codelijst van de status van een domicilie in Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020>;
+    skos:notation "DomicilieStatus".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/Bevestigd> a skos:Concept;
+    skos:prefLabel "Bevestigd domicilieadres"@nl;
+    skos:definition "Domicilieadres is bevestigd door de wijkagent."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:notation "Bevestigd".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/Aangifte> a skos:Concept;
+    skos:prefLabel "Aangegeven domicilieadres"@nl;
+    skos:definition "Domicilieadres is aangegeven door de persoon bij de gemeente."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:notation "Aangifte".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/IT020> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT020"@nl;
+    skos:definition "Codelijst van Informatie Type 020 'Adres van de hoofdverblijfplaats'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT020".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".
