@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- IT024 Referentieadres situatie en status attributen toegevoegd.
+- IT024 codelijst voor situatie type Referentieadres toegevoegd.
+- gebruikteVoornaam attribuut toegevoegd aan Persoon.
+
+### Changed
+- Ongebruikte attributen in Contactinfo weggelaten (aanschrijfvorm, openingsuren, adres, website, beschikbaarheid)
+
+### Fixed
+- Typo in VoorlopigeInschrijving label
+- Typo in AangegevenAdres definitie
+
 ## [0.1.1] - 2026-05-28
 
 ### Fixed
