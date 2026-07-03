@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.1] - 2026-09-24
 
 ### Changed
+<<<<<<< HEAD
 - Embedded personen in Swagger zijn beperkt tot een aantal velden samen met een referentie via @id.
 
 ## [0.3.0] - 2026-08-19
