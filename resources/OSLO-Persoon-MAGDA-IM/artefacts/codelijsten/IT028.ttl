@@ -1,16 +1,19 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028 Procedure types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT028>;
-    <http://www.w3.org/2004/02/skos/core#notation> "ProcedureType".
-<https://data.vlaanderen.be/id/conceptscheme/IT028> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT028"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT028".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT028 Procedure types"@nl;
+    skos:definition "Codelijst van de procedure types in Informatie Type 028 'Voorlopige Inschrijving'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028>;
+    skos:notation "ProcedureType".
+<https://data.vlaanderen.be/id/conceptscheme/IT028> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT028"@nl;
+    skos:definition "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT028".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".
