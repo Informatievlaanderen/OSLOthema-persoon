@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Ongebruikte attributen in Contactinfo weggelaten (aanschrijfvorm, openingsuren, adres, website, beschikbaarheid)
+- Contactinfo gebruikt nu W3C VCard in plaats van Schema.org
 
 ### Fixed
 - Typo in VoorlopigeInschrijving label
