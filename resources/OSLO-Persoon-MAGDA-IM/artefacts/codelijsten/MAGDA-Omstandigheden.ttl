@@ -1,58 +1,61 @@
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst MAGDA Omstandigheden (v1)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van alle omstandigheden van de MAGDA diensten."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Omstandigheid-v1".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst MAGDA Omstandigheden"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van alle omstandigheden van de MAGDA diensten."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Omstandigheid".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/100> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Fout in Informatietype"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Niet bestaand dossier in het Rijksregister of fout in een informatietype."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "100".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/105> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Dossiertoegang geweigerd"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De toegang tot het dossier is geweigerd bij het Rijksregister."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "105".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/140> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende gebruiker"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Gebruiker is ongekend bij het Rijksregister."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "140".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/150> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Geen toegangsrechten"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Gebruiker heeft geen toegangsrechten tot de transactie."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "150".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/P01> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Foutieve taalcode"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Foutieve of afwezige taalcode bij het Rijksregister."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "P01".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/P02> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Foutieve INSZ"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Foutieve INSZ volgens het Rijksregister."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "P02".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGDA codelijsten"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst MAGDA Omstandigheden (v1)"@nl;
+    skos:definition "Codelijst van alle omstandigheden van de MAGDA diensten."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "Omstandigheid-v1".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst MAGDA Omstandigheden"@nl;
+    skos:definition "Codelijst van alle omstandigheden van de MAGDA diensten."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
+    skos:notation "Omstandigheid".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/100> a skos:Concept;
+    skos:prefLabel "Fout in Informatietype"@nl;
+    skos:definition "Niet bestaand dossier in het Rijksregister of fout in een informatietype."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "100".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/105> a skos:Concept;
+    skos:prefLabel "Dossiertoegang geweigerd"@nl;
+    skos:definition "De toegang tot het dossier is geweigerd bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "105".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/140> a skos:Concept;
+    skos:prefLabel "Onbekende gebruiker"@nl;
+    skos:definition "Gebruiker is ongekend bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "140".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/150> a skos:Concept;
+    skos:prefLabel "Geen toegangsrechten"@nl;
+    skos:definition "Gebruiker heeft geen toegangsrechten tot de transactie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "150".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/P01> a skos:Concept;
+    skos:prefLabel "Foutieve taalcode"@nl;
+    skos:definition "Foutieve of afwezige taalcode bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "P01".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/P02> a skos:Concept;
+    skos:prefLabel "Foutieve INSZ"@nl;
+    skos:definition "Foutieve INSZ volgens het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "P02".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA> a skos:ConceptScheme;
+    skos:prefLabel "MAGDA codelijsten"@nl;
+    skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
+    skos:notation "MAGDA".

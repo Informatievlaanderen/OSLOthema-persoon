@@ -1,46 +1,49 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT000 Geslacht types (v1)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van geslacht in Informatie Type 000 'Identificatienummer'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Geslacht-v1".
-<https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT000 Geslacht types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van geslacht in Informatie Type 000 'Identificatienummer'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Geslacht".
-<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/0> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekend"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Het geslacht is onbekend."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "0".
-<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/1> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Mannelijk"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De persoon is van het mannelijk geslacht."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "1".
-<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/2> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Vrouwelijk"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De persoon is van het vrouwelijk geslacht."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "2".
-<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
-<https://data.vlaanderen.be/id/conceptscheme/IT000> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT000"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 000 'Identificatienummer'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT000".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT000 Geslacht types (v1)"@nl;
+    skos:definition "Codelijst van geslacht in Informatie Type 000 'Identificatienummer'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:notation "Geslacht-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT000 Geslacht types"@nl;
+    skos:definition "Codelijst van geslacht in Informatie Type 000 'Identificatienummer'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000>;
+    skos:notation "Geslacht".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/0> a skos:Concept;
+    skos:prefLabel "Onbekend"@nl;
+    skos:definition "Het geslacht is onbekend."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:notation "0".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/1> a skos:Concept;
+    skos:prefLabel "Mannelijk"@nl;
+    skos:definition "De persoon is van het mannelijk geslacht."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:notation "1".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/2> a skos:Concept;
+    skos:prefLabel "Vrouwelijk"@nl;
+    skos:definition "De persoon is van het vrouwelijk geslacht."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:notation "2".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/IT000> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT000"@nl;
+    skos:definition "Codelijst van Informatie Type 000 'Identificatienummer'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT000".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".

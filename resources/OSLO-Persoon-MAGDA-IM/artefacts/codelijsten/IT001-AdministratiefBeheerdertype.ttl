@@ -1,46 +1,49 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Administratief beheerder types (v1)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
-    <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype-v1".
-<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Administratief beheerder types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
-<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/Gemeente> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeente"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De administratief beheerder van het dossier is een Belgische gemeente."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Gemeente".
-<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/DiplomatiekePost> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Diplomatieke Post"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De administratief beheerder van het dossier is een diplomatieke post in het buitenland zoals een ambassade."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "DiplomatiekePost".
-<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/DienstVreemdelingenzaken> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Dienst Vreemdelingenzaken (DVZ)"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De administratief beheerder van het dossier is de federale overheidsdienst Dienst Vreemdelingenzaken."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "DienstVreemdelingenzaken".
-<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/UITZONDERING> a <http://www.w3.org/2004/02/skos/core#Concept>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Onbekende code"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
-    <http://www.w3.org/2004/02/skos/core#notation> "UITZONDERING".
-<https://data.vlaanderen.be/id/conceptscheme/IT001> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT001".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001 Administratief beheerder types (v1)"@nl;
+    skos:definition "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:notation "AdministratiefBeheerdertype-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001 Administratief beheerder types"@nl;
+    skos:definition "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:notation "AdministratiefBeheerdertype".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/Gemeente> a skos:Concept;
+    skos:prefLabel "Gemeente"@nl;
+    skos:definition "De administratief beheerder van het dossier is een Belgische gemeente."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:notation "Gemeente".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/DiplomatiekePost> a skos:Concept;
+    skos:prefLabel "Diplomatieke Post"@nl;
+    skos:definition "De administratief beheerder van het dossier is een diplomatieke post in het buitenland zoals een ambassade."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:notation "DiplomatiekePost".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/DienstVreemdelingenzaken> a skos:Concept;
+    skos:prefLabel "Dienst Vreemdelingenzaken (DVZ)"@nl;
+    skos:definition "De administratief beheerder van het dossier is de federale overheidsdienst Dienst Vreemdelingenzaken."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:notation "DienstVreemdelingenzaken".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/IT001> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001"@nl;
+    skos:definition "Codelijst van Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT001".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".

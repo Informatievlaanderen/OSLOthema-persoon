@@ -1,22 +1,25 @@
-<https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 Dossierstatus types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de dossierstatus types in Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#notation> "Dossierstatus".
-<https://data.vlaanderen.be/id/conceptscheme/IT001> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
-    <http://www.w3.org/2004/02/skos/core#notation> "IT001".
-<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst IT001 administratief beheerder types"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
-    <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/IT001>;
-    <http://www.w3.org/2004/02/skos/core#notation> "AdministratiefBeheerdertype".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
-    <http://www.w3.org/2004/02/skos/core#definition> "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
-    <http://www.w3.org/2004/02/skos/core#notation> "MAGDA-Persoon".
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001 Dossierstatus types"@nl;
+    skos:definition "Codelijst van de dossierstatus types in Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:notation "Dossierstatus".
+<https://data.vlaanderen.be/id/conceptscheme/IT001> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001"@nl;
+    skos:definition "Codelijst van Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT001".
+<https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT001 administratief beheerder types"@nl;
+    skos:definition "Codelijst van de administratief beheerder types in Informatie Type 001 'Gemeente van verblijf'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001>;
+    skos:notation "AdministratiefBeheerdertype".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".
