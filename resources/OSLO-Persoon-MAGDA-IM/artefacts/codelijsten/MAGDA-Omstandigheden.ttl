@@ -25,7 +25,7 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
     skos:notation "105".
-<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/140> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/v1/140> a skos:Concept;
     skos:prefLabel "Onbekende gebruiker"@nl;
     skos:definition "Gebruiker is ongekend bij het Rijksregister."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid/v1>;
