@@ -181,7 +181,7 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
     skos:notation "41".
-<https://data.vlaanderen.be/id/conceptscheme/IT114/Afstammingstype/v1/UITZONDERING> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT110-IT114>;
