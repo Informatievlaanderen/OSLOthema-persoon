@@ -199,6 +199,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "99981".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99983> a skos:Concept;
+    skos:prefLabel "Onbekende broncode"@nl;
+    skos:definition "MAGDA code niet aanwezig voor teruggekomen broncode. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "99983".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
