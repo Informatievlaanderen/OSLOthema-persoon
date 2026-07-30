@@ -4,7 +4,7 @@
     "prefix": "magda",
     "type": "voc",
     "eap": "OSLO-Persoon-MAGDA-IM.eap",
-    "diagram": "OSLO-Persoon-IM",
+    "diagram": "OSLO-Persoon-IM-metEnumeraties",
     "template": "persoon-im-voc.j2",
     "title": "Vocabularium MAGDA-Persoon",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
