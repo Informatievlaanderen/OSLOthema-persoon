@@ -20,7 +20,7 @@
   ],
   "components": {
     "schemas": {
-      "VdipEnvelope": { "$ref": "components.json#/components/schemas/VdipEnvelop" }
+      "PersonEnvelope": { "$ref": "components.json#/components/schemas/PersonEnvelope" }
     }
   },
   "paths": {
@@ -113,12 +113,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -132,12 +132,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -151,12 +151,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -170,12 +170,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -189,12 +189,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -208,12 +208,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -227,12 +227,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -246,12 +246,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -265,12 +265,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
