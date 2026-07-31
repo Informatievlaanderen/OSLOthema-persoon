@@ -2,14 +2,14 @@
   "openapi": "3.0.4",
   "info": {
     "title": "MAGDA geefPersoon REST",
-    "version": "1.0.0",
+    "version": "0.2.0",
     "contact": {
-        "name": "MAGDA Helpdesk",
-        "url": "https://overheid.vlaanderen.be/magda"
+        "name": "MAGDA Service Desk",
+        "url": "https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038"
     },
     "license": {
-        "name": "Persoon domein",
-        "url": "https://overheid.vlaanderen.be/magda"
+        "name": "Gebruiksvoorwaarden",
+        "url": "https://vlaamseoverheid.atlassian.net/wiki/spaces/MG/pages/1093927442/Persoon.GeefPersoon-02.02#Gebruiksvoorwaarden"
     }
   },
   "servers": [
@@ -20,7 +20,7 @@
   ],
   "components": {
     "schemas": {
-      "VdipEnvelope": { "$ref": "./components.json#/components/schemas/VdipEnvelop" }
+      "PersonEnvelope": { "$ref": "components.json#/components/schemas/PersonEnvelop" }
     }
   },
   "paths": {
@@ -52,34 +52,35 @@
             }
           },
           {
-            "name": "X-Bron",
-            "required": false,
-            "in": "header",
-            "description": "Bron die geraadpleegd moet worden om de Persoon op te vragen. Indien niet meegegeven zal er altijd naar het Rijkregister verwezen worden.",
+            "name": "source",
+            "required": true,
+            "in": "query",
+            "description": "Bron die geraadpleegd moet worden om de Persoon op te vragen.",
             "schema": {
               "type": "string",
-              "pattern": "^https:\\/\\/data\\.vlaanderen\\.be\\/id\\/organisatie\\/OVO\\d{6}$"
+              "pattern": "^(RR|KSZ)$"
             },
             "examples": {
               "RR": {
-                "summary": "Rijkregister (RR)",
-                "value": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+                "summary": "Rijksregister (OVO027248)",
+                "value": "RR"
               },
               "KSZ": {
-                "summary": "Kruispuntbank van de Sociale Zekerheid (KSZ)",
-                "value": "https://data.vlaanderen.be/id/organisatie/OVO008218"
+                "summary": "Kruispuntbank van de Sociale Zekerheid (OVO008218)",
+                "value": "KSZ"
               }
             }
           },
           {
-            "name": "X-ExtraIT",
+            "name": "embed",
             "required": false,
-            "in": "header",
+            "in": "query",
             "description": "Extra ITs die moeten worden opgevraagd die niet standaard bij de bron worden meegegeven. Indien niet meegegeven zal deze extra informatie niet in het antwoord zitten.",
             "schema": {
               "type": "array",
               "items": {
-                "type": "string"
+                "type": "string",
+                "pattern": "^(Afstamming|AfstammingDalendeLijn)$"
               }
             },
             "examples": {
@@ -103,7 +104,7 @@
             "description": "GeregistreerdPersoon object gevonden.",
             "content": {
               "application/ld+json": {
-                "schema": { "$ref": "components.json#/components/schemas/VdipEnvelop" }
+                "schema": { "$ref": "components.json#/components/schemas/PersonEnvelop" }
               }
             }
           },
@@ -112,12 +113,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -131,12 +132,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -150,12 +151,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -169,12 +170,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -188,12 +189,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -207,12 +208,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -226,12 +227,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -245,12 +246,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"
@@ -264,12 +265,12 @@
             "content": {
               "application/problem+json": {
                 "schema": {
-                  "$ref": "components.json#/components/schemas/Probleemdetail"
+                  "$ref": "components.json#/components/schemas/Problemdetail"
                 }
               }
             },
             "links": {
-              "Probleemdetail.type": {
+              "Problemdetail.type": {
                 "operationId": "PersoonGET",
                 "parameters": {
                   "type": "$response.body#/type"

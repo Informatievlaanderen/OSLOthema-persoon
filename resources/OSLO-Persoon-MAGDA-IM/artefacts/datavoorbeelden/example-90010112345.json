@@ -1,0 +1,174 @@
+{
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelop",
+  "data": {
+    "@type": "GeregistreerdPersoon",
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+    },
+    "creatiedatum": { "@value": "1990-01-01", "@type": "Date" },
+    "modificatiedatum": { "@value": "2023-05-15", "@type": "Date" },
+    "heeftGeboorte": {
+      "@type": "Geboorte",
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1990-01-01", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1990" },
+          "maand": { "@value": "01" },
+          "dag": { "@value": "01" }
+        }
+      }
+    },
+    "achternaam": [
+      { "@value": "Van Voorbeeld" }
+    ],
+    "voornaam": [
+      { "@value": "Fictieve" },
+      { "@value": "Testpersoon" }
+    ],
+    "heeftBurgerlijkeStaat": {
+      "@type": "BurgerlijkeStaat",
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+      }
+    },
+    "registratie": {
+      "@type": "Identificator",
+      "identificator": { "@value": "90010112345" }
+    },
+    "beheerder": [
+      {
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Antwerpen"
+        }
+      }
+  ],
+    "heeftInwonerschap": [{
+      "@type": "Inwonerschap",
+      "jurisdictie": {
+        "@type": "Jurisdictie",
+        "plaats": {
+          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+          "@type": "Plaats"
+        }
+      },
+      "heeftVerblijfplaats": [
+        {
+          "@type": "Domicilie",
+          "nietMededeelbaar": {
+            "@type": "NietMededeelbaar",
+            "periode": {
+              "@type": "Periode",
+              "van": { 
+                "@type":"Moment",
+                "inXSDdatum": { "@value": "2023-01-01", "@type": "Date" }
+               },
+              "tot": { 
+                "@type":"Moment",
+                "inXSDdatum": { "@value": "2025-12-31", "@type": "Date" }
+              }
+            },
+            "sinds": { "@value": "2023-01-01", "@type": "Date" }
+          },
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "8" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Kerkstraat 8 2000 Leuven BELGIE"
+            },
+            "postcode": { "@value": "2000" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Kerkstraat"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Antwerpen"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        },
+        {
+          "@type": "Postadres",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "12" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Postbus 12 1012 AB Amsterdam BELGIE"
+            },
+            "postcode": { "@value": "1012 AB" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Postbus"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Amsterdam"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Nederland"
+            }
+          }
+        },
+        {
+          "@type": "Referentieadres",
+          "verblijfsadres": {
+            "@type": "Adresvoorstelling",
+            "huisnummer": { "@value": "8" },
+            "volledigAdres": {
+              "@language": "nl",
+              "@value": "Kerkstraat 8 2000 Leuven BELGIE"
+            },
+            "postcode": { "@value": "2000" },
+            "straatnaam": {
+              "@language": "nl",
+              "@value": "Kerkstraat"
+            },
+            "gemeentenaam": {
+              "@language": "nl",
+              "@value": "Antwerpen"
+            },
+            "land": {
+              "@language": "nl",
+              "@value": "Belgie"
+            }
+          }
+        }
+      ]
+    }],
+    "heeftPersoonsrelatie": [
+      {
+        "@type": "Samenwonen",
+        "metPersoon": {
+          "@type": "GeregistreerdPersoon",
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": { "@value": "88052012345" }
+          },
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "achternaam": [
+            { "@value": "Janssens" }
+          ],
+          "voornaam": [
+            { "@value": "Anke" }
+          ]
+        }
+      }
+    ]
+  }
+}

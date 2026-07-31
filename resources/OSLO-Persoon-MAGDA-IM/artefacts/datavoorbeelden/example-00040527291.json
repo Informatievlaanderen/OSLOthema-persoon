@@ -1,13 +1,10 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
-    },
-    "dossierstatus": {
-      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
     },
     "creatiedatum": { "@value": "1980-11-20", "@type": "Date" },
     "bron": {
@@ -17,11 +14,38 @@
     "modificatiedatum": { "@value": "1996-03-03", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1900-04-05", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1900-04-05", "@type": "Date" },
+        "inDatumTijd": { 
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1900" },
+          "maand": { "@value": "04" },
+          "dag": { "@value": "05" }
+        }
+      },
+      "plaats": {
+        "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+        "@type": "Plaats",
+        "landcode": { "@value": "BEL" },
+        "plaatsnaam": {
+          "@language": "nl",
+          "@value": "Belgie"
+        }
+      }
     },
     "heeftOverlijden": {
       "@type": "Overlijden",
-      "datum": { "@value": "1986-11-13", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1986-11-13", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1986" },
+          "maand": { "@value": "11" },
+          "dag": { "@value": "13" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Nielens" }
@@ -40,52 +64,69 @@
       "@type": "Identificator",
       "identificator": { "@value": "00040527291" }
     },
-    "beheerder": {
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Koelkelberg"
-      }
-    },
-    "heeftInwonerschap": [{
-      "@type": "Inwonerschap",
-      "jurisdictie": {
-        "@type": "Jurisdictie",
-        "plaats": {
-          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
-          "@type": "Plaats"
-        }
-      },
-      "heeftVerblijfplaats": [
+    "registratiedetail": {
+      "@type": "Registratie",
+      "dossierstatus": [
         {
-          "@type": "Domicilie",
-          "verblijfsadres": {
-            "@type": "Adresvoorstelling",
-            "huisnummer": { "@value": "101" },
-            "volledigAdres": {
-              "@language": "nl",
-              "@value": "Segherslaan 101 1081 Koekelberg BELGIE"
-            },
-            "postcode": { "@value": "1081" },
-            "straatnaam": {
-              "@language": "nl",
-              "@value": "Segherslaan"
-            },
-            "gemeentenaam": {
-              "@language": "nl",
-              "@value": "Koekelberg"
-            },
-            "land": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+        }
+      ]
+    },
+    "beheerder": [
+      {
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Koelkelberg"
+        }
+      }
+    ],
+    "heeftInwonerschap": [
+      {
+        "@type": "Inwonerschap",
+        "jurisdictie": {
+          "@type": "Jurisdictie",
+          "plaats": {
+            "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+            "@type": "Plaats",
+            "landcode": { "@value": "BEL" },
+            "plaatsnaam": {
               "@language": "nl",
               "@value": "Belgie"
             }
           }
-        }
-      ]
-    }],
+        },
+        "heeftVerblijfplaats": [
+          {
+            "@type": "Domicilie",
+            "verblijfsadres": {
+              "@type": "Adresvoorstelling",
+              "huisnummer": { "@value": "101" },
+              "volledigAdres": {
+                "@language": "nl",
+                "@value": "Segherslaan 101 1081 Koekelberg BELGIE"
+              },
+              "postcode": { "@value": "1081" },
+              "straatnaam": {
+                "@language": "nl",
+                "@value": "Segherslaan"
+              },
+              "gemeentenaam": {
+                "@language": "nl",
+                "@value": "Koekelberg"
+              },
+              "land": {
+                "@language": "nl",
+                "@value": "Belgie"
+              }
+            }
+          }
+        ]
+      }
+    ],
     "heeftPersoonsrelatie": [
       {
         "@type": "Afstamming",

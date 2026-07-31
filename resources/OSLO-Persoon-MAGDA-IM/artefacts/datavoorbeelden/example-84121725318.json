@@ -1,6 +1,6 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
@@ -14,7 +14,16 @@
     "modificatiedatum": { "@value": "2017-10-11", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1984-12-17", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1984-12-17", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1984" },
+          "maand": { "@value": "12" },
+          "dag": { "@value": "17" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Bollen" }
@@ -36,16 +45,18 @@
       "@type": "Contactinfo",
       "telefoon": { "@value": "0497 17 00 70" }
     },
-    "beheerder": {
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Leuven"
+    "beheerder": [
+      {
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Leuven"
+        }
       }
-    },
+    ],
     "heeftInwonerschap": [{
       "@type": "Inwonerschap",
       "jurisdictie": {

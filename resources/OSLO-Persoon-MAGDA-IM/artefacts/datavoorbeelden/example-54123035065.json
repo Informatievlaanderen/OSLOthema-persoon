@@ -1,6 +1,6 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
@@ -14,7 +14,16 @@
     "modificatiedatum": { "@value": "2011-12-07", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1954-12-30", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1954-12-30", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1954" },
+          "maand": { "@value": "12" },
+          "dag": { "@value": "30" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Van Damme" }
@@ -32,16 +41,18 @@
       "@type": "Identificator",
       "identificator": { "@value": "54123035065" }
     },
-    "beheerder": {
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Lede"
+    "beheerder": [
+      {
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Lede"
+        }
       }
-    },
+    ],
     "heeftInwonerschap": [{
       "@type": "Inwonerschap",
       "jurisdictie": {

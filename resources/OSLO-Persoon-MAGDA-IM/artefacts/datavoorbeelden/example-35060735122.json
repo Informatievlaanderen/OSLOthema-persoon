@@ -1,23 +1,33 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "warning": [
     {
-      "@type": "Probleemdetail",
-      "status": { "@value": 30004, "@type": "Integer" },
-      "type": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004" },
-      "titel": { "@value": "Nieuwe INSZ", "@language": "nl" },
-      "detail": { "@value": "Persoon heeft een nieuw INSZ verkregen", "@language": "nl" },
-      "instantie": { "@id": "urn:probleem:29012818180-1" }
+      "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004",
+      "@type": "Uitzondering",
+      "oorsprong": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/UitzonderingOorsprong/MAGDA" },
+      "type": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/UitzonderingType/WAARSCHUWING" },
+      "diagnose": { "@value": "Persoon heeft een nieuw INSZ verkregen" },
+      "datum": { "@value": "2026-07-30T09:57:00Z", "@type": "DateTime" },
+      "omstandigheid": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/100" },
+      "annotatie": [
+        {
+          "@type": "Annotatie",
+          "naam": { "@value": "Oude INSZ" },
+          "waarde": { "@value": "35060735122" }
+        },
+        {
+          "@type": "Annotatie",
+          "naam": { "@value": "Nieuwe INSZ" },
+          "waarde": { "@value": "00004135311" }
+        }
+      ]
     }
   ],
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
-    },
-    "dossierstatus": {
-      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994"
     },
     "creatiedatum": { "@value": "2005-01-31", "@type": "Date" },
     "bron": {
@@ -27,7 +37,16 @@
     "modificatiedatum": { "@value": "2016-11-22", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1935-06-07", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1935-06-07", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1935" },
+          "maand": { "@value": "06" },
+          "dag": { "@value": "07" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Haentjens" }
@@ -46,38 +65,50 @@
       "@type": "Identificator",
       "identificator": { "@value": "35060735122" }
     },
-    "beheerder": {
-      "@id": "http://publications.europa.eu/resource/authority/country/DEU",
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "DUITSLAND ( BONDSREP. )"
-      }
-    },
-    "heeftInwonerschap": [{
-      "@type": "Inwonerschap",
-      "jurisdictie": {
-        "@type": "Jurisdictie",
-        "plaats": {
-          "@id": "http://publications.europa.eu/resource/authority/country/BEL",
-          "@type": "Plaats"
-        }
-      },
-      "heeftVerblijfplaats": [
+    "registratiedetail": {
+      "@type": "Registratie",
+      "dossierstatus": [
         {
-          "@type": "VerblijfplaatsBuitenland",
-          "verblijfsadres": {
-            "@type": "Adresvoorstelling",
-            "volledigAdres": {
-              "@language": "nl",
-              "@value": "Jesuitengasse 41 50735 KÖLN"
-            }
-          }
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994"
         }
       ]
-    }]
+    },
+    "beheerder": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/country/DEU",
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "DUITSLAND ( BONDSREP. )"
+        }
+      }
+    ],
+    "heeftInwonerschap": [
+      {
+        "@type": "Inwonerschap",
+        "jurisdictie": {
+          "@type": "Jurisdictie",
+          "plaats": {
+            "@id": "http://publications.europa.eu/resource/authority/country/BEL",
+            "@type": "Plaats"
+          }
+        },
+        "heeftVerblijfplaats": [
+          {
+            "@type": "VerblijfplaatsBuitenland",
+            "verblijfsadres": {
+              "@type": "Adresvoorstelling",
+              "volledigAdres": {
+                "@language": "nl",
+                "@value": "Jesuitengasse 41 50735 KÖLN"
+              }
+            }
+          }
+        ]
+      }
+    ]
   }
 }

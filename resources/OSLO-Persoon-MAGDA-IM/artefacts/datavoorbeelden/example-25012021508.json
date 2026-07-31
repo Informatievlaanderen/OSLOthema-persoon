@@ -1,13 +1,10 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
-    },
-    "dossierstatus": {
-      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
     },
     "creatiedatum": { "@value": "1972-01-27", "@type": "Date" },
     "bron": {
@@ -17,11 +14,29 @@
     "modificatiedatum": { "@value": "2003-10-04", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1925-01-20", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1925-01-20", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1925" },
+          "maand": { "@value": "01" },
+          "dag": { "@value": "20" }
+        }
+      }
     },
     "heeftOverlijden": {
       "@type": "Overlijden",
-      "datum": { "@value": "2001-01-01", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "2001-01-01", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "2001" },
+          "maand": { "@value": "01" },
+          "dag": { "@value": "01" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Cols" },
@@ -34,17 +49,27 @@
       "@type": "Identificator",
       "identificator": { "@value": "25012021508" }
     },
-    "beheerder": {
-      "@id": "http://publications.europa.eu/resource/authority/country/ESP",
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "SPANJE"
-      }
+    "registratiedetail": {
+      "@type": "Registratie",
+      "dossierstatus": [
+        {
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+        }
+      ]
     },
+    "beheerder": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/country/ESP",
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "SPANJE"
+        }
+      }
+    ],
     "heeftInwonerschap": [{
       "@type": "Inwonerschap",
       "jurisdictie": {

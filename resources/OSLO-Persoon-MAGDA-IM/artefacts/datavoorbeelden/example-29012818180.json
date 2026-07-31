@@ -1,13 +1,10 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.0.5/context/persoon.jsonld",
-  "@type": "VdipEnvelop",
+  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
     "geslacht": {
       "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
-    },
-    "dossierstatus": {
-      "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
     },
     "creatiedatum": { "@value": "1971-03-19", "@type": "Date" },
     "bron": {
@@ -17,11 +14,29 @@
     "modificatiedatum": { "@value": "2017-03-15", "@type": "Date" },
     "heeftGeboorte": {
       "@type": "Geboorte",
-      "datum": { "@value": "1929-01-28", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "1929-01-28", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "1929" },
+          "maand": { "@value": "01" },
+          "dag": { "@value": "28" }
+        }
+      }
     },
     "heeftOverlijden": {
       "@type": "Overlijden",
-      "datum": { "@value": "2017-02-28", "@type": "Date" }
+      "datum": {
+        "@type": "Moment",
+        "inXSDdatum": { "@value": "2017-02-28", "@type": "Date" },
+        "inDatumTijd": {
+          "@type": "AlgemeneDatumTijdBeschrijving",
+          "jaar": { "@value": "2017" },
+          "maand": { "@value": "02" },
+          "dag": { "@value": "28" }
+        }
+      }
     },
     "achternaam": [
       { "@value": "Bataille" }
@@ -42,17 +57,27 @@
       "@type": "Identificator",
       "identificator": { "@value": "29012818180" }
     },
-    "beheerder": {
-      "@id": "http://publications.europa.eu/resource/authority/country/FRA",
-      "@type": "AdministratiefBeheerder",
-      "type": {
-        "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
-      },
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "FRANKRIJK"
-      }
+    "registratiedetail": {
+      "@type": "Registratie",
+      "dossierstatus": [
+        {
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+        }
+      ]
     },
+    "beheerder": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/country/FRA",
+        "@type": "AdministratiefBeheerder",
+        "type": {
+          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+        },
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "FRANKRIJK"
+        }
+      }
+    ],
     "heeftInwonerschap": [{
       "@type": "Inwonerschap",
       "jurisdictie": {

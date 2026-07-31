@@ -1,6 +1,6 @@
 package be.vlaanderen.pocs.oslopersoon;
 
-import be.vlaanderen.pocs.oslopersoon.model.VdipEnvelope;
+import be.vlaanderen.pocs.oslopersoon.model.PersonEnvelop;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.validation.ConstraintViolation;
@@ -41,7 +41,8 @@ class GeregistreerdPersoonJsonLdDeserializationTest
             "json/example-35060735122.json", // Met Uitzondering
             "json/example-54123035065.json",
             "json/example-64042106496.json",
-            "json/example-84121725318.json"
+            "json/example-84121725318.json",
+            "json/example-90010112345.json"
     })
     void shouldDeserializeAndReserializeJsonLd(String resourcePath) throws Exception {
         JsonNode inputJson;
@@ -50,7 +51,7 @@ class GeregistreerdPersoonJsonLdDeserializationTest
             inputJson = objectMapper.readTree(is);
         }
 
-        VdipEnvelope persoon = objectMapper.treeToValue(inputJson, VdipEnvelope.class);
+        PersonEnvelop persoon = objectMapper.treeToValue(inputJson, PersonEnvelop.class);
         assertNotNull(persoon, "Deserialisatie gaf null terug voor: " + resourcePath);
 
         validateResponse(resourcePath, persoon);
@@ -71,8 +72,8 @@ class GeregistreerdPersoonJsonLdDeserializationTest
         System.out.println(Files.readString(outputFile));
     }
 
-    private void validateResponse(String resourcePath, VdipEnvelope persoon) {
-        Set<ConstraintViolation<VdipEnvelope>> violations = validator.validate(persoon);
+    private void validateResponse(String resourcePath, PersonEnvelop persoon) {
+        Set<ConstraintViolation<PersonEnvelop>> violations = validator.validate(persoon);
         if (!violations.isEmpty()) {
             System.out.println("Validatiefouten in " + resourcePath + ":");
             violations.forEach(v -> System.out.println("  - " + v.getPropertyPath() + ": " + v.getMessage()));
