@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.test-vlaanderen.be//doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/v0.2.0/context/persoon.jsonld",
   "@type": "PersonEnvelope",
   "data": {
     "@type": "GeregistreerdPersoon",
