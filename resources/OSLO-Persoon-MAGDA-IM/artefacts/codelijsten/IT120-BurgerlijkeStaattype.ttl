@@ -78,7 +78,7 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
     skos:notation "90".
-<https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1/UITZONDERING> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype/v1>;
@@ -90,6 +90,77 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT120".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10> a skos:Concept;
+    skos:prefLabel "Ongehuwd"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "10".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/20> a skos:Concept;
+    skos:prefLabel "Gehuwd"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "20".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/25> a skos:Concept;
+    skos:prefLabel "Nietigverklaring van het huwelijk"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "25".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/26> a skos:Concept;
+    skos:prefLabel "Putatief huwelijk"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "26".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/30> a skos:Concept;
+    skos:prefLabel "Weduwnaar (weduwe)"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "30".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/40> a skos:Concept;
+    skos:prefLabel "Gescheiden"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "40".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/41> a skos:Concept;
+    skos:prefLabel "Echtscheiding uitgesproken met toepassing van de wet van 30 juni 1994"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "41".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/50> a skos:Concept;
+    skos:prefLabel "Scheiding van tafel en bed en van goederen"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "50".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/51> a skos:Concept;
+    skos:prefLabel "scheiding van tafel en bed en van goederen uitgesproken met toepassing van de wet van 30 juni 1994"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "51".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/60> a skos:Concept;
+    skos:prefLabel "Ontbinding van het huwelijk op een bijzondere wijze"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "60".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/80> a skos:Concept;
+    skos:prefLabel "Partnerschap"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "80".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/81> a skos:Concept;
+    skos:prefLabel "Beëindiging  partnerschap"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "81".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/90> a skos:Concept;
+    skos:prefLabel "Onbepaald"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "90".
+<https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT120/BurgerlijkeStaattype>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

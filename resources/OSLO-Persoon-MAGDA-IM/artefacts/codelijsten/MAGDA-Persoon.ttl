@@ -31,6 +31,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "DomicilieStatus".
+<https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024 Situatie"@nl;
+    skos:definition "Codelijst van de situaties in Informatie Type 024 'Referentieadres'"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "Situatie".
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid> a skos:ConceptScheme;
     skos:prefLabel "Codelijst IT026 Reden tijdelijke afwezigheid"@nl;
     skos:definition "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;
@@ -103,6 +109,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     skos:notation "DomicilieStatus-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024 Situatie (v1)"@nl;
+    skos:definition "Codelijst van de situaties in Informatie Type 024 'Referentieadres'"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:notation "Situatie-v1".
 <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1> a skos:ConceptScheme;
     skos:prefLabel "Codelijst IT026 Reden tijdelijke afwezigheid (v1)"@nl;
     skos:definition "Codelijst van de redenen om tijdelijk afwezig te zijn in Informatie Type 026 'Tijdelijke Afwezigheid'."@nl;

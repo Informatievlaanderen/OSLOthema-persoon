@@ -1,0 +1,157 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024 Situatie (v1)"@nl;
+    skos:definition "Codelijst van de situaties in Informatie Type 024 'Referentieadres'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "Situatie-v1".
+<https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024 Situatie"@nl;
+    skos:definition "Codelijst van de situaties in Informatie Type 024 'Referentieadres'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024>;
+    skos:notation "Situatie".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0010> a skos:Concept;
+    skos:prefLabel "Inschrijving bij OCMW"@nl;
+    skos:definition "Persoon die bij gebrek aan voldoende middelen niet over een vaste verblijfplaats beschikt en ingeschreven is bij het OCMW."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "10".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0011> a skos:Concept;
+    skos:prefLabel "Inschrijving bij een burger"@nl;
+    skos:definition "Persoon die bij gebrek aan voldoende middelen niet over een vaste verblijfplaats beschikt en ingeschreven is bij een burger."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "11".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0020> a skos:Concept;
+    skos:prefLabel "Mobiele woning"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "20".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0021> a skos:Concept;
+    skos:prefLabel "Hechtenis"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "21".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0022> a skos:Concept;
+    skos:prefLabel "Beroepsredenen"@nl;
+    skos:definition "Beroepsredenen voor een maximale duur van 1 jaar."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "22".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0023> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Defensie"@nl;
+    skos:definition "Persoon voert een buitenlandse opdracht uit voor Defensie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "23".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0024> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Politie"@nl;
+    skos:definition "Persoon voert een buitenlandse opdracht uit voor Politie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "24".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0025> a skos:Concept;
+    skos:prefLabel "Dienstplicht"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "25".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0026> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Ambtenaar"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "26".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0027> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Coöperatie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "27".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/0028> a skos:Concept;
+    skos:prefLabel "Slachtoffer"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "28".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/v1/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT024 Situatie'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie/v1>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/IT024> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024"@nl;
+    skos:definition "Codelijst van Informatie Type 024 'Referentieadres'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT024".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0010> a skos:Concept;
+    skos:prefLabel "Inschrijving bij OCMW"@nl;
+    skos:definition "Persoon die bij gebrek aan voldoende middelen niet over een vaste verblijfplaats beschikt en ingeschreven is bij het OCMW."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "10".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0011> a skos:Concept;
+    skos:prefLabel "Inschrijving bij een burger"@nl;
+    skos:definition "Persoon die bij gebrek aan voldoende middelen niet over een vaste verblijfplaats beschikt en ingeschreven is bij een burger."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "11".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0020> a skos:Concept;
+    skos:prefLabel "Mobiele woning"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "20".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0021> a skos:Concept;
+    skos:prefLabel "Hechtenis"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "21".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0022> a skos:Concept;
+    skos:prefLabel "Beroepsredenen"@nl;
+    skos:definition "Beroepsredenen voor een maximale duur van 1 jaar."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "22".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0023> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Defensie"@nl;
+    skos:definition "Persoon voert een buitenlandse opdracht uit voor Defensie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "23".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0024> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Politie"@nl;
+    skos:definition "Persoon voert een buitenlandse opdracht uit voor Politie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "24".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0025> a skos:Concept;
+    skos:prefLabel "Dienstplicht"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "25".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0026> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Ambtenaar"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "26".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0027> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Coöperatie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "27".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/0028> a skos:Concept;
+    skos:prefLabel "Slachtoffer"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "28".
+<https://data.vlaanderen.be/id/concept/IT024/Situatie/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT024 Situatie'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie>;
+    skos:notation "UITZONDERING".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".

@@ -27,7 +27,7 @@
     skos:notation "Aangifte".
 <https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT020 Domicilie status'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus/v1>;
     skos:notation "UITZONDERING".
@@ -37,6 +37,24 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT020".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/Bevestigd> a skos:Concept;
+    skos:prefLabel "Bevestigd domicilieadres"@nl;
+    skos:definition "Domicilieadres is bevestigd door de wijkagent."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:notation "Bevestigd".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/Aangifte> a skos:Concept;
+    skos:prefLabel "Aangegeven domicilieadres"@nl;
+    skos:definition "Domicilieadres is aangegeven door de persoon bij de gemeente."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:notation "Aangifte".
+<https://data.vlaanderen.be/id/concept/IT020/DomicilieStatus/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT020 Domicilie status'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT020/DomicilieStatus>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

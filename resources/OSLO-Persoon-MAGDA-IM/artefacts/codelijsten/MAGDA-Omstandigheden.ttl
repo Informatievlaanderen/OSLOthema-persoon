@@ -59,3 +59,45 @@
     skos:prefLabel "MAGDA codelijsten"@nl;
     skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
     skos:notation "MAGDA".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/100> a skos:Concept;
+    skos:prefLabel "Fout in Informatietype"@nl;
+    skos:definition "Niet bestaand dossier in het Rijksregister of fout in een informatietype."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "100".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/105> a skos:Concept;
+    skos:prefLabel "Dossiertoegang geweigerd"@nl;
+    skos:definition "De toegang tot het dossier is geweigerd bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "105".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/140> a skos:Concept;
+    skos:prefLabel "Onbekende gebruiker"@nl;
+    skos:definition "Gebruiker is ongekend bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "140".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/150> a skos:Concept;
+    skos:prefLabel "Geen toegangsrechten"@nl;
+    skos:definition "Gebruiker heeft geen toegangsrechten tot de transactie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "150".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/P01> a skos:Concept;
+    skos:prefLabel "Foutieve taalcode"@nl;
+    skos:definition "Foutieve of afwezige taalcode bij het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "P01".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/P02> a skos:Concept;
+    skos:prefLabel "Foutieve INSZ"@nl;
+    skos:definition "Foutieve INSZ volgens het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "P02".
+<https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid>;
+    skos:notation "UITZONDERING".

@@ -35,7 +35,7 @@
     skos:notation "4".
 <https://data.vlaanderen.be/id/concept/IT028/ProcedureType/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT028 Procedure type'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType/v1>;
     skos:notation "UITZONDERING".
@@ -43,6 +43,32 @@
     skos:prefLabel "Codelijst IT028"@nl;
     skos:definition "Codelijst van Informatie Type 028 'Voorlopige Inschrijving'."@nl;
     skos:notation "IT028".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/1> a skos:Concept;
+    skos:prefLabel "Voorlopige inschrijving"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "1".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/2> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve actie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "2".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/3> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve actie die verwijdering oplegt"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "3".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/4> a skos:Concept;
+    skos:prefLabel "Juridische of administratieve beslissing die toelating geeft om te blijven"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "4".
+<https://data.vlaanderen.be/id/concept/IT028/ProcedureType/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT028 Procedure type'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT028/ProcedureType>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

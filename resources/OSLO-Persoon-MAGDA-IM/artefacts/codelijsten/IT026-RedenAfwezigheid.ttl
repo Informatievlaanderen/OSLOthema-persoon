@@ -75,7 +75,7 @@
     skos:notation "21".
 <https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT026 Reden Afwezigheid'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid/v1>;
     skos:notation "UITZONDERING".
@@ -85,6 +85,72 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT026".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/10> a skos:Concept;
+    skos:prefLabel "Tijdelijke afwezigheid"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "10".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/11> a skos:Concept;
+    skos:prefLabel "Therapie en/of medische hulpverlening"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "11".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/12> a skos:Concept;
+    skos:prefLabel "Hechtenis"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "12".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/13> a skos:Concept;
+    skos:prefLabel "Geplaatst in instelling (minderjarige)"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "13".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/14> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Defensie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "14".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/15> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Politie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "15".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/16> a skos:Concept;
+    skos:prefLabel "Dienstplicht"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "16".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/17> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Ambtenaar"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "17".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/18> a skos:Concept;
+    skos:prefLabel "Buitenlandse opdracht - Coöperatie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "18".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/19> a skos:Concept;
+    skos:prefLabel "Landurige verdwijning"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "19".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/20> a skos:Concept;
+    skos:prefLabel "Beroepsopdracht"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "20".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/21> a skos:Concept;
+    skos:prefLabel "Studieredenen"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "21".
+<https://data.vlaanderen.be/id/concept/IT026/RedenAfwezigheid/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT026 Reden Afwezigheid'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT026/RedenAfwezigheid>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

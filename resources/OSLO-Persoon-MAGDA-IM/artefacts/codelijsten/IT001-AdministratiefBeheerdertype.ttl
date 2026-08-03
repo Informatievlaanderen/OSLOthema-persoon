@@ -33,7 +33,7 @@
     skos:notation "DienstVreemdelingenzaken".
 <https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT001 Administratiefbeheerder'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype/v1>;
     skos:notation "UITZONDERING".
@@ -43,6 +43,30 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT001".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/Gemeente> a skos:Concept;
+    skos:prefLabel "Gemeente"@nl;
+    skos:definition "De administratief beheerder van het dossier is een Belgische gemeente."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:notation "Gemeente".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/DiplomatiekePost> a skos:Concept;
+    skos:prefLabel "Diplomatieke Post"@nl;
+    skos:definition "De administratief beheerder van het dossier is een diplomatieke post in het buitenland zoals een ambassade."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:notation "DiplomatiekePost".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/DienstVreemdelingenzaken> a skos:Concept;
+    skos:prefLabel "Dienst Vreemdelingenzaken (DVZ)"@nl;
+    skos:definition "De administratief beheerder van het dossier is de federale overheidsdienst Dienst Vreemdelingenzaken."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:notation "DienstVreemdelingenzaken".
+<https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT001 Administratiefbeheerder'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/AdministratiefBeheerdertype>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

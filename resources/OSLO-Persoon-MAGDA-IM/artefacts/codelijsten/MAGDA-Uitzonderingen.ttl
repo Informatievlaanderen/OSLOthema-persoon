@@ -207,7 +207,7 @@
     skos:notation "99983".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "UITZONDERING".
@@ -215,3 +215,201 @@
     skos:prefLabel "MAGDA codelijsten"@nl;
     skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
     skos:notation "MAGDA".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/13202> a skos:Concept;
+    skos:prefLabel "Niet opvraagbaar"@nl;
+    skos:definition "Gegevens niet opvraagbaar, geen persoonsdossier geregistreerd."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "13202".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/13252> a skos:Concept;
+    skos:prefLabel "Registratie dekt niet gevraagde periode"@nl;
+    skos:definition "Registratie persoon dekt niet de gevraagde periode."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "13252".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/16018> a skos:Concept;
+    skos:prefLabel "Niet beschikbaar"@nl;
+    skos:definition "Gegevens uit externe bron zijn niet beschikbaar."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "16018".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/20002> a skos:Concept;
+    skos:prefLabel "Ongeldig INSZ formaat"@nl;
+    skos:definition "INSZ in de vraag heeft een ongeldige structuur."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "20002".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/25002> a skos:Concept;
+    skos:prefLabel "Taal niet gevonden"@nl;
+    skos:definition "Omschrijving in de gevraagde taal niet gevonden."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "25002".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30001> a skos:Concept;
+    skos:prefLabel "Geen gegevens"@nl;
+    skos:definition "Geen gegevens gevonden voor de vraag."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "30001".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30002> a skos:Concept;
+    skos:prefLabel "Geannuleerde INSZ"@nl;
+    skos:definition "Persoon heeft een geannuleerde INSZ."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "30002".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004> a skos:Concept;
+    skos:prefLabel "Nieuwe INSZ"@nl;
+    skos:definition "Persoon heeft een nieuw INSZ verkregen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "30004".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30042> a skos:Concept;
+    skos:prefLabel "Meerdere voorkomens"@nl;
+    skos:definition "Meerdere voorkomens aanwezig bij de bron, slechts 1 voorkomen aanwezig in het Magda antwoord."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "30042".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30106> a skos:Concept;
+    skos:prefLabel "Ongeldige datum"@nl;
+    skos:definition "Gegevens van de bron bevat geen geldige datum."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "30106".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40001> a skos:Concept;
+    skos:prefLabel "Geen geldige wettelijke context"@nl;
+    skos:definition "Er werd geen geldige wettelijke context opgegeven."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40001".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40003> a skos:Concept;
+    skos:prefLabel "Geen inschrijving"@nl;
+    skos:definition "Geen inschrijving aanwezig voor het INSZ in de vraag."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40003".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40006> a skos:Concept;
+    skos:prefLabel "Autorisatiefout"@nl;
+    skos:definition "Fout in autorisatie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40006".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40019> a skos:Concept;
+    skos:prefLabel "Bijwerking niet opnieuw uitvoeren"@nl;
+    skos:definition "Gelieve deze bijwerking niet opnieuw uit te voeren, maar om contact op te nemen met de diensten van het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40019".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40101> a skos:Concept;
+    skos:prefLabel "Niet beheerd"@nl;
+    skos:definition "Het opgegeven INSZ wordt momenteel niet beheerd door het Rijksregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40101".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40102> a skos:Concept;
+    skos:prefLabel "Geen gegevensgroepen opgegeven"@nl;
+    skos:definition "Er werden geen gegevensgroepen opgegeven in de vraag. "@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40102".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40140> a skos:Concept;
+    skos:prefLabel "INSZ niet gekend in wettelijke context"@nl;
+    skos:definition "INSZ niet gekend voor de klant in de juiste wettelijke context."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40140".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40200> a skos:Concept;
+    skos:prefLabel "INSZ is Bisnummer"@nl;
+    skos:definition "INSZ is een Bisnummer."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40200".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40201> a skos:Concept;
+    skos:prefLabel "Opvraging overlijden niet toegestaan"@nl;
+    skos:definition "Opvragen indicator 'overlijden' is niet toegestaan."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40201".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40206> a skos:Concept;
+    skos:prefLabel "Toestemming ontbreekt"@nl;
+    skos:definition "Er is geen toestemming om een van de gevraagde informatietypes op te halen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "40206".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/45016> a skos:Concept;
+    skos:prefLabel "INSZ anomalie"@nl;
+    skos:definition "Anomalie gevonden in INSZ."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "45016".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/48220> a skos:Concept;
+    skos:prefLabel "Foutieve informatie burgelijke staat"@nl;
+    skos:definition "We hebben een fout van de bron ontvangen voor element Burgerlijke Staten waardoor we deze gegevens niet kunnen doorgeven indien u hier toegang toe had."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "48220".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/48221> a skos:Concept;
+    skos:prefLabel "Ontbrekende informatie burgerlijke staat"@nl;
+    skos:definition "We hebben niet alle informatie ontvangen die nodig is. Hierdoor ontbreekt er een element in het het gegevensblok Burgerlijke Staat."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "48221".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/48222> a skos:Concept;
+    skos:prefLabel "Belgisch adres zonder gemeente"@nl;
+    skos:definition "Een Belgische adres zonder gemeente werd gedetecteerd."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "48222".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/48223> a skos:Concept;
+    skos:prefLabel "Referentieadres toegevoegd"@nl;
+    skos:definition "Referentieadres aanduiding zonder adres aanwezig in de authentieke bron."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "48223".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/48224> a skos:Concept;
+    skos:prefLabel "Vervaldatum referentieadres toegevoegd"@nl;
+    skos:definition "Vervaldatum toegevoegd op basis van volgende verschijning voor referentieadres."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "48224".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/49021> a skos:Concept;
+    skos:prefLabel "Postcode en NIS code discrepantie"@nl;
+    skos:definition "Postcode en NISCode van de gemeente komen niet overeen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "49021".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60003> a skos:Concept;
+    skos:prefLabel "Fout formaat in vraag"@nl;
+    skos:definition "Fout formaat in de vraag naar de bron toe."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60003".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60009> a skos:Concept;
+    skos:prefLabel "Technisch probleem"@nl;
+    skos:definition "Er heeft zich een technisch probleem voorgedaan."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60009".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60013> a skos:Concept;
+    skos:prefLabel "Fout in brontoegang"@nl;
+    skos:definition "Fout in toegang naar de bron."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60013".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99981> a skos:Concept;
+    skos:prefLabel "Onbekend land"@nl;
+    skos:definition "Gegevens over het land zijn niet gekende bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "99981".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99983> a skos:Concept;
+    skos:prefLabel "Onbekende broncode"@nl;
+    skos:definition "MAGDA code niet aanwezig voor teruggekomen broncode. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "99983".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "UITZONDERING".

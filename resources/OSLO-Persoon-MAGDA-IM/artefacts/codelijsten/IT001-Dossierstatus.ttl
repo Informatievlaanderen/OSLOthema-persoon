@@ -153,7 +153,7 @@
     skos:notation "21099".
 <https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT001 Dossierstatus'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus/v1>;
     skos:notation "UITZONDERING".
@@ -163,6 +163,150 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT001".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/00992> a skos:Concept;
+    skos:prefLabel "Afvoering van ambtswege in het buitenland"@nl;
+    skos:definition "De persoon is afgevoerd naar het buitenland."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "00992".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/992> a skos:Concept;
+    skos:prefLabel "Afvoering van ambtswege in het buitenland"@nl;
+    skos:definition "De persoon is afgevoerd naar het buitenland."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "992".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990> a skos:Concept;
+    skos:prefLabel "Overleden"@nl;
+    skos:definition "De persoon is overleden."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99990".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99991> a skos:Concept;
+    skos:prefLabel "Afvoering van ambtswege (ambtsbehalve schrapping)"@nl;
+    skos:definition "Het dossier is afgevoerd van ambtswege (ambtsbehalve schrapping)."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99991".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99992> a skos:Concept;
+    skos:prefLabel "Afvoering van ambtswege in het buitenland"@nl;
+    skos:definition "Het dossier is afgevoerd van ambtswege in het buitenland."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99992".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99993> a skos:Concept;
+    skos:prefLabel "Schrapping - einde functies"@nl;
+    skos:definition "Het dossier van de persoon is geschrapt omdat het niet meer van toepassing is."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99993".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier"@nl;
+    skos:definition "Het dossier van de persoon is geannuleerd."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-00> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Verworpen rechtsvaardiging"@nl;
+    skos:definition "Dossier geannuleerd met verworpen rechtvaardiging."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-00".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-01> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Voldoet niet aan inschrijvingsvoorwaarden"@nl;
+    skos:definition "Dossier geannuleerd omdat de persoon niet voldoet aan de inschrijvingsvoorwaarden."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-01".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-02> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Fout in geboortedatum of geslacht"@nl;
+    skos:definition "Dossier geannuleerd door fout in de geboortedatum of betreffende het geslacht bij de verzameling (geblokkeerd 07.04.2020 – zie codes 08, 09 of 10)"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-02".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-03> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Dubbele INSZ"@nl;
+    skos:definition "Dossier geannuleerd omdat er bestaan twee identificatienummers voor dezelfde persoon."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-03".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-04> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Programmafout"@nl;
+    skos:definition "Dossier geannuleerd door een verzameling van meerdere dossiers per vergissing (programmafout)."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-04".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-05> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Geslachtsverandering"@nl;
+    skos:definition "Dossier geannuleerd omdat de persoon veranderde van geslacht waarvoor er een nieuw dossier is aangemaakt of een bestaand dossier is hernomen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-05".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-06> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Incorrecte identiteit"@nl;
+    skos:definition "Dossier geannuleerd omdat de indentiteit is incorrect ingegeven."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-06".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-07> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Stopzetting schijnrelatie"@nl;
+    skos:definition "Dossier geannuleerd door stopzetting procedure schijnrelatie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-07".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-08> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Geboortedatum fout verzameld"@nl;
+    skos:definition "Dossier geannuleerd door fout in de geboortedatum bij de verzameling."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-08".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-09> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Geslacht fout verzameld"@nl;
+    skos:definition "Dossier geannuleerd door fout betreffende het geslacht bij de verzameling."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-09".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-10> a skos:Concept;
+    skos:prefLabel "Geannuleerd dossier - Geslacht en geboortedatum fout verzameld"@nl;
+    skos:definition "Dossier geannuleerd door fout in de geboortedatum en betreffende het geslacht bij de verzameling."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99994-10".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99995> a skos:Concept;
+    skos:prefLabel "Vrijgesteld van inschrijving"@nl;
+    skos:definition "De persoon is vrijgesteld van inschrijving."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99995".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99996> a skos:Concept;
+    skos:prefLabel "Afwezig verklaard"@nl;
+    skos:definition "De persoon is afwezig verklaard."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99996".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99997> a skos:Concept;
+    skos:prefLabel "Afvoering - verlies van het recht op verblijf"@nl;
+    skos:definition "De persoon verloor het recht op verblijf."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99997".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99998> a skos:Concept;
+    skos:prefLabel "Afvoering - geen recht op inschrijving"@nl;
+    skos:definition "De persoon heeft geen recht op inschrijving."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "99998".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/21099> a skos:Concept;
+    skos:prefLabel "Dienst vreemdelingenzaken"@nl;
+    skos:definition "De persoon is gecollecteerd door de Dienst Vreemdelingenzaken in het wachtregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "21099".
+<https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT001 Dossierstatus'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT001/Dossierstatus>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

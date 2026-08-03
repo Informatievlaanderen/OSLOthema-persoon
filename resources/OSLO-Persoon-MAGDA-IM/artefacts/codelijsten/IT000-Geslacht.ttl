@@ -33,7 +33,7 @@
     skos:notation "2".
 <https://data.vlaanderen.be/id/concept/IT000/Geslacht/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT000 Geslacht'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1>;
     skos:notation "UITZONDERING".
@@ -43,6 +43,30 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT000".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/0> a skos:Concept;
+    skos:prefLabel "Onbekend"@nl;
+    skos:definition "Het geslacht is onbekend."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:notation "0".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/1> a skos:Concept;
+    skos:prefLabel "Mannelijk"@nl;
+    skos:definition "De persoon is van het mannelijk geslacht."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:notation "1".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/2> a skos:Concept;
+    skos:prefLabel "Vrouwelijk"@nl;
+    skos:definition "De persoon is van het vrouwelijk geslacht."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:notation "2".
+<https://data.vlaanderen.be/id/concept/IT000/Geslacht/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT000 Geslacht'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

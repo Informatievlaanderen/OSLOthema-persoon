@@ -43,9 +43,9 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     skos:notation "05".
-<https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1/UITZONDERING> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
-    skos:definition "De code is nog niet gekend bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT141 Woonvorm'. Contacteer MAGDA via de Servicedesk."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm/v1>;
     skos:notation "UITZONDERING".
@@ -55,6 +55,42 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "IT141".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/00> a skos:Concept;
+    skos:prefLabel "Gewone gezinssamenstelling"@nl;
+    skos:definition "Normale gezinssamenstelling binnen Belgie, of een gezin in het buitenland."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "00".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/01> a skos:Concept;
+    skos:prefLabel "Zorgwonen (Vlaams Gewest)"@nl;
+    skos:definition "Zorgwonen in het Vlaams Gewest is het creëren van een kleinere woongelegenheid in of bij een bestaande woning zodat maximaal twee oudere of hulpbehoevende personen kunnen inwonen. Om een zorgwoning te creëren moet de eigendom, of ten minste de blote eigendom van de hoofd- en de ondergeschikte wooneenheid aan dezelfde eigenaar toebehoren."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "01".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/02> a skos:Concept;
+    skos:prefLabel "Collectief wonen (Waals Gewest)"@nl;
+    skos:definition "Het gezin verblijft in een woning in het Waals gewest met verschillende wooneenheden waarbij ze hetzelfde huisnummer delen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "02".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/03> a skos:Concept;
+    skos:prefLabel "Collectief wonen (Brussels Gewest)"@nl;
+    skos:definition "Het gezin verblijft in een woning in het Brussels gewest met verschillende wooneenheden waarbij ze hetzelfde huisnummer delen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "03".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/05> a skos:Concept;
+    skos:prefLabel "Tijdelijke opvang"@nl;
+    skos:definition "Gezin dat tijdelijk is opgevangen bij een pleeggezin die een deel van hun woning afstaan als tijdelijk verblijf voor het opgevangen gezin."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "05".
+<https://data.vlaanderen.be/id/concept/IT141/Woonvorm/UITZONDERING> a skos:Concept;
+    skos:prefLabel "Onbekende code"@nl;
+    skos:definition "De code is nog niet gekend bij MAGDA voor 'IT141 Woonvorm'. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/IT141/Woonvorm>;
+    skos:notation "UITZONDERING".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;

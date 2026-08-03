@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/IT024/Situatie> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst IT024"@nl;
+    skos:definition "Codelijst van Informatie Type 024 'Referentieadres'."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "IT024".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
+    skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
+    skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
+    skos:notation "MAGDA-Persoon".
