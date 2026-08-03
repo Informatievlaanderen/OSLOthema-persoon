@@ -1,0 +1,2574 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MAGDA persoon.personen REST",
+    "version": "0.2.0",
+    "contact": {
+        "name": "MAGDA Service Desk",
+        "url": "https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038"
+    },
+    "license": {
+        "name": "Gebruiksvoorwaarden",
+        "url": "https://vlaamseoverheid.atlassian.net/wiki/spaces/MG/pages/1093927442/Persoon.GeefPersoon-02.02#Gebruiksvoorwaarden"
+    }
+  },
+  "servers": [
+    {
+      "url": "api/v1/persoon",
+      "description": "Basis URL"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "Woonvormtype": {
+        "title": "Woonvormtype",
+        "type": "object",
+        "description": "Enumeratie van Woonvormtype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "RedenAfwezigheid": {
+        "title": "RedenAfwezigheid",
+        "type": "object",
+        "description": "Enumeratie van RedenAfwezigheid",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Afstammingstype": {
+        "title": "Afstammingstype",
+        "type": "object",
+        "description": "Enumeratie van Afstammingstype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Geslacht": {
+        "title": "Geslacht",
+        "type": "object",
+        "description": "Enumeratie van Geslacht",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "BurgerlijkeStaatType": {
+        "title": "BurgerlijkeStaatType",
+        "type": "object",
+        "description": "Enumeratie van BurgerlijkeStaatType",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "ProcedureType": {
+        "title": "ProcedureType",
+        "type": "object",
+        "description": "Enumeratie van ProcedureType",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "DomicilieStatus": {
+        "title": "DomicilieStatus",
+        "type": "object",
+        "description": "Enumeratie van DomicilieStatus",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "AdministratiefBeheerdertype": {
+        "title": "AdministratiefBeheerdertype",
+        "type": "object",
+        "description": "Enumeratie van AdministratiefBeheerdertype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Dossierstatus": {
+        "title": "Dossierstatus",
+        "type": "object",
+        "description": "Enumeratie van Dossierstatus",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Omstandigheid": {
+        "title": "Omstandigheid",
+        "type": "object",
+        "description": "Enumeratie van Omstandigheid",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Gezinsrelatietype": {
+        "title": "Gezinsrelatietype",
+        "type": "object",
+        "description": "Enumeratie van Gezinsrelatietype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "UitzonderingOorsprong": {
+        "title": "UitzonderingOorsprong",
+        "type": "object",
+        "description": "Enumeratie van UitzonderingOorsprong",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "UitzonderingType": {
+        "title": "UitzonderingType",
+        "type": "object",
+        "description": "Enumeratie van UitzonderingType",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Persoon": {
+        "title": "Persoon",
+        "type": "object",
+        "description": "Natuurlijk persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Persoon)",
+            "pattern": "^Persoon$"
+          },
+          "voornaam": {
+            "type": "array",
+            "description": "Lijst van String items.",
+            "items": {
+              "type": "object",
+              "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@value"
+              ]
+            },
+            "minItems": 1
+          },
+          "achternaam": {
+            "type": "array",
+            "description": "Lijst van String items.",
+            "items": {
+              "type": "object",
+              "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@value"
+              ]
+            },
+            "minItems": 1
+          },
+          "contactinfo": {
+            "$ref": "#/components/schemas/Contactinfo"
+          },
+          "geslacht": {
+            "$ref": "#/components/schemas/Geslacht"
+          },
+          "isHoofdVan": {
+            "$ref": "#/components/schemas/Gezin"
+          },
+          "heeftBurgerlijkeStaat": {
+            "$ref": "#/components/schemas/BurgerlijkeStaat"
+          },
+          "heeftGeboorte": {
+            "$ref": "#/components/schemas/Geboorte"
+          },
+          "heeftOverlijden": {
+            "$ref": "#/components/schemas/Overlijden"
+          },
+          "heeftInwonerschap": {
+            "type": "array",
+            "description": "Lijst van Inwonerschap items.",
+            "items": {
+              "$ref": "#/components/schemas/Inwonerschap"
+            },
+            "minItems": 1
+          },
+          "heeftPersoonsrelatie": {
+            "type": "array",
+            "description": "Lijst van Persoonsrelatie items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Gezinsrelatie"
+                },
+                {
+                  "$ref": "#/components/schemas/Huwelijk"
+                },
+                {
+                  "$ref": "#/components/schemas/Samenwonen"
+                },
+                {
+                  "$ref": "#/components/schemas/Afstamming"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                  "Huwelijk": "#/components/schemas/Huwelijk",
+                  "Samenwonen": "#/components/schemas/Samenwonen",
+                  "Afstamming": "#/components/schemas/Afstamming"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "isLidVan": {
+            "type": "array",
+            "description": "Lijst van Gezin items.",
+            "items": {
+              "$ref": "#/components/schemas/Gezin"
+            },
+            "minItems": 1
+          },
+          "creatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "modificatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "bron": {
+            "$ref": "#/components/schemas/Organisatie"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Plaats": {
+        "title": "Plaats",
+        "type": "object",
+        "description": "Een ruimtelijk gebied of benoemde plaats.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Plaats)",
+            "pattern": "^Plaats$"
+          },
+          "plaatsnaam": {
+            "type": "object",
+            "description": "Naam van de plaats of van het gebied.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "landcode": {
+            "type": "object",
+            "description": "Code van het land waartoe de plaats behoort.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Gezinsrelatie": {
+        "title": "Gezinsrelatie",
+        "type": "object",
+        "description": "Relatie tussen leden van eenzelfde gezin.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Gezinsrelatie)",
+            "pattern": "^Gezinsrelatie$"
+          },
+          "gezinsrelatietype": {
+            "$ref": "#/components/schemas/Gezinsrelatietype"
+          },
+          "metPersoon": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type",
+          "metPersoon"
+        ]
+      },
+      "Overlijden": {
+        "title": "Overlijden",
+        "type": "object",
+        "description": "Het doodgaan van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Overlijden)",
+            "pattern": "^Overlijden$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "datum": {
+            "$ref": "#/components/schemas/Moment"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Persoonsgebeurtenis": {
+        "title": "Persoonsgebeurtenis",
+        "type": "object",
+        "description": "Belangrijke gebeurtenis in het leven van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Persoonsgebeurtenis)",
+            "pattern": "^Persoonsgebeurtenis$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "datum": {
+            "$ref": "#/components/schemas/Moment"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Geboorte": {
+        "title": "Geboorte",
+        "type": "object",
+        "description": "Het ter wereld komen van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Geboorte)",
+            "pattern": "^Geboorte$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "datum": {
+            "$ref": "#/components/schemas/Moment"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Huwelijk": {
+        "title": "Huwelijk",
+        "type": "object",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Huwelijk)",
+            "pattern": "^Huwelijk$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "metPersoon": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type",
+          "metPersoon"
+        ]
+      },
+      "Registratie": {
+        "title": "Registratie",
+        "type": "object",
+        "description": "Opname van de Persoon in het register.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Registratie)",
+            "pattern": "^Registratie$"
+          },
+          "dossierstatus": {
+            "type": "array",
+            "description": "Lijst van Dossierstatus items.",
+            "items": {
+              "$ref": "#/components/schemas/Dossierstatus"
+            },
+            "minItems": 1
+          },
+          "referentiedossier": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "redenAfwezigheid": {
+            "$ref": "#/components/schemas/RedenAfwezigheid"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Versie": {
+        "title": "Versie",
+        "type": "object",
+        "description": "Entiteit gedurende een bepaalde periode in de databank.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Versie)",
+            "pattern": "^Versie$"
+          },
+          "creatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "modificatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "bron": {
+            "$ref": "#/components/schemas/Organisatie"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "FormeleOrganisatie": {
+        "title": "FormeleOrganisatie",
+        "type": "object",
+        "description": "Een erkende Organisatie,erkend in brede zin of  meer specifiek in juridische zin met bijbehorende rechten en plichten.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse FormeleOrganisatie)",
+            "pattern": "^FormeleOrganisatie$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Problemdetail": {
+        "title": "Problemdetail",
+        "type": "object",
+        "description": "Meer gedetailleerde beschrijving van de fout in een HTTP response.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Problemdetail)",
+            "pattern": "^Problemdetail$"
+          },
+          "type": {
+            "type": "object",
+            "description": "Aard van de fout.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          },
+          "title": {
+            "type": "object",
+            "description": "Korte mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "status": {
+            "type": "object",
+            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".",
+            "properties": {
+              "@value": {
+                "type": "number",
+                "format": "int64"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Integer$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "detail": {
+            "type": "object",
+            "description": "Mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "instance": {
+            "type": "object",
+            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          }
+        },
+        "required": [
+          "@type",
+          "type",
+          "title",
+          "detail"
+        ]
+      },
+      "PersonEnvelope": {
+        "title": "PersonEnvelope",
+        "type": "object",
+        "description": "Enveloppe om Persoon en bijhorende validatiewaarschuwingen uit te wisselen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse PersonEnvelope)",
+            "pattern": "^PersonEnvelope$"
+          },
+          "warning": {
+            "type": "array",
+            "description": "Lijst van Uitzondering items.",
+            "items": {
+              "$ref": "#/components/schemas/Uitzondering"
+            },
+            "minItems": 1
+          },
+          "data": {
+            "$ref": "#/components/schemas/GeregistreerdPersoon"
+          },
+          "@context": {
+            "type": "string",
+            "description": "URI of the JSON-LD versioned context file for this response.",
+            "pattern": "^https:\\/\\/implementatie.data.test-vlaanderen.be\\/\\/doc\\/implementatiemodel\\/magda\\/persoon\\/v0.2.0\\/context\\/persoon.jsonld$"
+          }
+        },
+        "required": [
+          "@type",
+          "data"
+        ]
+      },
+      "NietMededeelbaar": {
+        "title": "NietMededeelbaar",
+        "type": "object",
+        "description": "Data die vertrouwelijk is en daardoor niet mag meegedeeld worden.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse NietMededeelbaar)",
+            "pattern": "^NietMededeelbaar$"
+          },
+          "sinds": {
+            "type": "object",
+            "description": "Datum wanneer de beslissing genomen is dat de informatie vertrouwelijk is.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Inwonerschap": {
+        "title": "Inwonerschap",
+        "type": "object",
+        "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Inwonerschap)",
+            "pattern": "^Inwonerschap$"
+          },
+          "jurisdictie": {
+            "$ref": "#/components/schemas/Jurisdictie"
+          },
+          "heeftVerblijfplaats": {
+            "type": "array",
+            "description": "Lijst van Verblijfplaats items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Domicilie"
+                },
+                {
+                  "$ref": "#/components/schemas/AangegevenAdres"
+                },
+                {
+                  "$ref": "#/components/schemas/VoorlopigeInschrijving"
+                },
+                {
+                  "$ref": "#/components/schemas/Contactadres"
+                },
+                {
+                  "$ref": "#/components/schemas/Postadres"
+                },
+                {
+                  "$ref": "#/components/schemas/Referentieadres"
+                },
+                {
+                  "$ref": "#/components/schemas/VerblijfplaatsBuitenlandDomicilie"
+                },
+                {
+                  "$ref": "#/components/schemas/VerblijfplaatsBuitenland"
+                },
+                {
+                  "$ref": "#/components/schemas/WettelijkVerblijf"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Domicilie": "#/components/schemas/Domicilie",
+                  "AangegevenAdres": "#/components/schemas/AangegevenAdres",
+                  "VoorlopigeInschrijving": "#/components/schemas/VoorlopigeInschrijving",
+                  "Contactadres": "#/components/schemas/Contactadres",
+                  "Postadres": "#/components/schemas/Postadres",
+                  "Referentieadres": "#/components/schemas/Referentieadres",
+                  "VerblijfplaatsBuitenlandDomicilie": "#/components/schemas/VerblijfplaatsBuitenlandDomicilie",
+                  "VerblijfplaatsBuitenland": "#/components/schemas/VerblijfplaatsBuitenland",
+                  "WettelijkVerblijf": "#/components/schemas/WettelijkVerblijf"
+                }
+              }
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "@type",
+          "jurisdictie"
+        ]
+      },
+      "Samenwonen": {
+        "title": "Samenwonen",
+        "type": "object",
+        "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Samenwonen)",
+            "pattern": "^Samenwonen$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          },
+          "metPersoon": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type",
+          "metPersoon"
+        ]
+      },
+      "GeregistreerdPersoon": {
+        "title": "GeregistreerdPersoon",
+        "type": "object",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse GeregistreerdPersoon)",
+            "pattern": "^GeregistreerdPersoon$"
+          },
+          "registratie": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "registratiedetail": {
+            "$ref": "#/components/schemas/Registratie"
+          },
+          "beheerder": {
+            "type": "array",
+            "description": "Lijst van AdministratiefBeheerder items.",
+            "items": {
+              "$ref": "#/components/schemas/AdministratiefBeheerder"
+            },
+            "minItems": 1
+          },
+          "voornaam": {
+            "type": "array",
+            "description": "Lijst van String items.",
+            "items": {
+              "type": "object",
+              "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@value"
+              ]
+            },
+            "minItems": 1
+          },
+          "achternaam": {
+            "type": "array",
+            "description": "Lijst van String items.",
+            "items": {
+              "type": "object",
+              "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@value"
+              ]
+            },
+            "minItems": 1
+          },
+          "contactinfo": {
+            "$ref": "#/components/schemas/Contactinfo"
+          },
+          "geslacht": {
+            "$ref": "#/components/schemas/Geslacht"
+          },
+          "isHoofdVan": {
+            "$ref": "#/components/schemas/Gezin"
+          },
+          "heeftBurgerlijkeStaat": {
+            "$ref": "#/components/schemas/BurgerlijkeStaat"
+          },
+          "heeftGeboorte": {
+            "$ref": "#/components/schemas/Geboorte"
+          },
+          "heeftOverlijden": {
+            "$ref": "#/components/schemas/Overlijden"
+          },
+          "heeftInwonerschap": {
+            "type": "array",
+            "description": "Lijst van Inwonerschap items.",
+            "items": {
+              "$ref": "#/components/schemas/Inwonerschap"
+            },
+            "minItems": 1
+          },
+          "heeftPersoonsrelatie": {
+            "type": "array",
+            "description": "Lijst van Persoonsrelatie items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Gezinsrelatie"
+                },
+                {
+                  "$ref": "#/components/schemas/Huwelijk"
+                },
+                {
+                  "$ref": "#/components/schemas/Samenwonen"
+                },
+                {
+                  "$ref": "#/components/schemas/Afstamming"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                  "Huwelijk": "#/components/schemas/Huwelijk",
+                  "Samenwonen": "#/components/schemas/Samenwonen",
+                  "Afstamming": "#/components/schemas/Afstamming"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "isLidVan": {
+            "type": "array",
+            "description": "Lijst van Gezin items.",
+            "items": {
+              "$ref": "#/components/schemas/Gezin"
+            },
+            "minItems": 1
+          },
+          "creatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "modificatiedatum": {
+            "type": "object",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "bron": {
+            "$ref": "#/components/schemas/Organisatie"
+          }
+        },
+        "required": [
+          "@type",
+          "registratie"
+        ]
+      },
+      "Domicilie": {
+        "title": "Domicilie",
+        "type": "object",
+        "description": "Hoofdverblijfplaats van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Domicilie)",
+            "pattern": "^Domicilie$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Afstamming": {
+        "title": "Afstamming",
+        "type": "object",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Afstamming)",
+            "pattern": "^Afstamming$"
+          },
+          "datumVanAfstamming": {
+            "type": "object",
+            "description": "De datum waarop de afstamming wordt vastgesteld.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "afstammingstype": {
+            "$ref": "#/components/schemas/Afstammingstype"
+          },
+          "metPersoon": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type",
+          "metPersoon"
+        ]
+      },
+      "AangegevenAdres": {
+        "title": "AangegevenAdres",
+        "type": "object",
+        "description": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse AangegevenAdres)",
+            "pattern": "^AangegevenAdres$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "VoorlopigeInschrijving": {
+        "title": "VoorlopigeInschrijving",
+        "type": "object",
+        "description": "De Persoon is voorlopig ingeschreven in het bevolkingsregister wanneer deze Persoon zich gevestigd heeft in een woning waar permanente bewoning niet toegelaten is.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse VoorlopigeInschrijving)",
+            "pattern": "^VoorlopigeInschrijving$"
+          },
+          "geldigheid": {
+            "$ref": "#/components/schemas/Periode"
+          },
+          "procedure": {
+            "$ref": "#/components/schemas/ProcedureType"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Contactadres": {
+        "title": "Contactadres",
+        "type": "object",
+        "description": "Het domicillie adres voor personen die in het BIS, RAD of RAN register geregistreerd zijn bij KSZ.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Contactadres)",
+            "pattern": "^Contactadres$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Uitzondering": {
+        "title": "Uitzondering",
+        "type": "object",
+        "description": "Uitzondering geeft miet-kritieke problemen weer bij het uitwisselen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Uitzondering)",
+            "pattern": "^Uitzondering$"
+          },
+          "datum": {
+            "type": "object",
+            "description": "De datum waarop de Uitzondering aangemaakt werd.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^DateTime$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "diagnose": {
+            "type": "object",
+            "description": "Een beschrijving waarom de Uitzondering aangemaakt werd.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "oorsprong": {
+            "$ref": "#/components/schemas/UitzonderingOorsprong"
+          },
+          "type": {
+            "$ref": "#/components/schemas/UitzonderingType"
+          },
+          "omstandigheid": {
+            "$ref": "#/components/schemas/Omstandigheid"
+          },
+          "annotatie": {
+            "type": "array",
+            "description": "Lijst van Annotatie items.",
+            "items": {
+              "$ref": "#/components/schemas/Annotatie"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "BelgischAdres": {
+        "title": "BelgischAdres",
+        "type": "object",
+        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid, een ligplaats, een standplaats of een perceel op basis van een gemeentenaam, een straatnaam, een huisnummer en eventueel een busnummer en een postcode.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse BelgischAdres)",
+            "pattern": "^BelgischAdres$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Annotatie": {
+        "title": "Annotatie",
+        "type": "object",
+        "description": "Detailinformatie die meegegeven is bij een Uitzondering.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Annotatie)",
+            "pattern": "^Annotatie$"
+          },
+          "waarde": {
+            "type": "object",
+            "description": "De waarde van het veld.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "naam": {
+            "type": "object",
+            "description": "Naam van het veld.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          }
+        },
+        "required": [
+          "@type",
+          "waarde",
+          "naam"
+        ]
+      },
+      "Jurisdictie": {
+        "title": "Jurisdictie",
+        "type": "object",
+        "description": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Jurisdictie)",
+            "pattern": "^Jurisdictie$"
+          },
+          "plaats": {
+            "$ref": "#/components/schemas/Plaats"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Gezin": {
+        "title": "Gezin",
+        "type": "object",
+        "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Gezin)",
+            "pattern": "^Gezin$"
+          },
+          "gezinsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "woonvorm": {
+            "$ref": "#/components/schemas/Woonvormtype"
+          },
+          "gezinshoofd": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+              }
+            }
+          },
+          "gezinslid": {
+            "type": "array",
+            "description": "Lijst van Persoon items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Persoon"
+                },
+                {
+                  "$ref": "#/components/schemas/GeregistreerdPersoon"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Persoon": "#/components/schemas/Persoon",
+                  "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+                }
+              }
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "BurgerlijkeStaat": {
+        "title": "BurgerlijkeStaat",
+        "type": "object",
+        "description": "Burgerrechtelijke toestand van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse BurgerlijkeStaat)",
+            "pattern": "^BurgerlijkeStaat$"
+          },
+          "type": {
+            "$ref": "#/components/schemas/BurgerlijkeStaatType"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Organisatie": {
+        "title": "Organisatie",
+        "type": "object",
+        "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Organisatie)",
+            "pattern": "^Organisatie$"
+          },
+          "voorkeursnaam": {
+            "type": "object",
+            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Postadres": {
+        "title": "Postadres",
+        "type": "object",
+        "description": "Postadres van de verblijfplaats van een persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Postadres)",
+            "pattern": "^Postadres$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Referentieadres": {
+        "title": "Referentieadres",
+        "type": "object",
+        "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Referentieadres)",
+            "pattern": "^Referentieadres$"
+          },
+          "einddatum": {
+            "type": "object",
+            "description": "De datum waarop het referentieadres vervalt.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "VerblijfplaatsBuitenlandDomicilie": {
+        "title": "VerblijfplaatsBuitenlandDomicilie",
+        "type": "object",
+        "description": "Hoofdverblijplaats in het buitenland.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
+            "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DomicilieStatus"
+          },
+          "nietMededeelbaar": {
+            "$ref": "#/components/schemas/NietMededeelbaar"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "VerblijfplaatsBuitenland": {
+        "title": "VerblijfplaatsBuitenland",
+        "type": "object",
+        "description": "Verblijplaats in het buitenland.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse VerblijfplaatsBuitenland)",
+            "pattern": "^VerblijfplaatsBuitenland$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "WettelijkVerblijf": {
+        "title": "WettelijkVerblijf",
+        "type": "object",
+        "description": "Juridisch vastgelegde verblijplaats.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse WettelijkVerblijf)",
+            "pattern": "^WettelijkVerblijf$"
+          },
+          "verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "AdministratiefBeheerder": {
+        "title": "AdministratiefBeheerder",
+        "type": "object",
+        "description": "Organisatie die het dossier van de persoon in het register beheert.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse AdministratiefBeheerder)",
+            "pattern": "^AdministratiefBeheerder$"
+          },
+          "voorkeursnaam": {
+            "type": "object",
+            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "type": {
+            "$ref": "#/components/schemas/AdministratiefBeheerdertype"
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Locatie": {
+        "title": "Locatie",
+        "type": "object",
+        "description": "Een locatie kan een identificeerbare geografische locatie zijn (ISO 19112), maar deze locatie kan ook een niet-geografische locatie zijn, zoals een directory, rij of kolom. Als zodanig zijn er talloze manieren waarop locatie kan worden uitgedrukt.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Locatie)",
+            "pattern": "^Locatie$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Adresvoorstelling": {
+        "title": "Adresvoorstelling",
+        "type": "object",
+        "description": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Adresvoorstelling)",
+            "pattern": "^Adresvoorstelling$"
+          },
+          "administratieveEenheidNiveau1": {
+            "type": "object",
+            "description": "Hoogste Administratieve eenheid van het adres, doorgaans een land.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "administratieveEenheidNiveau2": {
+            "type": "object",
+            "description": "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "adresgebied": {
+            "type": "object",
+            "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bijvoorbeeld: de naam van het gehucht waarin het adres ligt.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "busnummer": {
+            "type": "object",
+            "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "gemeentenaam": {
+            "type": "object",
+            "description": "Gemeentenaam van het adres.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "huisnummer": {
+            "type": "object",
+            "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "land": {
+            "type": "object",
+            "description": "Land waarin het adres gelegen is.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "locatieaanduiding": {
+            "type": "array",
+            "description": "Lijst van String items.",
+            "items": {
+              "type": "object",
+              "description": "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@value"
+              ]
+            },
+            "minItems": 1
+          },
+          "locatienaam": {
+            "type": "array",
+            "description": "Lijst van LangString items.",
+            "items": {
+              "type": "object",
+              "description": "Naam of omschrijving van het het geografisch object dat de adreslocator aanduidt.",
+              "properties": {
+                "@value": {
+                  "type": "string"
+                },
+                "@language": {
+                  "type": "string",
+                  "pattern": "^nl$"
+                }
+              },
+              "required": [
+                "@value",
+                "@language"
+              ]
+            },
+            "minItems": 1
+          },
+          "postbus": {
+            "type": "object",
+            "description": "Postbusnummer in een postkantoor.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "postcode": {
+            "type": "object",
+            "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "postnaam": {
+            "type": "object",
+            "description": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "straatnaam": {
+            "type": "object",
+            "description": "Straatnaam van het adres.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "volledigAdres": {
+            "type": "object",
+            "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "verwijstNaar": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Identificator": {
+        "title": "Identificator",
+        "type": "object",
+        "description": "Informatie gebruikt om een object uniek te identificeren.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Identificator)",
+            "pattern": "^Identificator$"
+          },
+          "identificator": {
+            "type": "object",
+            "description": "String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Contactinfo": {
+        "title": "Contactinfo",
+        "type": "object",
+        "description": "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Contactinfo)",
+            "pattern": "^Contactinfo$"
+          },
+          "aanschrijfvorm": {
+            "type": "object",
+            "description": "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie, Dokter, ...",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "naam": {
+            "type": "object",
+            "description": "Naam van bijvoorbeeld de persoon die men kan contacteren.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "email": {
+            "type": "object",
+            "description": "Email-adres waarnaar men kan mailen.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "faxnummer": {
+            "type": "object",
+            "description": "Faxnummer waarnaar men kan faxen.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "telefoon": {
+            "type": "object",
+            "description": "Telefoonnummer waarop men kan bellen.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "website": {
+            "type": "object",
+            "description": "Website waarnaar men kan surfen.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          },
+          "adres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Moment": {
+        "title": "Moment",
+        "type": "object",
+        "description": "Moment met omvang en duur nul.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Moment)",
+            "pattern": "^Moment$"
+          },
+          "inXSDdatum": {
+            "type": "object",
+            "description": "Positie in de tijd uitgedrukt door middel van xsd:date.",
+            "properties": {
+              "@value": {
+                "type": "string",
+                "format": "date"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Date$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "inDatumTijd": {
+            "$ref": "#/components/schemas/AlgemeneDatumTijdBeschrijving"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "AlgemeneDatumTijdBeschrijving": {
+        "title": "AlgemeneDatumTijdBeschrijving",
+        "type": "object",
+        "description": "Algemene beschrijving van datum en tijd.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse AlgemeneDatumTijdBeschrijving)",
+            "pattern": "^AlgemeneDatumTijdBeschrijving$"
+          },
+          "jaar": {
+            "type": "object",
+            "description": "Jaar positie in een kalendersysteem.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "maand": {
+            "type": "object",
+            "description": "Maand positie in een kalendersysteem.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          },
+          "dag": {
+            "type": "object",
+            "description": "Dag positie in een kalendersysteem.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "@value"
+            ]
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Periode": {
+        "title": "Periode",
+        "type": "object",
+        "description": "Temporele Entiteit waarvan de omvang en duurtijd verschilt van nul, dit wil zeggen, waarvoor de begin- en eindtijd verschillend zijn.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Periode)",
+            "pattern": "^Periode$"
+          },
+          "tot": {
+            "$ref": "#/components/schemas/Moment"
+          },
+          "van": {
+            "$ref": "#/components/schemas/Moment"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "TemporeleEntiteit": {
+        "title": "TemporeleEntiteit",
+        "type": "object",
+        "description": "Abstracte klasse voor temporele objecten.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse TemporeleEntiteit)",
+            "pattern": "^TemporeleEntiteit$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "TemporelePositie": {
+        "title": "TemporelePositie",
+        "type": "object",
+        "description": "Abstracte klasse voor temporele posities.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse TemporelePositie)",
+            "pattern": "^TemporelePositie$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      }
+    }
+  },
+  "paths": {
+    "/personen": {
+      "get": {
+        "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "operationId": "PersoonGET",
+        "parameters": [
+          {
+            "name": "X-INSZ",
+            "required": true,
+            "in": "header",
+            "description": "INSZ van een GeregistreerdPersoon object.",
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{11}$"
+            }
+          },
+          {
+            "name": "X-Correlation-Id",
+            "required": true,
+            "in": "header",
+            "description": "Correlatie ID van het request.",
+            "schema": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 36
+            }
+          },
+          {
+            "name": "source",
+            "required": true,
+            "in": "query",
+            "description": "Bron die geraadpleegd moet worden om de Persoon op te vragen.",
+            "schema": {
+              "type": "string",
+              "pattern": "^(RR|KSZ)$"
+            },
+            "examples": {
+              "RR": {
+                "summary": "Rijksregister (OVO027248)",
+                "value": "RR"
+              },
+              "KSZ": {
+                "summary": "Kruispuntbank van de Sociale Zekerheid (OVO008218)",
+                "value": "KSZ"
+              }
+            }
+          },
+          {
+            "name": "embed",
+            "required": false,
+            "in": "query",
+            "description": "Extra ITs die moeten worden opgevraagd die niet standaard bij de bron worden meegegeven. Indien niet meegegeven zal deze extra informatie niet in het antwoord zitten.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^(Afstamming|AfstammingDalendeLijn)$"
+              }
+            },
+            "examples": {
+              "IT110": {
+                "summary": "Afstamming (IT 110)",
+                "value": ["Afstamming"]
+              },
+              "IT114": {
+                "summary": "Afstamming in dalende lijn (IT 114)",
+                "value": ["AfstammingDalendeLijn"]
+              },
+              "IT110-IT114": {
+                "summary": "Afstamming (IT 110) en Afstamming in dalende lijn (IT 114)",
+                "value": ["Afstamming", "AfstammingDalendeLijn"]
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdPersoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": { "$ref": "#/components/schemas/PersonEnvelope" }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid data supplied.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid authorization.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "412": {
+            "description": "Pre-condition failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected Server Error.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "503": {
+            "description": "Service unavailable.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            },
+            "links": {
+              "Problemdetail.type": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "type": "$response.body#/type"
+                },
+                "description": "De waarde van het attribuut `type` kan gebruikt worden om het gerefereerde object van het type `ProblemDetails` op te halen."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

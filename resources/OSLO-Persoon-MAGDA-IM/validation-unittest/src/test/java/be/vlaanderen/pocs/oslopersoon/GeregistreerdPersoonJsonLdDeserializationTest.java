@@ -1,6 +1,6 @@
 package be.vlaanderen.pocs.oslopersoon;
 
-import be.vlaanderen.pocs.oslopersoon.model.PersonEnvelop;
+import be.vlaanderen.pocs.oslopersoon.model.PersonEnvelope;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.validation.ConstraintViolation;
@@ -51,7 +51,7 @@ class GeregistreerdPersoonJsonLdDeserializationTest
             inputJson = objectMapper.readTree(is);
         }
 
-        PersonEnvelop persoon = objectMapper.treeToValue(inputJson, PersonEnvelop.class);
+        PersonEnvelope persoon = objectMapper.treeToValue(inputJson, PersonEnvelope.class);
         assertNotNull(persoon, "Deserialisatie gaf null terug voor: " + resourcePath);
 
         validateResponse(resourcePath, persoon);
@@ -72,8 +72,8 @@ class GeregistreerdPersoonJsonLdDeserializationTest
         System.out.println(Files.readString(outputFile));
     }
 
-    private void validateResponse(String resourcePath, PersonEnvelop persoon) {
-        Set<ConstraintViolation<PersonEnvelop>> violations = validator.validate(persoon);
+    private void validateResponse(String resourcePath, PersonEnvelope persoon) {
+        Set<ConstraintViolation<PersonEnvelope>> violations = validator.validate(persoon);
         if (!violations.isEmpty()) {
             System.out.println("Validatiefouten in " + resourcePath + ":");
             violations.forEach(v -> System.out.println("  - " + v.getPropertyPath() + ": " + v.getMessage()));

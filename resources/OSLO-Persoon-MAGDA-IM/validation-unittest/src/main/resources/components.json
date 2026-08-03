@@ -748,8 +748,8 @@
           "detail"
         ]
       },
-      "PersonEnvelop": {
-        "title": "PersonEnvelop",
+      "PersonEnvelope": {
+        "title": "PersonEnvelope",
         "type": "object",
         "description": "Enveloppe om Persoon en bijhorende validatiewaarschuwingen uit te wisselen.",
         "properties": {
@@ -759,8 +759,8 @@
           },
           "@type": {
             "type": "string",
-            "description": "Object type (klasse PersonEnvelop)",
-            "pattern": "^PersonEnvelop$"
+            "description": "Object type (klasse PersonEnvelope)",
+            "pattern": "^PersonEnvelope$"
           },
           "warning": {
             "type": "array",
@@ -821,8 +821,7 @@
           }
         },
         "required": [
-          "@type",
-          "beschrijving"
+          "@type"
         ]
       },
       "Inwonerschap": {
@@ -1348,12 +1347,7 @@
           }
         },
         "required": [
-          "@type",
-          "datum",
-          "diagnose",
-          "oorsprong",
-          "type",
-          "omstandigheid"
+          "@type"
         ]
       },
       "BelgischAdres": {
@@ -2472,17 +2466,17 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
       },
-      "PersonEnvelop.warning": {
-        "operationId": "PersonEnvelopGET",
+      "PersonEnvelope.warning": {
+        "operationId": "PersonEnvelopeGET",
         "parameters": {
-          "id": "$response.body#/PersonEnvelop.warning/@id"
+          "id": "$response.body#/PersonEnvelope.warning/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Uitzondering` op te halen."
       },
-      "PersonEnvelop.data": {
-        "operationId": "PersonEnvelopGET",
+      "PersonEnvelope.data": {
+        "operationId": "PersonEnvelopeGET",
         "parameters": {
-          "id": "$response.body#/PersonEnvelop.data/@id"
+          "id": "$response.body#/PersonEnvelope.data/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
       },

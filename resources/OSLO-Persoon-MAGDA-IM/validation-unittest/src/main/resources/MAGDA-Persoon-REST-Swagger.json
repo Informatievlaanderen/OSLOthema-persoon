@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "MAGDA geefPersoon REST",
+    "title": "MAGDA persoon.personen REST",
     "version": "0.2.0",
     "contact": {
         "name": "MAGDA Service Desk",
@@ -20,11 +20,11 @@
   ],
   "components": {
     "schemas": {
-      "PersonEnvelope": { "$ref": "components.json#/components/schemas/PersonEnvelop" }
+      "PersonEnvelope": { "$ref": "components.json#/components/schemas/PersonEnvelope" }
     }
   },
   "paths": {
-    "/persoon": {
+    "/personen": {
       "get": {
         "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
         "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
@@ -104,7 +104,7 @@
             "description": "GeregistreerdPersoon object gevonden.",
             "content": {
               "application/ld+json": {
-                "schema": { "$ref": "components.json#/components/schemas/PersonEnvelop" }
+                "schema": { "$ref": "components.json#/components/schemas/PersonEnvelope" }
               }
             }
           },
