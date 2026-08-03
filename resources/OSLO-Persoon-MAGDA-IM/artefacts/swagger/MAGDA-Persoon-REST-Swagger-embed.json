@@ -686,72 +686,27 @@
             "pattern": "^Problemdetail$"
           },
           "type": {
-            "type": "object",
-            "description": "Aard van de fout.",
-            "properties": {
-              "@id": {
-                "type": "string",
-                "format": "uri"
-              }
-            },
-            "required": [
-              "@id"
-            ]
+            "type": "string",
+            "format": "uri",
+            "description": "Aard van de fout."
           },
           "title": {
-            "type": "object",
-            "description": "Korte mensleesbare beschrijving van de fout.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "@value"
-            ]
+            "type": "string",
+            "description": "Korte mensleesbare beschrijving van de fout."
           },
           "status": {
-            "type": "object",
-            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".",
-            "properties": {
-              "@value": {
-                "type": "number",
-                "format": "int64"
-              },
-              "@type": {
-                "type": "string",
-                "pattern": "^Integer$"
-              }
-            },
-            "required": [
-              "@value",
-              "@type"
-            ]
+            "type": "integer",
+            "format": "int64",
+            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\"."
           },
           "detail": {
-            "type": "object",
-            "description": "Mensleesbare beschrijving van de fout.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "@value"
-            ]
+            "type": "string",
+            "description": "Mensleesbare beschrijving van de fout."
           },
           "instance": {
-            "type": "object",
-            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.",
-            "properties": {
-              "@id": {
-                "type": "string",
-                "format": "uri"
-              }
-            },
-            "required": [
-              "@id"
-            ]
+            "type": "string",
+            "format": "uri",
+            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request."
           }
         },
         "required": [
