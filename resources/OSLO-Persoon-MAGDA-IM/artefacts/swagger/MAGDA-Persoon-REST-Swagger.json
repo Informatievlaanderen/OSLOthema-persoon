@@ -24,7 +24,7 @@
     }
   },
   "paths": {
-    "/persoon": {
+    "/personen": {
       "get": {
         "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
         "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
