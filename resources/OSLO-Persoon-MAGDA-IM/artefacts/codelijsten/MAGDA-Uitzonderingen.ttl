@@ -187,12 +187,24 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "60009".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/60010> a skos:Concept;
+    skos:prefLabel "Dienst tijdelijk onbeschikbaar"@nl;
+    skos:definition "Dient tijdelijk ongepland onbeschikbaar. Probeer het later opnieuw."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "60010".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/60013> a skos:Concept;
     skos:prefLabel "Fout in brontoegang"@nl;
     skos:definition "Fout in toegang naar de bron."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "60013".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/60019> a skos:Concept;
+    skos:prefLabel "Dienst gepauzeerd"@nl;
+    skos:definition "Dient gepauzeerd voor gepland onderhoud. Probeer het later opnieuw. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "60019".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99981> a skos:Concept;
     skos:prefLabel "Onbekend land"@nl;
     skos:definition "Gegevens over het land zijn niet gekende bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
@@ -205,6 +217,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "99983".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99996> a skos:Concept;
+    skos:prefLabel "Bron tijdelijk onbeschikbaar"@nl;
+    skos:definition "Bron is tijdelijk ongepland onbeschikbaar."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "99996".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;
@@ -389,12 +407,24 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "60009".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60010> a skos:Concept;
+    skos:prefLabel "Dienst tijdelijk onbeschikbaar"@nl;
+    skos:definition "Dient tijdelijk ongepland onbeschikbaar. Probeer het later opnieuw."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60010".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60013> a skos:Concept;
     skos:prefLabel "Fout in brontoegang"@nl;
     skos:definition "Fout in toegang naar de bron."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "60013".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60019> a skos:Concept;
+    skos:prefLabel "Dienst gepauzeerd"@nl;
+    skos:definition "Dient gepauzeerd voor gepland onderhoud. Probeer het later opnieuw. Contacteer MAGDA via de Servicedesk."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60019".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99981> a skos:Concept;
     skos:prefLabel "Onbekend land"@nl;
     skos:definition "Gegevens over het land zijn niet gekende bij MAGDA. Contacteer MAGDA via de Servicedesk."@nl;
@@ -407,6 +437,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "99983".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99996> a skos:Concept;
+    skos:prefLabel "Bron tijdelijk onbeschikbaar"@nl;
+    skos:definition "Bron is tijdelijk ongepland onbeschikbaar."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "99996".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;

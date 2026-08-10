@@ -731,7 +731,7 @@
           "@context": {
             "type": "string",
             "description": "URI of the JSON-LD versioned context file for this response.",
-            "pattern": "^https:\\/\\/implementatie.data.test-vlaanderen.be\\/\\/doc\\/implementatiemodel\\/magda\\/persoon\\/v0.2.0\\/context\\/persoon.jsonld$"
+            "pattern": "^https:\\/\\/implementatie.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/v0.2.0\\/context\\/persoon.jsonld$"
           }
         },
         "required": [
