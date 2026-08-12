@@ -181,6 +181,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "60003".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/60006> a skos:Concept;
+    skos:prefLabel "Geen bronantwoord"@nl;
+    skos:definition "Geen antwoord van de bron ontvangen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "60006".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/60009> a skos:Concept;
     skos:prefLabel "Technisch probleem"@nl;
     skos:definition "Er heeft zich een technisch probleem voorgedaan."@nl;
@@ -217,12 +223,24 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "99983".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99994> a skos:Concept;
+    skos:prefLabel "Onbekende bronfout"@nl;
+    skos:definition "Onverwachte fout bij de bron."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "99994".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99996> a skos:Concept;
     skos:prefLabel "Bron tijdelijk onbeschikbaar"@nl;
     skos:definition "Bron is tijdelijk ongepland onbeschikbaar."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
     skos:notation "99996".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/99999> a skos:Concept;
+    skos:prefLabel "Technische fout"@nl;
+    skos:definition "Er heeft zich een technische fout voorgedaan."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering/v1>;
+    skos:notation "99999".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/v1/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;
@@ -401,6 +419,12 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "60003".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60006> a skos:Concept;
+    skos:prefLabel "Geen bronantwoord"@nl;
+    skos:definition "Geen antwoord van de bron ontvangen."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "60006".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60009> a skos:Concept;
     skos:prefLabel "Technisch probleem"@nl;
     skos:definition "Er heeft zich een technisch probleem voorgedaan."@nl;
@@ -437,12 +461,24 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "99983".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99994> a skos:Concept;
+    skos:prefLabel "Onbekende bronfout"@nl;
+    skos:definition "Onverwachte fout bij de bron."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "99994".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99996> a skos:Concept;
     skos:prefLabel "Bron tijdelijk onbeschikbaar"@nl;
     skos:definition "Bron is tijdelijk ongepland onbeschikbaar."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
     skos:notation "99996".
+<https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99999> a skos:Concept;
+    skos:prefLabel "Technische fout"@nl;
+    skos:definition "Er heeft zich een technische fout voorgedaan."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering>;
+    skos:notation "99999".
 <https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/UITZONDERING> a skos:Concept;
     skos:prefLabel "Onbekende code"@nl;
     skos:definition "De code is nog niet gekend bij MAGDA voor 'MAGDA Uitzonderingen'. Contacteer MAGDA via de Servicedesk."@nl;
