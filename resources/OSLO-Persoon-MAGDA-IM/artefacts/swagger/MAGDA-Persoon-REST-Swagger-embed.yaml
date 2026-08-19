@@ -1,7 +1,7 @@
 openapi: 3.0.4
 info:
   title: MAGDA persoon.personen REST
-  version: 0.2.6
+  version: 0.3.0
   contact:
     name: MAGDA Service Desk
     url: 'https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038'

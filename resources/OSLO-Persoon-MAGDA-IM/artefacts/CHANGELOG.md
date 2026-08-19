@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### [0.3.0] - 2026-08-19
+
+### Added
+- IT024
+- Onvolledige datums kunnen nu toegevoegd worden dankzij W3C OWL Time.
+- Registratiedetails kunnen nu voorzien worden.
+- Extra codelijsten voor o.a. IT024 toegevoegd.
+- Versieloze codelijsten voorzien.
+- Nog extra Uitzondering codes toegevoegd.
+
+### Changed
+- Uitzondering is nu een aparte klasse, specifiek voor MAGDA.
+- Overerving addressen aangepast zodat de generator deze kan meenemen.
+- ProblemDetail is nu in het Engels en volledig flat.
+
+### Fixed
+- Definitie typos
+- Ontbrekende labels
+- Label typos
+
+## [0.2.0] - 2026-07-20
+
+### Added
+- Ongedocumenteerde MAGDA Uitzondering codes toegevoegd.
+
+### Fixed
+- URI typos
+
 ## [0.1.1] - 2026-05-28
 
 ### Fixed
