@@ -1,7 +1,7 @@
 openapi: 3.0.4
 info:
   title: MAGDA persoon.personen REST
-  version: 0.3.0
+  version: 0.3.1
   contact:
     name: MAGDA Service Desk
     url: 'https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038'
@@ -256,6 +256,55 @@ components:
           $ref: '#/components/schemas/Organisatie'
       required:
         - '@type'
+    PersoonReferentie:
+      title: PersoonReferentie
+      type: object
+      description: Natuurlijk persoon waarvan enkel een beperkt aantal gegevens doorgegeven worden.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Persoon)
+          pattern: ^Persoon$
+        voornaam:
+          type: array
+          description: Lijst van String items.
+          items:
+            type: object
+            description: >-
+              Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de
+              Persoon van de andere personen in de familie.
+            properties:
+              '@value':
+                type: string
+            required:
+              - '@value'
+          minItems: 1
+        achternaam:
+          type: array
+          description: Lijst van String items.
+          items:
+            type: object
+            description: >-
+              Gedeelte van de volledige naam van de Persoon ontvangen van de
+              vorige generatie. Ook wel familienaam genoemd omdat de achternaam
+              een familiale verwantschap aanduidt.
+            properties:
+              '@value':
+                type: string
+            required:
+              - '@value'
+          minItems: 1
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+        heeftGeboorte:
+          $ref: '#/components/schemas/Geboorte'
+        heeftOverlijden:
+          $ref: '#/components/schemas/Overlijden'
+      required:
+        - '@type'
     Plaats:
       title: Plaats
       type: object
@@ -306,13 +355,13 @@ components:
           $ref: '#/components/schemas/Gezinsrelatietype'
         metPersoon:
           oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
           discriminator:
             propertyName: '@type'
             mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+              Persoon: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
         - metPersoon
@@ -388,13 +437,13 @@ components:
           $ref: '#/components/schemas/Plaats'
         metPersoon:
           oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
           discriminator:
             propertyName: '@type'
             mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+              Persoon: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
         - metPersoon
@@ -641,13 +690,13 @@ components:
           $ref: '#/components/schemas/Plaats'
         metPersoon:
           oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
           discriminator:
             propertyName: '@type'
             mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+              Persoon: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
         - metPersoon
@@ -774,6 +823,58 @@ components:
       required:
         - '@type'
         - registratie
+    GeregistreerdPersoonReferentie:
+      title: GeregistreerdPersoonReferentie
+      type: object
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register, waarvan enkel een beperkt aantal gegevens doorgegeven worden.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse GeregistreerdPersoon)
+          pattern: ^GeregistreerdPersoon$
+        registratie:
+          $ref: '#/components/schemas/Identificator'
+        voornaam:
+          type: array
+          description: Lijst van String items.
+          items:
+            type: object
+            description: >-
+              Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de
+              Persoon van de andere personen in de familie.
+            properties:
+              '@value':
+                type: string
+            required:
+              - '@value'
+          minItems: 1
+        achternaam:
+          type: array
+          description: Lijst van String items.
+          items:
+            type: object
+            description: >-
+              Gedeelte van de volledige naam van de Persoon ontvangen van de
+              vorige generatie. Ook wel familienaam genoemd omdat de achternaam
+              een familiale verwantschap aanduidt.
+            properties:
+              '@value':
+                type: string
+            required:
+              - '@value'
+          minItems: 1
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+        heeftGeboorte:
+          $ref: '#/components/schemas/Geboorte'
+        heeftOverlijden:
+          $ref: '#/components/schemas/Overlijden'
+      required:
+        - '@type'
+        - registratie
     Domicilie:
       title: Domicilie
       type: object
@@ -825,13 +926,13 @@ components:
           $ref: '#/components/schemas/Afstammingstype'
         metPersoon:
           oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
           discriminator:
             propertyName: '@type'
             mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+              Persoon: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
         - metPersoon
@@ -1038,25 +1139,25 @@ components:
           $ref: '#/components/schemas/Woonvormtype'
         gezinshoofd:
           oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
           discriminator:
             propertyName: '@type'
             mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+              Persoon: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
         gezinslid:
           type: array
           description: Lijst van Persoon items.
           items:
             oneOf:
-              - $ref: '#/components/schemas/Persoon'
-              - $ref: '#/components/schemas/GeregistreerdPersoon'
+              - $ref: '#/components/schemas/PersoonReferentie'
+              - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
             discriminator:
               propertyName: '@type'
               mapping:
-                Persoon: '#/components/schemas/Persoon'
-                GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+                Persoon: '#/components/schemas/PersoonReferentie'
+                GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoonReferentie'
           minItems: 1
       required:
         - '@type'
