@@ -79,6 +79,18 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
     skos:notation "Gezinsrelatietype".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/Omstandigheid> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst Omstandigheid"@nl;
+    skos:definition "Codelijst van omstandigheden binnen MAGDA Persoon."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "Omstandigheid".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/Uitzondering> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst Uitzondering"@nl;
+    skos:definition "Codelijst van uitzonderingen binnen MAGDA Persoon."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon>;
+    skos:notation "Uitzondering".
 <https://data.vlaanderen.be/id/conceptscheme/IT000/Geslacht/v1> a skos:ConceptScheme;
     skos:prefLabel "Codelijst IT000 Geslacht types (v1)"@nl;
     skos:definition "Codelijst van geslacht in Informatie Type 000 'Identificatienummer'."@nl;
@@ -157,6 +169,18 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
     skos:notation "Gezinsrelatietype-v1".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/Omstandigheid/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst Omstandigheid (v1)"@nl;
+    skos:definition "Codelijst van omstandigheden binnen MAGDA Persoon."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:notation "Omstandigheid-v1".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/Uitzondering/v1> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst Uitzondering (v1)"@nl;
+    skos:definition "Codelijst van uitzonderingen binnen MAGDA Persoon."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon/v1>;
+    skos:notation "Uitzondering-v1".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA> a skos:ConceptScheme;
     skos:prefLabel "MAGDA codelijsten"@nl;
     skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
