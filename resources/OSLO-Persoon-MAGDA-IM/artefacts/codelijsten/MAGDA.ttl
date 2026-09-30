@@ -1,25 +1,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Omstandigheid> a skos:ConceptScheme;
-    skos:prefLabel "Codelijst MAGDA Omstandigheden"@nl;
-    skos:definition "Codelijst van alle omstandigheden van de MAGDA diensten."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    skos:notation "Omstandigheid".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA> a skos:ConceptScheme;
-    skos:prefLabel "MAGDA codelijsten"@nl;
-    skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
-    skos:notation "MAGDA".
-<https://data.vlaanderen.be/id/conceptscheme/MAGDA/Uitzondering> a skos:ConceptScheme;
-    skos:prefLabel "Codelijst MAGDA Uitzonderingen"@nl;
-    skos:definition "Codelijst van alle uitzonderingen van de MAGDA diensten."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
-    skos:notation "Uitzonderingen".
 <https://data.vlaanderen.be/id/conceptscheme/MAGDA/Persoon> a skos:ConceptScheme;
     skos:prefLabel "Codelijsten Implementatiemodel MAGDA Persoon"@nl;
     skos:definition "Codelijsten toegepast in de implementatie van Persoon bij MAGDA volgens het Implementatiemodel MAGDA Persoon."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA>;
     skos:notation "MAGDA-Persoon".
+<https://data.vlaanderen.be/id/conceptscheme/MAGDA> a skos:ConceptScheme;
+    skos:prefLabel "MAGDA codelijsten"@nl;
+    skos:definition "Alle codelijsten die specifiek zijn voor de MAGDA diensten."@nl;
+    skos:notation "MAGDA".
