@@ -104,7 +104,7 @@
           "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/09"
         },
         "metPersoon": {
-          "@type": "Persoon",
+          "@type": "PersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
@@ -117,13 +117,13 @@
         }
       },
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1964-04-21", "@type": "Date" },
         "metPersoon": {
-          "@type": "GeregistreerdPersoon",
+          "@type": "GeregistreerdPersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
@@ -140,13 +140,13 @@
         }
       },
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1964-04-21", "@type": "Date" },
         "metPersoon": {
-          "@type": "GeregistreerdPersoon",
+          "@type": "GeregistreerdPersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
           },
@@ -166,7 +166,7 @@
       {
         "@type": "Huwelijk",
         "metPersoon": {
-          "@type": "GeregistreerdPersoon",
+          "@type": "GeregistreerdPersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
@@ -190,7 +190,7 @@
           "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/11"
         },
         "metPersoon": {
-          "@type": "GeregistreerdPersoon",
+          "@type": "GeregistreerdPersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },

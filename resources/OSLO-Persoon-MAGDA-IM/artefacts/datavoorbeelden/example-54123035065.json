@@ -91,13 +91,13 @@
     }],
     "heeftPersoonsrelatie": [
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
         "metPersoon": {
-          "@type": "Persoon",
+          "@type": "PersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
           },
@@ -111,13 +111,13 @@
         }
       },
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
         "metPersoon": {
-          "@type": "Persoon",
+          "@type": "PersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
@@ -133,7 +133,7 @@
       {
         "@type": "Huwelijk",
         "metPersoon": {
-          "@type": "GeregistreerdPersoon",
+          "@type": "GeregistreerdPersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
