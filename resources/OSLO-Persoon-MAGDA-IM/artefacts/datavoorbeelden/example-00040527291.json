@@ -17,7 +17,7 @@
       "datum": {
         "@type": "Moment",
         "inXSDdatum": { "@value": "1900-04-05", "@type": "Date" },
-        "inDatumTijd": { 
+        "inDatumTijd": {
           "@type": "AlgemeneDatumTijdBeschrijving",
           "jaar": { "@value": "1900" },
           "maand": { "@value": "04" },
@@ -129,13 +129,13 @@
     ],
     "heeftPersoonsrelatie": [
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1900-04-05", "@type": "Date" },
         "metPersoon": {
-          "@type": "Persoon",
+          "@type": "PersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
           },
@@ -148,13 +148,13 @@
         }
       },
       {
-        "@type": "Afstamming",
+        "@type": "AfstammingOpgaandeLijn",
         "afstammingstype": {
           "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
         },
         "datumVanAfstamming": { "@value": "1900-04-05", "@type": "Date" },
         "metPersoon": {
-          "@type": "Persoon",
+          "@type": "PersoonReferentie",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
