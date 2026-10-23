@@ -1,0 +1,2501 @@
+openapi: 3.1.0
+info:
+  title: MAGDA persoon.personen REST
+  description: >-
+    Raadpleegt de gegevens van een persoon die is ingeschreven in een register,
+    op basis van het INSZ. De gegevens komen uit het Rijksregister (RR) of de
+    Kruispuntbank van de Sociale Zekerheid (KSZ), volgen het OSLO
+    Persoon-model en worden teruggegeven in JSON-LD. De huidige versie is een
+    MVP voorzien van de meest populaire informatietypes (IT's).
+  version: 0.4.0
+  contact:
+    name: MAGDA Service Desk
+    url: 'https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038'
+  license:
+    name: Gebruiksvoorwaarden
+    url: >-
+      https://vlaamseoverheid.atlassian.net/wiki/spaces/MG/pages/9056387121/persoon.personen+-+v1#Gebruiksvoorwaarden
+  x-guidelines-version: '1.0.0'
+externalDocs:
+  description: Gebruikersdocumentatie REST services - Persoon
+  url: >-
+    https://vlaamseoverheid.atlassian.net/wiki/spaces/MG/pages/9057959989/REST+services+-+Persoon
+servers:
+  - url: /v1/persoon
+    description: Basis URL
+components:
+  schemas:
+    Woonvormtype:
+      title: Woonvormtype
+      type: object
+      description: Enumeratie van Woonvormtype
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    RedenAfwezigheid:
+      title: RedenAfwezigheid
+      type: object
+      description: Enumeratie van RedenAfwezigheid
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Afstammingstype:
+      title: Afstammingstype
+      type: object
+      description: Enumeratie van Afstammingstype
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Geslacht:
+      title: Geslacht
+      type: object
+      description: Enumeratie van Geslacht
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    BurgerlijkeStaatType:
+      title: BurgerlijkeStaatType
+      type: object
+      description: Enumeratie van BurgerlijkeStaatType
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    ProcedureType:
+      title: ProcedureType
+      type: object
+      description: Enumeratie van ProcedureType
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    DomicilieStatus:
+      title: DomicilieStatus
+      type: object
+      description: Enumeratie van DomicilieStatus
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    AdministratiefBeheerdertype:
+      title: AdministratiefBeheerdertype
+      type: object
+      description: Enumeratie van AdministratiefBeheerdertype
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Dossierstatus:
+      title: Dossierstatus
+      type: object
+      description: Enumeratie van Dossierstatus
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Omstandigheid:
+      title: Omstandigheid
+      type: object
+      description: Enumeratie van Omstandigheid
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Gezinsrelatietype:
+      title: Gezinsrelatietype
+      type: object
+      description: Enumeratie van Gezinsrelatietype
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    UitzonderingOorsprong:
+      title: UitzonderingOorsprong
+      type: object
+      description: Enumeratie van UitzonderingOorsprong
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    UitzonderingType:
+      title: UitzonderingType
+      type: object
+      description: Enumeratie van UitzonderingType
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    Persoon.voornaam:
+      title: Persoon.voornaam
+      type: object
+      description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Persoon.achternaam:
+      title: Persoon.achternaam
+      type: object
+      description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Persoon.creatiedatum:
+      title: Persoon.creatiedatum
+      type: object
+      description: Datum waarop de gegevens zijn ingevoerd.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Persoon.modificatiedatum:
+      title: Persoon.modificatiedatum
+      type: object
+      description: Datum waarop de gegevens werden bijgewerkt.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Persoon:
+      title: Persoon
+      type: object
+      description: Natuurlijk persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Persoon)
+          pattern: ^Persoon$
+        voornaam:
+          type: array
+          description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/Persoon.voornaam'
+          minItems: 1
+        achternaam:
+          type: array
+          description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/Persoon.achternaam'
+          minItems: 1
+        contactinfo:
+          $ref: '#/components/schemas/Contactinfo'
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+        isHoofdVan:
+          $ref: '#/components/schemas/Gezin'
+        heeftBurgerlijkeStaat:
+          $ref: '#/components/schemas/BurgerlijkeStaat'
+        heeftGeboorte:
+          $ref: '#/components/schemas/Geboorte'
+        heeftOverlijden:
+          $ref: '#/components/schemas/Overlijden'
+        heeftInwonerschap:
+          type: array
+          description: Inwonerschap van de persoon. Lijst van Inwonerschap items.
+          items:
+            $ref: '#/components/schemas/Inwonerschap'
+          minItems: 1
+        heeftPersoonsrelatie:
+          type: array
+          description: Persoonsrelatie van de persoon. Lijst van Persoonsrelatie items.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/Gezinsrelatie'
+              - $ref: '#/components/schemas/Huwelijk'
+              - $ref: '#/components/schemas/Samenwonen'
+              - $ref: '#/components/schemas/Afstamming'
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
+                Huwelijk: '#/components/schemas/Huwelijk'
+                Samenwonen: '#/components/schemas/Samenwonen'
+                Afstamming: '#/components/schemas/Afstamming'
+          minItems: 1
+        isLidVan:
+          type: array
+          description: Persoon die tot een Gezin behoort. Lijst van Gezin items.
+          items:
+            $ref: '#/components/schemas/Gezin'
+          minItems: 1
+        creatiedatum:
+          $ref: '#/components/schemas/Persoon.creatiedatum'
+        modificatiedatum:
+          $ref: '#/components/schemas/Persoon.modificatiedatum'
+        bron:
+          $ref: '#/components/schemas/Organisatie'
+      required:
+        - '@type'
+    Plaats.plaatsnaam:
+      title: Plaats.plaatsnaam
+      type: object
+      description: Naam van de plaats of van het gebied.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Plaats.landcode:
+      title: Plaats.landcode
+      type: object
+      description: Code van het land waartoe de plaats behoort.
+      properties:
+        '@value':
+          type: string
+        '@type':
+          type: string
+      required:
+        - '@value'
+        - '@type'
+    Plaats:
+      title: Plaats
+      type: object
+      description: Een ruimtelijk gebied of benoemde plaats.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Plaats)
+          pattern: ^Plaats$
+        plaatsnaam:
+          $ref: '#/components/schemas/Plaats.plaatsnaam'
+        landcode:
+          $ref: '#/components/schemas/Plaats.landcode'
+      required:
+        - '@type'
+    Gezinsrelatie:
+      title: Gezinsrelatie
+      type: object
+      description: Relatie tussen leden van eenzelfde gezin.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Gezinsrelatie)
+          pattern: ^Gezinsrelatie$
+        gezinsrelatietype:
+          $ref: '#/components/schemas/Gezinsrelatietype'
+        metPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              PersoonReferentie: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
+      required:
+        - '@type'
+        - metPersoon
+    Overlijden:
+      title: Overlijden
+      type: object
+      description: Het doodgaan van een Persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Overlijden)
+          pattern: ^Overlijden$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+        datum:
+          $ref: '#/components/schemas/Moment'
+      required:
+        - '@type'
+    Persoonsgebeurtenis:
+      title: Persoonsgebeurtenis
+      type: object
+      description: Belangrijke gebeurtenis in het leven van een Persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Persoonsgebeurtenis)
+          pattern: ^Persoonsgebeurtenis$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+        datum:
+          $ref: '#/components/schemas/Moment'
+      required:
+        - '@type'
+    Geboorte:
+      title: Geboorte
+      type: object
+      description: Het ter wereld komen van een Persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Geboorte)
+          pattern: ^Geboorte$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+        datum:
+          $ref: '#/components/schemas/Moment'
+      required:
+        - '@type'
+    Huwelijk:
+      title: Huwelijk
+      type: object
+      description: "Een door burgerlijk of religieus recht geregelde\_samenlevingsvorm van twee personen."
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Huwelijk)
+          pattern: ^Huwelijk$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+        metPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              PersoonReferentie: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
+      required:
+        - '@type'
+        - metPersoon
+    Registratie:
+      title: Registratie
+      type: object
+      description: Opname van de Persoon in het register.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Registratie)
+          pattern: ^Registratie$
+        dossierstatus:
+          type: array
+          description: 'Toestand van het dossier van de Registratie. In het Rijksregister gebruikt wanneer de inschrijving in het register niet meer geldig is, bijvoorbeeld: omdat de persoon uit het register is geschrapt of een eerdere registratie werd geannuleerd of de persoon is overleden, etc. Lijst van Dossierstatus items.'
+          items:
+            $ref: '#/components/schemas/Dossierstatus'
+          minItems: 1
+        referentiedossier:
+          $ref: '#/components/schemas/Identificator'
+        redenAfwezigheid:
+          $ref: '#/components/schemas/RedenAfwezigheid'
+      required:
+        - '@type'
+    Versie.creatiedatum:
+      title: Versie.creatiedatum
+      type: object
+      description: Datum waarop de gegevens zijn ingevoerd.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Versie.modificatiedatum:
+      title: Versie.modificatiedatum
+      type: object
+      description: Datum waarop de gegevens werden bijgewerkt.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Versie:
+      title: Versie
+      type: object
+      description: Entiteit gedurende een bepaalde periode in de databank.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Versie)
+          pattern: ^Versie$
+        creatiedatum:
+          $ref: '#/components/schemas/Versie.creatiedatum'
+        modificatiedatum:
+          $ref: '#/components/schemas/Versie.modificatiedatum'
+        bron:
+          $ref: '#/components/schemas/Organisatie'
+      required:
+        - '@type'
+    FormeleOrganisatie:
+      title: FormeleOrganisatie
+      type: object
+      description: Een erkende Organisatie,erkend in brede zin of  meer specifiek in juridische zin met bijbehorende rechten en plichten.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse FormeleOrganisatie)
+          pattern: ^FormeleOrganisatie$
+      required:
+        - '@type'
+    Problemdetail.type:
+      title: Problemdetail.type
+      type: object
+      description: Aard van de fout.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          pattern: ^AnyURI$
+      required:
+        - '@id'
+        - '@type'
+    Problemdetail.title:
+      title: Problemdetail.title
+      type: object
+      description: Korte mensleesbare beschrijving van de fout.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Problemdetail.status:
+      title: Problemdetail.status
+      type: object
+      description: 'HTTP foutcode. Zoals beschreven in <a href="https://www.rfc-editor.org/rfc/rfc7231">RFC7231</a>. Bijvoorbeeld: 404 voor "Not Found".'
+      properties:
+        '@value':
+          type: integer
+          format: int64
+        '@type':
+          type: string
+          pattern: ^Integer$
+      required:
+        - '@value'
+        - '@type'
+    Problemdetail.detail:
+      title: Problemdetail.detail
+      type: object
+      description: Mensleesbare beschrijving van de fout.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Problemdetail.instance:
+      title: Problemdetail.instance
+      type: object
+      description: 'Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.'
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          pattern: ^AnyURI$
+      required:
+        - '@id'
+        - '@type'
+    Problemdetail:
+      title: Problemdetail
+      type: object
+      description: Meer gedetailleerde beschrijving van de fout in een HTTP response.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Problemdetail)
+          pattern: ^Problemdetail$
+        type:
+          $ref: '#/components/schemas/Problemdetail.type'
+        title:
+          $ref: '#/components/schemas/Problemdetail.title'
+        status:
+          $ref: '#/components/schemas/Problemdetail.status'
+        detail:
+          $ref: '#/components/schemas/Problemdetail.detail'
+        instance:
+          $ref: '#/components/schemas/Problemdetail.instance'
+        errors:
+          type: array
+          description: Mogelijke validatie-fouten die de aanleiding geven voor het probleem. Lijst van Error items.
+          items:
+            $ref: '#/components/schemas/Error'
+          minItems: 1
+      required:
+        - '@type'
+        - type
+        - title
+        - detail
+    PersonEnvelope:
+      title: PersonEnvelope
+      type: object
+      description: Enveloppe om Persoon en bijhorende validatiewaarschuwingen uit te wisselen.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse PersonEnvelope)
+          pattern: ^PersonEnvelope$
+        warning:
+          type: array
+          description: Foutmeldingen die opgetreden zijn bij het afleveren van de data. Foutmeldingen kunnen ook optreden bij HTTP 200 waarbij validatiefouten worden meegegeven zoals MAGDA Uitzonderingen. Lijst van Uitzondering items.
+          items:
+            $ref: '#/components/schemas/Uitzondering'
+          minItems: 1
+        data:
+          $ref: '#/components/schemas/GeregistreerdPersoon'
+        '@context':
+          type: string
+          description: URI of the JSON-LD versioned context file for this response.
+          pattern: ^https:\/\/implementatie.data.test-vlaanderen.be\/doc\/implementatiemodel\/magda\/persoon\/v0.4.0\/context\/persoon.jsonld$
+      required:
+        - '@type'
+        - data
+    NietMededeelbaar.sinds:
+      title: NietMededeelbaar.sinds
+      type: object
+      description: Datum wanneer de beslissing genomen is dat de informatie vertrouwelijk is.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    NietMededeelbaar:
+      title: NietMededeelbaar
+      type: object
+      description: Data die vertrouwelijk is en daardoor niet mag meegedeeld worden.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse NietMededeelbaar)
+          pattern: ^NietMededeelbaar$
+        sinds:
+          $ref: '#/components/schemas/NietMededeelbaar.sinds'
+        periode:
+          $ref: '#/components/schemas/Periode'
+      required:
+        - '@type'
+    Inwonerschap:
+      title: Inwonerschap
+      type: object
+      description: Het feit dat een Persoon verblijf houdt in een plaats of land.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Inwonerschap)
+          pattern: ^Inwonerschap$
+        jurisdictie:
+          $ref: '#/components/schemas/Jurisdictie'
+        heeftVerblijfplaats:
+          type: array
+          description: Plaats waar een persoon verblijft. Lijst van Verblijfplaats items.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/Domicilie'
+              - $ref: '#/components/schemas/AangegevenAdres'
+              - $ref: '#/components/schemas/VoorlopigeInschrijving'
+              - $ref: '#/components/schemas/Contactadres'
+              - $ref: '#/components/schemas/Postadres'
+              - $ref: '#/components/schemas/Referentieadres'
+              - $ref: '#/components/schemas/VerblijfplaatsBuitenlandDomicilie'
+              - $ref: '#/components/schemas/VerblijfplaatsBuitenland'
+              - $ref: '#/components/schemas/WettelijkVerblijf'
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Domicilie: '#/components/schemas/Domicilie'
+                AangegevenAdres: '#/components/schemas/AangegevenAdres'
+                VoorlopigeInschrijving: '#/components/schemas/VoorlopigeInschrijving'
+                Contactadres: '#/components/schemas/Contactadres'
+                Postadres: '#/components/schemas/Postadres'
+                Referentieadres: '#/components/schemas/Referentieadres'
+                VerblijfplaatsBuitenlandDomicilie: '#/components/schemas/VerblijfplaatsBuitenlandDomicilie'
+                VerblijfplaatsBuitenland: '#/components/schemas/VerblijfplaatsBuitenland'
+                WettelijkVerblijf: '#/components/schemas/WettelijkVerblijf'
+          minItems: 1
+      required:
+        - '@type'
+        - jurisdictie
+    Samenwonen:
+      title: Samenwonen
+      type: object
+      description: Regeling waarbij twee personen die niet getrouwd zijn samenleven.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Samenwonen)
+          pattern: ^Samenwonen$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+        metPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              PersoonReferentie: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
+      required:
+        - '@type'
+        - metPersoon
+    GeregistreerdPersoon.voornaam:
+      title: GeregistreerdPersoon.voornaam
+      type: object
+      description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    GeregistreerdPersoon.achternaam:
+      title: GeregistreerdPersoon.achternaam
+      type: object
+      description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    GeregistreerdPersoon.creatiedatum:
+      title: GeregistreerdPersoon.creatiedatum
+      type: object
+      description: Datum waarop de gegevens zijn ingevoerd.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    GeregistreerdPersoon.modificatiedatum:
+      title: GeregistreerdPersoon.modificatiedatum
+      type: object
+      description: Datum waarop de gegevens werden bijgewerkt.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    GeregistreerdPersoon:
+      title: GeregistreerdPersoon
+      type: object
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse GeregistreerdPersoon)
+          pattern: ^GeregistreerdPersoon$
+        registratie:
+          $ref: '#/components/schemas/Identificator'
+        registratiedetail:
+          $ref: '#/components/schemas/Registratie'
+        beheerder:
+          type: array
+          description: 'Verwijzing naar de Adminstratiefbeheerder van het dossier van de persoon. Normaal is er maar 1 beheerder aanwezig bij een persoon, maar in uitzonderlijke gevallen kunnen er meerdere beheerders zijn. Bijvoorbeeld: de persoon heeft een adres in het buitenland, is aan het verhuizen tussen gemeenten, etc. Lijst van AdministratiefBeheerder items.'
+          items:
+            $ref: '#/components/schemas/AdministratiefBeheerder'
+          minItems: 1
+        voornaam:
+          type: array
+          description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistreerdPersoon.voornaam'
+          minItems: 1
+        achternaam:
+          type: array
+          description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistreerdPersoon.achternaam'
+          minItems: 1
+        contactinfo:
+          $ref: '#/components/schemas/Contactinfo'
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+        isHoofdVan:
+          $ref: '#/components/schemas/Gezin'
+        heeftBurgerlijkeStaat:
+          $ref: '#/components/schemas/BurgerlijkeStaat'
+        heeftGeboorte:
+          $ref: '#/components/schemas/Geboorte'
+        heeftOverlijden:
+          $ref: '#/components/schemas/Overlijden'
+        heeftInwonerschap:
+          type: array
+          description: Inwonerschap van de persoon. Lijst van Inwonerschap items.
+          items:
+            $ref: '#/components/schemas/Inwonerschap'
+          minItems: 1
+        heeftPersoonsrelatie:
+          type: array
+          description: Persoonsrelatie van de persoon. Lijst van Persoonsrelatie items.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/Gezinsrelatie'
+              - $ref: '#/components/schemas/Huwelijk'
+              - $ref: '#/components/schemas/Samenwonen'
+              - $ref: '#/components/schemas/Afstamming'
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
+                Huwelijk: '#/components/schemas/Huwelijk'
+                Samenwonen: '#/components/schemas/Samenwonen'
+                Afstamming: '#/components/schemas/Afstamming'
+          minItems: 1
+        isLidVan:
+          type: array
+          description: Persoon die tot een Gezin behoort. Lijst van Gezin items.
+          items:
+            $ref: '#/components/schemas/Gezin'
+          minItems: 1
+        creatiedatum:
+          $ref: '#/components/schemas/GeregistreerdPersoon.creatiedatum'
+        modificatiedatum:
+          $ref: '#/components/schemas/GeregistreerdPersoon.modificatiedatum'
+        bron:
+          $ref: '#/components/schemas/Organisatie'
+      required:
+        - '@type'
+        - registratie
+    Domicilie:
+      title: Domicilie
+      type: object
+      description: Hoofdverblijfplaats van een Persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Domicilie)
+          pattern: ^Domicilie$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    AangegevenAdres:
+      title: AangegevenAdres
+      type: object
+      description: Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse AangegevenAdres)
+          pattern: ^AangegevenAdres$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    VoorlopigeInschrijving:
+      title: VoorlopigeInschrijving
+      type: object
+      description: De Persoon is voorlopig ingeschreven in het bevolkingsregister wanneer deze Persoon zich gevestigd heeft in een woning waar permanente bewoning niet toegelaten is.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse VoorlopigeInschrijving)
+          pattern: ^VoorlopigeInschrijving$
+        geldigheid:
+          $ref: '#/components/schemas/Periode'
+        procedure:
+          $ref: '#/components/schemas/ProcedureType'
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    Contactadres:
+      title: Contactadres
+      type: object
+      description: Het domicillie adres voor personen die in het BIS, RAD of RAN register geregistreerd zijn bij KSZ.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Contactadres)
+          pattern: ^Contactadres$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    Uitzondering.datum:
+      title: Uitzondering.datum
+      type: object
+      description: De datum waarop de Uitzondering aangemaakt werd.
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          type: string
+          pattern: ^DateTime$
+      required:
+        - '@value'
+        - '@type'
+    Uitzondering.diagnose:
+      title: Uitzondering.diagnose
+      type: object
+      description: Een beschrijving waarom de Uitzondering aangemaakt werd.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Uitzondering:
+      title: Uitzondering
+      type: object
+      description: Uitzondering geeft miet-kritieke problemen weer bij het uitwisselen.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Uitzondering)
+          pattern: ^Uitzondering$
+        datum:
+          $ref: '#/components/schemas/Uitzondering.datum'
+        diagnose:
+          $ref: '#/components/schemas/Uitzondering.diagnose'
+        oorsprong:
+          $ref: '#/components/schemas/UitzonderingOorsprong'
+        type:
+          $ref: '#/components/schemas/UitzonderingType'
+        omstandigheid:
+          $ref: '#/components/schemas/Omstandigheid'
+        annotatie:
+          type: array
+          description: Verwijzing naar annotaties die bij de Uitzondering horen. Lijst van Annotatie items.
+          items:
+            $ref: '#/components/schemas/Annotatie'
+          minItems: 1
+      required:
+        - '@type'
+    BelgischAdres:
+      title: BelgischAdres
+      type: object
+      description: Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid, een ligplaats, een standplaats of een perceel op basis van een gemeentenaam, een straatnaam, een huisnummer en eventueel een busnummer en een postcode.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse BelgischAdres)
+          pattern: ^BelgischAdres$
+      required:
+        - '@type'
+    Annotatie.waarde:
+      title: Annotatie.waarde
+      type: object
+      description: De waarde van het veld.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Annotatie.naam:
+      title: Annotatie.naam
+      type: object
+      description: Naam van het veld.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Annotatie:
+      title: Annotatie
+      type: object
+      description: Detailinformatie die meegegeven is bij een Uitzondering.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Annotatie)
+          pattern: ^Annotatie$
+        waarde:
+          $ref: '#/components/schemas/Annotatie.waarde'
+        naam:
+          $ref: '#/components/schemas/Annotatie.naam'
+      required:
+        - '@type'
+        - waarde
+        - naam
+    Error.status:
+      title: Error.status
+      type: object
+      description: 'HTTP foutcode. Zoals beschreven in <a href="https://www.rfc-editor.org/rfc/rfc7231">RFC7231</a>. Bijvoorbeeld: 404 voor "Not Found".'
+      properties:
+        '@value':
+          type: integer
+          format: int64
+        '@type':
+          type: string
+          pattern: ^Integer$
+      required:
+        - '@value'
+        - '@type'
+    Error.title:
+      title: Error.title
+      type: object
+      description: Korte mensleesbare beschrijving van de fout.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Error.type:
+      title: Error.type
+      type: object
+      description: Aard van de fout.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          pattern: ^AnyURI$
+      required:
+        - '@id'
+        - '@type'
+    Error:
+      title: Error
+      type: object
+      description: Beschrijving van de fout die is opgetreden.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Error)
+          pattern: ^Error$
+        status:
+          $ref: '#/components/schemas/Error.status'
+        title:
+          $ref: '#/components/schemas/Error.title'
+        type:
+          $ref: '#/components/schemas/Error.type'
+      required:
+        - '@type'
+        - title
+        - type
+    Jurisdictie:
+      title: Jurisdictie
+      type: object
+      description: Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Jurisdictie)
+          pattern: ^Jurisdictie$
+        plaats:
+          $ref: '#/components/schemas/Plaats'
+      required:
+        - '@type'
+    Gezin:
+      title: Gezin
+      type: object
+      description: Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Gezin)
+          pattern: ^Gezin$
+        gezinsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        woonvorm:
+          $ref: '#/components/schemas/Woonvormtype'
+        gezinshoofd:
+          oneOf:
+            - $ref: '#/components/schemas/Persoon'
+            - $ref: '#/components/schemas/GeregistreerdPersoon'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              Persoon: '#/components/schemas/Persoon'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+        gezinslid:
+          type: array
+          description: Personen waaruit het gezin bestaat. Lijst van Persoon items.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/Persoon'
+              - $ref: '#/components/schemas/GeregistreerdPersoon'
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Persoon: '#/components/schemas/Persoon'
+                GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+          minItems: 1
+      required:
+        - '@type'
+    BurgerlijkeStaat:
+      title: BurgerlijkeStaat
+      type: object
+      description: Burgerrechtelijke toestand van een Persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse BurgerlijkeStaat)
+          pattern: ^BurgerlijkeStaat$
+        type:
+          $ref: '#/components/schemas/BurgerlijkeStaatType'
+      required:
+        - '@type'
+    Organisatie.voorkeursnaam:
+      title: Organisatie.voorkeursnaam
+      type: object
+      description: Naam waarmee de Organisatie bij voorkeur wordt aangeduid.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Organisatie:
+      title: Organisatie
+      type: object
+      description: Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Organisatie)
+          pattern: ^Organisatie$
+        voorkeursnaam:
+          $ref: '#/components/schemas/Organisatie.voorkeursnaam'
+        identificator:
+          $ref: '#/components/schemas/Identificator'
+      required:
+        - '@type'
+    Postadres:
+      title: Postadres
+      type: object
+      description: Postadres van de verblijfplaats van een persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Postadres)
+          pattern: ^Postadres$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+      required:
+        - '@type'
+    Referentieadres.einddatum:
+      title: Referentieadres.einddatum
+      type: object
+      description: De datum waarop het referentieadres vervalt.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Referentieadres:
+      title: Referentieadres
+      type: object
+      description: Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Referentieadres)
+          pattern: ^Referentieadres$
+        einddatum:
+          $ref: '#/components/schemas/Referentieadres.einddatum'
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    VerblijfplaatsBuitenlandDomicilie:
+      title: VerblijfplaatsBuitenlandDomicilie
+      type: object
+      description: Hoofdverblijplaats in het buitenland.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse VerblijfplaatsBuitenlandDomicilie)
+          pattern: ^VerblijfplaatsBuitenlandDomicilie$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+        status:
+          $ref: '#/components/schemas/DomicilieStatus'
+        nietMededeelbaar:
+          $ref: '#/components/schemas/NietMededeelbaar'
+      required:
+        - '@type'
+    VerblijfplaatsBuitenland:
+      title: VerblijfplaatsBuitenland
+      type: object
+      description: Verblijplaats in het buitenland.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse VerblijfplaatsBuitenland)
+          pattern: ^VerblijfplaatsBuitenland$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+      required:
+        - '@type'
+    WettelijkVerblijf:
+      title: WettelijkVerblijf
+      type: object
+      description: Juridisch vastgelegde verblijplaats.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse WettelijkVerblijf)
+          pattern: ^WettelijkVerblijf$
+        verblijfsadres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+      required:
+        - '@type'
+    AdministratiefBeheerder.voorkeursnaam:
+      title: AdministratiefBeheerder.voorkeursnaam
+      type: object
+      description: Naam waarmee de Organisatie bij voorkeur wordt aangeduid.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    AdministratiefBeheerder:
+      title: AdministratiefBeheerder
+      type: object
+      description: Organisatie die het dossier van de persoon in het register beheert.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse AdministratiefBeheerder)
+          pattern: ^AdministratiefBeheerder$
+        voorkeursnaam:
+          $ref: '#/components/schemas/AdministratiefBeheerder.voorkeursnaam'
+        type:
+          $ref: '#/components/schemas/AdministratiefBeheerdertype'
+        identificator:
+          $ref: '#/components/schemas/Identificator'
+      required:
+        - '@type'
+    AfstammingDalendeLijn.datumVanAfstamming:
+      title: AfstammingDalendeLijn.datumVanAfstamming
+      type: object
+      description: De datum waarop de afstamming wordt vastgesteld.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    AfstammingDalendeLijn:
+      title: AfstammingDalendeLijn
+      type: object
+      description: Het bloedverwantschap tussen een persoon en kinderen van de persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse AfstammingDalendeLijn)
+          pattern: ^AfstammingDalendeLijn$
+        afstammingstype:
+          $ref: '#/components/schemas/Afstammingstype'
+        datumVanAfstamming:
+          $ref: '#/components/schemas/AfstammingDalendeLijn.datumVanAfstamming'
+        vanPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/Persoon'
+            - $ref: '#/components/schemas/GeregistreerdPersoon'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              Persoon: '#/components/schemas/Persoon'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+        metPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              PersoonReferentie: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
+      required:
+        - '@type'
+        - vanPersoon
+        - metPersoon
+    AfstammingOpgaandeLijn.datumVanAfstamming:
+      title: AfstammingOpgaandeLijn.datumVanAfstamming
+      type: object
+      description: De datum waarop de afstamming wordt vastgesteld.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    AfstammingOpgaandeLijn:
+      title: AfstammingOpgaandeLijn
+      type: object
+      description: Het bloedverwantschap tussen een persoon en ouders van de persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse AfstammingOpgaandeLijn)
+          pattern: ^AfstammingOpgaandeLijn$
+        afstammingstype:
+          $ref: '#/components/schemas/Afstammingstype'
+        datumVanAfstamming:
+          $ref: '#/components/schemas/AfstammingOpgaandeLijn.datumVanAfstamming'
+        vanPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/Persoon'
+            - $ref: '#/components/schemas/GeregistreerdPersoon'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              Persoon: '#/components/schemas/Persoon'
+              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+        metPersoon:
+          oneOf:
+            - $ref: '#/components/schemas/PersoonReferentie'
+            - $ref: '#/components/schemas/GeregistreerdPersoonReferentie'
+          discriminator:
+            propertyName: '@type'
+            mapping:
+              PersoonReferentie: '#/components/schemas/PersoonReferentie'
+              GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
+      required:
+        - '@type'
+        - vanPersoon
+        - metPersoon
+    PersoonReferentie.achternaam:
+      title: PersoonReferentie.achternaam
+      type: object
+      description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    PersoonReferentie.voornaam:
+      title: PersoonReferentie.voornaam
+      type: object
+      description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    PersoonReferentie:
+      title: PersoonReferentie
+      type: object
+      description: Natuurlijk persoon.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse PersoonReferentie)
+          pattern: ^PersoonReferentie$
+        achternaam:
+          type: array
+          description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/PersoonReferentie.achternaam'
+          minItems: 1
+        voornaam:
+          type: array
+          description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/PersoonReferentie.voornaam'
+          minItems: 1
+        contactinfo:
+          $ref: '#/components/schemas/Contactinfo'
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+      required:
+        - '@type'
+    GeregistreerdPersoonReferentie.achternaam:
+      title: GeregistreerdPersoonReferentie.achternaam
+      type: object
+      description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    GeregistreerdPersoonReferentie.voornaam:
+      title: GeregistreerdPersoonReferentie.voornaam
+      type: object
+      description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    GeregistreerdPersoonReferentie.creatiedatum:
+      title: GeregistreerdPersoonReferentie.creatiedatum
+      type: object
+      description: Datum waarop de gegevens zijn ingevoerd.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    GeregistreerdPersoonReferentie.modificatiedatum:
+      title: GeregistreerdPersoonReferentie.modificatiedatum
+      type: object
+      description: Datum waarop de gegevens werden bijgewerkt.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    GeregistreerdPersoonReferentie:
+      title: GeregistreerdPersoonReferentie
+      type: object
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse GeregistreerdPersoonReferentie)
+          pattern: ^GeregistreerdPersoonReferentie$
+        registratie:
+          $ref: '#/components/schemas/Identificator'
+        achternaam:
+          type: array
+          description: Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistreerdPersoonReferentie.achternaam'
+          minItems: 1
+        voornaam:
+          type: array
+          description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistreerdPersoonReferentie.voornaam'
+          minItems: 1
+        contactinfo:
+          $ref: '#/components/schemas/Contactinfo'
+        geslacht:
+          $ref: '#/components/schemas/Geslacht'
+        isHoofdVan:
+          $ref: '#/components/schemas/Gezin'
+        heeftBurgerlijkeStaat:
+          $ref: '#/components/schemas/BurgerlijkeStaat'
+        heeftGeboorte:
+          $ref: '#/components/schemas/Geboorte'
+        heeftOverlijden:
+          $ref: '#/components/schemas/Overlijden'
+        heeftInwonerschap:
+          type: array
+          description: Inwonerschap van de persoon. Lijst van Inwonerschap items.
+          items:
+            $ref: '#/components/schemas/Inwonerschap'
+          minItems: 1
+        heeftPersoonsrelatie:
+          type: array
+          description: Persoonsrelatie van de persoon. Lijst van Persoonsrelatie items.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/Gezinsrelatie'
+              - $ref: '#/components/schemas/Huwelijk'
+              - $ref: '#/components/schemas/Samenwonen'
+              - $ref: '#/components/schemas/Afstamming'
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
+                Huwelijk: '#/components/schemas/Huwelijk'
+                Samenwonen: '#/components/schemas/Samenwonen'
+                Afstamming: '#/components/schemas/Afstamming'
+          minItems: 1
+        isLidVan:
+          type: array
+          description: Persoon die tot een Gezin behoort. Lijst van Gezin items.
+          items:
+            $ref: '#/components/schemas/Gezin'
+          minItems: 1
+        creatiedatum:
+          $ref: '#/components/schemas/GeregistreerdPersoonReferentie.creatiedatum'
+        modificatiedatum:
+          $ref: '#/components/schemas/GeregistreerdPersoonReferentie.modificatiedatum'
+        bron:
+          $ref: '#/components/schemas/Organisatie'
+      required:
+        - '@type'
+        - registratie
+    Locatie:
+      title: Locatie
+      type: object
+      description: Een locatie kan een identificeerbare geografische locatie zijn (ISO 19112), maar deze locatie kan ook een niet-geografische locatie zijn, zoals een directory, rij of kolom. Als zodanig zijn er talloze manieren waarop locatie kan worden uitgedrukt.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Locatie)
+          pattern: ^Locatie$
+      required:
+        - '@type'
+    Adresvoorstelling.administratieveEenheidNiveau1:
+      title: Adresvoorstelling.administratieveEenheidNiveau1
+      type: object
+      description: Hoogste Administratieve eenheid van het adres, doorgaans een land.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.administratieveEenheidNiveau2:
+      title: Adresvoorstelling.administratieveEenheidNiveau2
+      type: object
+      description: De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.adresgebied:
+      title: Adresvoorstelling.adresgebied
+      type: object
+      description: 'Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bijvoorbeeld: de naam van het gehucht waarin het adres ligt.'
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.busnummer:
+      title: Adresvoorstelling.busnummer
+      type: object
+      description: Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Adresvoorstelling.gemeentenaam:
+      title: Adresvoorstelling.gemeentenaam
+      type: object
+      description: Gemeentenaam van het adres.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.huisnummer:
+      title: Adresvoorstelling.huisnummer
+      type: object
+      description: Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Adresvoorstelling.land:
+      title: Adresvoorstelling.land
+      type: object
+      description: Land waarin het adres gelegen is.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.locatieaanduiding:
+      title: Adresvoorstelling.locatieaanduiding
+      type: object
+      description: Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Adresvoorstelling.locatienaam:
+      title: Adresvoorstelling.locatienaam
+      type: object
+      description: Naam of omschrijving van het het geografisch object dat de adreslocator aanduidt.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.postbus:
+      title: Adresvoorstelling.postbus
+      type: object
+      description: Postbusnummer in een postkantoor.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Adresvoorstelling.postcode:
+      title: Adresvoorstelling.postcode
+      type: object
+      description: Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Adresvoorstelling.postnaam:
+      title: Adresvoorstelling.postnaam
+      type: object
+      description: Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.straatnaam:
+      title: Adresvoorstelling.straatnaam
+      type: object
+      description: Straatnaam van het adres.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling.volledigAdres:
+      title: Adresvoorstelling.volledigAdres
+      type: object
+      description: Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgchreven volgorde van de verschillende onderdelen weer.
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Adresvoorstelling:
+      title: Adresvoorstelling
+      type: object
+      description: Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Adresvoorstelling)
+          pattern: ^Adresvoorstelling$
+        administratieveEenheidNiveau1:
+          $ref: '#/components/schemas/Adresvoorstelling.administratieveEenheidNiveau1'
+        administratieveEenheidNiveau2:
+          $ref: '#/components/schemas/Adresvoorstelling.administratieveEenheidNiveau2'
+        adresgebied:
+          $ref: '#/components/schemas/Adresvoorstelling.adresgebied'
+        busnummer:
+          $ref: '#/components/schemas/Adresvoorstelling.busnummer'
+        gemeentenaam:
+          $ref: '#/components/schemas/Adresvoorstelling.gemeentenaam'
+        huisnummer:
+          $ref: '#/components/schemas/Adresvoorstelling.huisnummer'
+        land:
+          $ref: '#/components/schemas/Adresvoorstelling.land'
+        locatieaanduiding:
+          type: array
+          description: Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc. Lijst van String items.
+          items:
+            $ref: '#/components/schemas/Adresvoorstelling.locatieaanduiding'
+          minItems: 1
+        locatienaam:
+          type: array
+          description: Naam of omschrijving van het het geografisch object dat de adreslocator aanduidt. Lijst van LangString items.
+          items:
+            $ref: '#/components/schemas/Adresvoorstelling.locatienaam'
+          minItems: 1
+        postbus:
+          $ref: '#/components/schemas/Adresvoorstelling.postbus'
+        postcode:
+          $ref: '#/components/schemas/Adresvoorstelling.postcode'
+        postnaam:
+          $ref: '#/components/schemas/Adresvoorstelling.postnaam'
+        straatnaam:
+          $ref: '#/components/schemas/Adresvoorstelling.straatnaam'
+        volledigAdres:
+          $ref: '#/components/schemas/Adresvoorstelling.volledigAdres'
+        verwijstNaar:
+          $ref: '#/components/schemas/BelgischAdres'
+      required:
+        - '@type'
+    Identificator.identificator:
+      title: Identificator.identificator
+      type: object
+      description: String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.
+      properties:
+        '@value':
+          type: string
+        '@type':
+          type: string
+      required:
+        - '@value'
+        - '@type'
+    Identificator:
+      title: Identificator
+      type: object
+      description: Informatie gebruikt om een object uniek te identificeren.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Identificator)
+          pattern: ^Identificator$
+        identificator:
+          $ref: '#/components/schemas/Identificator.identificator'
+      required:
+        - '@type'
+    Contactinfo.aanschrijfvorm:
+      title: Contactinfo.aanschrijfvorm
+      type: object
+      description: 'Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie, Dokter, ...'
+      properties:
+        '@value':
+          type: string
+        '@language':
+          type: string
+          pattern: ^nl$
+      required:
+        - '@value'
+        - '@language'
+    Contactinfo.naam:
+      title: Contactinfo.naam
+      type: object
+      description: Naam van bijvoorbeeld de persoon die men kan contacteren.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Contactinfo.email:
+      title: Contactinfo.email
+      type: object
+      description: Email-adres waarnaar men kan mailen.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Contactinfo.faxnummer:
+      title: Contactinfo.faxnummer
+      type: object
+      description: Faxnummer waarnaar men kan faxen.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Contactinfo.telefoon:
+      title: Contactinfo.telefoon
+      type: object
+      description: Telefoonnummer waarop men kan bellen.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    Contactinfo.website:
+      title: Contactinfo.website
+      type: object
+      description: Website waarnaar men kan surfen.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          pattern: ^AnyURI$
+      required:
+        - '@id'
+        - '@type'
+    Contactinfo:
+      title: Contactinfo
+      type: object
+      description: Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Contactinfo)
+          pattern: ^Contactinfo$
+        aanschrijfvorm:
+          $ref: '#/components/schemas/Contactinfo.aanschrijfvorm'
+        naam:
+          $ref: '#/components/schemas/Contactinfo.naam'
+        email:
+          $ref: '#/components/schemas/Contactinfo.email'
+        faxnummer:
+          $ref: '#/components/schemas/Contactinfo.faxnummer'
+        telefoon:
+          $ref: '#/components/schemas/Contactinfo.telefoon'
+        website:
+          $ref: '#/components/schemas/Contactinfo.website'
+        adres:
+          $ref: '#/components/schemas/Adresvoorstelling'
+      required:
+        - '@type'
+    Moment.inXSDdatum:
+      title: Moment.inXSDdatum
+      type: object
+      description: Positie in de tijd uitgedrukt door middel van xsd:date.
+      properties:
+        '@value':
+          type: string
+          format: date
+        '@type':
+          type: string
+          pattern: ^Date$
+      required:
+        - '@value'
+        - '@type'
+    Moment:
+      title: Moment
+      type: object
+      description: Moment met omvang en duur nul.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Moment)
+          pattern: ^Moment$
+        inXSDdatum:
+          $ref: '#/components/schemas/Moment.inXSDdatum'
+        inDatumTijd:
+          $ref: '#/components/schemas/AlgemeneDatumTijdBeschrijving'
+      required:
+        - '@type'
+    AlgemeneDatumTijdBeschrijving.jaar:
+      title: AlgemeneDatumTijdBeschrijving.jaar
+      type: object
+      description: Jaar positie in een kalendersysteem.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    AlgemeneDatumTijdBeschrijving.maand:
+      title: AlgemeneDatumTijdBeschrijving.maand
+      type: object
+      description: Maand positie in een kalendersysteem.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    AlgemeneDatumTijdBeschrijving.dag:
+      title: AlgemeneDatumTijdBeschrijving.dag
+      type: object
+      description: Dag positie in een kalendersysteem.
+      properties:
+        '@value':
+          type: string
+      required:
+        - '@value'
+    AlgemeneDatumTijdBeschrijving:
+      title: AlgemeneDatumTijdBeschrijving
+      type: object
+      description: Algemene beschrijving van datum en tijd.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse AlgemeneDatumTijdBeschrijving)
+          pattern: ^AlgemeneDatumTijdBeschrijving$
+        jaar:
+          $ref: '#/components/schemas/AlgemeneDatumTijdBeschrijving.jaar'
+        maand:
+          $ref: '#/components/schemas/AlgemeneDatumTijdBeschrijving.maand'
+        dag:
+          $ref: '#/components/schemas/AlgemeneDatumTijdBeschrijving.dag'
+      required:
+        - '@type'
+    Periode:
+      title: Periode
+      type: object
+      description: Temporele Entiteit waarvan de omvang en duurtijd verschilt van nul, dit wil zeggen, waarvoor de begin- en eindtijd verschillend zijn.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse Periode)
+          pattern: ^Periode$
+        tot:
+          $ref: '#/components/schemas/Moment'
+        van:
+          $ref: '#/components/schemas/Moment'
+      required:
+        - '@type'
+    TemporeleEntiteit:
+      title: TemporeleEntiteit
+      type: object
+      description: Abstracte klasse voor temporele objecten.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse TemporeleEntiteit)
+          pattern: ^TemporeleEntiteit$
+      required:
+        - '@type'
+    TemporelePositie:
+      title: TemporelePositie
+      type: object
+      description: Abstracte klasse voor temporele posities.
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          type: string
+          description: Object type (klasse TemporelePositie)
+          pattern: ^TemporelePositie$
+      required:
+        - '@type'
+  parameters:
+    XCorrelationId:
+      name: X-Correlation-Id
+      required: true
+      in: header
+      description: >-
+        Correlatie ID van het request, in UUID-formaat. De response bevat
+        dezelfde waarde in de X-Correlation-Id header.
+      schema:
+        type: string
+        format: uuid
+    XRequestId:
+      name: X-Request-Id
+      required: false
+      in: header
+      description: >-
+        Unieke ID van het request, in UUID-formaat. Indien niet
+        meegegeven, genereert de dienst een waarde.
+      schema:
+        type: string
+        format: uuid
+  headers:
+    XCorrelationId:
+      description: >-
+        Correlatie ID van het request. Gelijk aan de waarde van de
+        X-Correlation-Id header in het request.
+      schema:
+        type: string
+        format: uuid
+paths:
+  /personen:
+    get:
+      summary: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      operationId: PersoonGET
+      security:
+        - OAuth2:
+            - persoon_personen_v1
+      parameters:
+        - name: X-INSZ
+          required: true
+          in: header
+          description: INSZ van een GeregistreerdPersoon object.
+          schema:
+            type: string
+            pattern: '^\d{11}$'
+        - $ref: '#/components/parameters/XCorrelationId'
+        - $ref: '#/components/parameters/XRequestId'
+        - name: source
+          required: true
+          in: query
+          description: Bron die geraadpleegd moet worden om de Persoon op te vragen.
+          schema:
+            type: string
+            pattern: ^(RR|KSZ)$
+          examples:
+            RR:
+              summary: Rijksregister (OVO027248)
+              value: RR
+            KSZ:
+              summary: Kruispuntbank van de Sociale Zekerheid (OVO008218)
+              value: KSZ
+        - name: embed
+          required: false
+          in: query
+          description: >-
+            Extra ITs die moeten worden opgevraagd die niet standaard bij de
+            bron worden meegegeven. Indien niet meegegeven zal deze extra
+            informatie niet in het antwoord zitten.
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              pattern: ^(Afstamming|AfstammingDalendeLijn)$
+          examples:
+            IT110:
+              summary: Afstamming (IT 110)
+              value:
+                - Afstamming
+            IT114:
+              summary: Afstamming in dalende lijn (IT 114)
+              value:
+                - AfstammingDalendeLijn
+            IT110-IT114:
+              summary: Afstamming (IT 110) en Afstamming in dalende lijn (IT 114)
+              value:
+                - Afstamming
+                - AfstammingDalendeLijn
+      responses:
+        '200':
+          description: |-
+            GeregistreerdPersoon object gevonden.
+
+            Niet-blokkerende uitzonderingen worden teruggegeven in de `warning`-array van de PersonEnvelope.
+            Elke uitzondering krijgt een eigen entry; de volgorde van de bron blijft behouden.
+            Het type van een uitzondering is `https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/{code}`.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/ld+json:
+              schema:
+                $ref: '#/components/schemas/PersonEnvelope'
+        '400':
+          description: >-
+            Bad Request. De vraag bevat ongeldige of ontbrekende gegevens.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '20002':
+                  summary: '20002 Ongeldig INSZ formaat'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/20002'
+                    title: 'Ongeldig INSZ formaat'
+                    status: 400
+                    detail: 'INSZ in de vraag heeft een ongeldige structuur.'
+                '40102':
+                  summary: '40102 Geen gegevensgroepen opgegeven'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40102'
+                    title: 'Geen gegevensgroepen opgegeven'
+                    status: 400
+                    detail: 'Er werden geen gegevensgroepen opgegeven in de vraag.'
+        '401':
+          description: >-
+            Unauthorized. Authenticatie van de client is mislukt.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '40006':
+                  summary: '40006 Autorisatiefout'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40006'
+                    title: 'Autorisatiefout'
+                    status: 401
+                    detail: 'Fout in autorisatie.'
+        '403':
+          description: >-
+            Forbidden. De client is geauthenticeerd, maar heeft geen toegang tot de gevraagde gegevens.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '40001':
+                  summary: '40001 Geen geldige wettelijke context'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40001'
+                    title: 'Geen geldige wettelijke context'
+                    status: 403
+                    detail: 'Er werd geen geldige wettelijke context opgegeven.'
+                '40201':
+                  summary: '40201 Opvraging overlijden niet toegestaan'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40201'
+                    title: 'Opvraging overlijden niet toegestaan'
+                    status: 403
+                    detail: 'Opvragen indicator ''overlijden'' is niet toegestaan.'
+                '40206':
+                  summary: '40206 Toestemming ontbreekt'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40206'
+                    title: 'Toestemming ontbreekt'
+                    status: 403
+                    detail: 'Geen toestemming om een van de gevraagde informatietypes op te halen.'
+        '404':
+          description: >-
+            Not Found. Er zijn geen gegevens beschikbaar voor dit INSZ. Bij code 40140 bevestigt noch ontkent het antwoord dat het INSZ bestaat.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '13202':
+                  summary: '13202 Niet opvraagbaar'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/13202'
+                    title: 'Niet opvraagbaar'
+                    status: 404
+                    detail: 'Gegevens niet opvraagbaar, geen persoonsdossier geregistreerd.'
+                '13252':
+                  summary: '13252 Periode niet gedekt'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/13252'
+                    title: 'Periode niet gedekt'
+                    status: 404
+                    detail: 'Registratie persoon dekt niet de gevraagde periode.'
+                '15021':
+                  summary: '15021 Geen gegevens wegens filtering'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/15021'
+                    title: 'Geen gegevens wegens filtering'
+                    status: 404
+                    detail: 'Geen gegevens in antwoord wegens filtering.'
+                '30001':
+                  summary: '30001 Geen gegevens'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30001'
+                    title: 'Geen gegevens'
+                    status: 404
+                    detail: 'Geen gegevens gevonden voor de vraag.'
+                '30002':
+                  summary: '30002 INSZ geannuleerd'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30002'
+                    title: 'INSZ geannuleerd'
+                    status: 404
+                    detail: 'INSZ geannuleerd.'
+                '30003':
+                  summary: '30003 Onbestaand INSZ'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30003'
+                    title: 'Onbestaand INSZ'
+                    status: 404
+                    detail: 'Het INSZ in de vraag bestaat niet.'
+                '40003':
+                  summary: '40003 Geen inschrijving'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40003'
+                    title: 'Geen inschrijving'
+                    status: 404
+                    detail: 'Geen inschrijving aanwezig voor het INSZ in de vraag.'
+                '40101':
+                  summary: '40101 Niet beheerd'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40101'
+                    title: 'Niet beheerd'
+                    status: 404
+                    detail: 'Het opgegeven INSZ wordt momenteel niet beheerd door het Rijksregister.'
+                '40140':
+                  summary: '40140 INSZ niet gekend in wettelijke context'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40140'
+                    title: 'INSZ niet gekend in wettelijke context'
+                    status: 404
+                    detail: 'INSZ niet gekend voor de klant in de juiste wettelijke context.'
+        '409':
+          description: >-
+            Conflict. De bron kan de opvraging voor dit INSZ niet uitvoeren.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '40019':
+                  summary: '40019 Bijwerking niet opnieuw uitvoeren'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40019'
+                    title: 'Bijwerking niet opnieuw uitvoeren'
+                    status: 409
+                    detail: 'Bijwerking niet opnieuw uitvoeren; contacteer de diensten van het Rijksregister.'
+                '45016':
+                  summary: '45016 INSZ anomalie'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/45016'
+                    title: 'INSZ anomalie'
+                    status: 409
+                    detail: 'Anomalie gevonden in INSZ.'
+        '422':
+          description: >-
+            Unprocessable Content. Het INSZ is syntactisch geldig, maar functioneel niet verwerkbaar.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '40200':
+                  summary: '40200 INSZ is Bisnummer'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/40200'
+                    title: 'INSZ is Bisnummer'
+                    status: 422
+                    detail: 'INSZ is een Bisnummer.'
+        '500':
+          description: >-
+            Internal Server Error. Er heeft zich een technische fout voorgedaan.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '60009':
+                  summary: '60009 Technisch probleem'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60009'
+                    title: 'Technisch probleem'
+                    status: 500
+                    detail: 'Er heeft zich een technisch probleem voorgedaan.'
+                '99999':
+                  summary: '99999 Technische fout'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99999'
+                    title: 'Technische fout'
+                    status: 500
+                    detail: 'Er heeft zich een technische fout voorgedaan.'
+        '502':
+          description: >-
+            Bad Gateway. De bron levert geen geldig antwoord.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '16018':
+                  summary: '16018 Niet beschikbaar'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/16018'
+                    title: 'Niet beschikbaar'
+                    status: 502
+                    detail: 'Gegevens uit externe bron zijn niet beschikbaar.'
+                '60003':
+                  summary: '60003 Fout formaat in vraag'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60003'
+                    title: 'Fout formaat in vraag'
+                    status: 502
+                    detail: 'Fout formaat in de vraag naar de bron toe.'
+                '99994':
+                  summary: '99994 Onverwachte fout bij de bron'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/99994'
+                    title: 'Onverwachte fout bij de bron'
+                    status: 502
+                    detail: 'Onverwachte fout bij de bron.'
+        '503':
+          description: >-
+            Service Unavailable. De dienst of de bron is tijdelijk niet beschikbaar.
+          headers:
+            X-Correlation-Id:
+              $ref: '#/components/headers/XCorrelationId'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problemdetail'
+              examples:
+                '60013':
+                  summary: '60013 Fout in brontoegang'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60013'
+                    title: 'Fout in brontoegang'
+                    status: 503
+                    detail: 'Fout in toegang naar de bron.'
+                '60019':
+                  summary: '60019 Dienst gepauzeerd'
+                  value:
+                    '@type': Problemdetail
+                    type: 'https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/60019'
+                    title: 'Dienst gepauzeerd'
+                    status: 503
+                    detail: 'Dienst gepauzeerd. Probeer later opnieuw. Contacteer de MAGDA helpdesk.'
