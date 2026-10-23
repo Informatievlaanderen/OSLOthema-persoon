@@ -45,10 +45,10 @@ components:
           format: uri
       required:
         - '@id'
-    Afstammingstype:
-      title: Afstammingstype
+    AfstammingDalendelijnstype:
+      title: AfstammingDalendelijnstype
       type: object
-      description: Enumeratie van Afstammingstype
+      description: Enumeratie van AfstammingDalendelijnstype
       properties:
         '@id':
           type: string
@@ -119,6 +119,16 @@ components:
       title: Omstandigheid
       type: object
       description: Enumeratie van Omstandigheid
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    AfstammingStijgendelijnstype:
+      title: AfstammingStijgendelijnstype
+      type: object
+      description: Enumeratie van AfstammingStijgendelijnstype
       properties:
         '@id':
           type: string
@@ -251,14 +261,16 @@ components:
               - $ref: '#/components/schemas/Gezinsrelatie'
               - $ref: '#/components/schemas/Huwelijk'
               - $ref: '#/components/schemas/Samenwonen'
-              - $ref: '#/components/schemas/Afstamming'
+              - $ref: '#/components/schemas/AfstammingDalendeLijn'
+              - $ref: '#/components/schemas/AfstammingOpgaandeLijn'
             discriminator:
               propertyName: '@type'
               mapping:
                 Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
                 Huwelijk: '#/components/schemas/Huwelijk'
                 Samenwonen: '#/components/schemas/Samenwonen'
-                Afstamming: '#/components/schemas/Afstamming'
+                AfstammingDalendeLijn: '#/components/schemas/AfstammingDalendeLijn'
+                AfstammingOpgaandeLijn: '#/components/schemas/AfstammingOpgaandeLijn'
           minItems: 1
         isLidVan:
           type: array
@@ -298,7 +310,6 @@ components:
           type: string
       required:
         - '@value'
-        - '@type'
     Plaats:
       title: Plaats
       type: object
@@ -625,7 +636,7 @@ components:
         '@context':
           type: string
           description: URI of the JSON-LD versioned context file for this response.
-          pattern: ^https:\/\/implementatie.data.test-vlaanderen.be\/doc\/implementatiemodel\/magda\/persoon\/v0.4.0\/context\/persoon.jsonld$
+          pattern: ^https:\/\/implementatie.data.vlaanderen.be\/doc\/implementatiemodel\/magda\/persoon\/v0.4.0\/context\/persoon.jsonld$
       required:
         - '@type'
         - data
@@ -837,14 +848,16 @@ components:
               - $ref: '#/components/schemas/Gezinsrelatie'
               - $ref: '#/components/schemas/Huwelijk'
               - $ref: '#/components/schemas/Samenwonen'
-              - $ref: '#/components/schemas/Afstamming'
+              - $ref: '#/components/schemas/AfstammingDalendeLijn'
+              - $ref: '#/components/schemas/AfstammingOpgaandeLijn'
             discriminator:
               propertyName: '@type'
               mapping:
                 Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
                 Huwelijk: '#/components/schemas/Huwelijk'
                 Samenwonen: '#/components/schemas/Samenwonen'
-                Afstamming: '#/components/schemas/Afstamming'
+                AfstammingDalendeLijn: '#/components/schemas/AfstammingDalendeLijn'
+                AfstammingOpgaandeLijn: '#/components/schemas/AfstammingOpgaandeLijn'
           minItems: 1
         isLidVan:
           type: array
@@ -1375,19 +1388,10 @@ components:
           type: string
           description: Object type (klasse AfstammingDalendeLijn)
           pattern: ^AfstammingDalendeLijn$
-        afstammingstype:
-          $ref: '#/components/schemas/Afstammingstype'
         datumVanAfstamming:
           $ref: '#/components/schemas/AfstammingDalendeLijn.datumVanAfstamming'
-        vanPersoon:
-          oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
-          discriminator:
-            propertyName: '@type'
-            mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+        afstammingstype:
+          $ref: '#/components/schemas/AfstammingDalendelijnstype'
         metPersoon:
           oneOf:
             - $ref: '#/components/schemas/PersoonReferentie'
@@ -1399,7 +1403,6 @@ components:
               GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
-        - vanPersoon
         - metPersoon
     AfstammingOpgaandeLijn.datumVanAfstamming:
       title: AfstammingOpgaandeLijn.datumVanAfstamming
@@ -1427,19 +1430,10 @@ components:
           type: string
           description: Object type (klasse AfstammingOpgaandeLijn)
           pattern: ^AfstammingOpgaandeLijn$
-        afstammingstype:
-          $ref: '#/components/schemas/Afstammingstype'
         datumVanAfstamming:
           $ref: '#/components/schemas/AfstammingOpgaandeLijn.datumVanAfstamming'
-        vanPersoon:
-          oneOf:
-            - $ref: '#/components/schemas/Persoon'
-            - $ref: '#/components/schemas/GeregistreerdPersoon'
-          discriminator:
-            propertyName: '@type'
-            mapping:
-              Persoon: '#/components/schemas/Persoon'
-              GeregistreerdPersoon: '#/components/schemas/GeregistreerdPersoon'
+        afstammingstype:
+          $ref: '#/components/schemas/AfstammingStijgendelijnstype'
         metPersoon:
           oneOf:
             - $ref: '#/components/schemas/PersoonReferentie'
@@ -1451,7 +1445,6 @@ components:
               GeregistreerdPersoonReferentie: '#/components/schemas/GeregistreerdPersoonReferentie'
       required:
         - '@type'
-        - vanPersoon
         - metPersoon
     PersoonReferentie.achternaam:
       title: PersoonReferentie.achternaam
@@ -1599,14 +1592,16 @@ components:
               - $ref: '#/components/schemas/Gezinsrelatie'
               - $ref: '#/components/schemas/Huwelijk'
               - $ref: '#/components/schemas/Samenwonen'
-              - $ref: '#/components/schemas/Afstamming'
+              - $ref: '#/components/schemas/AfstammingDalendeLijn'
+              - $ref: '#/components/schemas/AfstammingOpgaandeLijn'
             discriminator:
               propertyName: '@type'
               mapping:
                 Gezinsrelatie: '#/components/schemas/Gezinsrelatie'
                 Huwelijk: '#/components/schemas/Huwelijk'
                 Samenwonen: '#/components/schemas/Samenwonen'
-                Afstamming: '#/components/schemas/Afstamming'
+                AfstammingDalendeLijn: '#/components/schemas/AfstammingDalendeLijn'
+                AfstammingOpgaandeLijn: '#/components/schemas/AfstammingOpgaandeLijn'
           minItems: 1
         isLidVan:
           type: array
@@ -1789,7 +1784,7 @@ components:
     Adresvoorstelling.volledigAdres:
       title: Adresvoorstelling.volledigAdres
       type: object
-      description: Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgchreven volgorde van de verschillende onderdelen weer.
+      description: Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.
       properties:
         '@value':
           type: string
@@ -1862,7 +1857,6 @@ components:
           type: string
       required:
         - '@value'
-        - '@type'
     Identificator:
       title: Identificator
       type: object
