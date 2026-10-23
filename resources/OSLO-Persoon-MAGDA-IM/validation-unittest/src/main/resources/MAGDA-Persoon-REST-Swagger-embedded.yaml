@@ -522,64 +522,27 @@ components:
         - '@type'
     Problemdetail.type:
       title: Problemdetail.type
-      type: object
+      type: string
+      format: uri
       description: Aard van de fout.
-      properties:
-        '@id':
-          type: string
-          format: uri
-        '@type':
-          type: string
-          pattern: ^AnyURI$
-      required:
-        - '@id'
-        - '@type'
     Problemdetail.title:
       title: Problemdetail.title
-      type: object
+      type: string
       description: Korte mensleesbare beschrijving van de fout.
-      properties:
-        '@value':
-          type: string
-      required:
-        - '@value'
     Problemdetail.status:
       title: Problemdetail.status
-      type: object
+      type: integer
+      format: int64
       description: 'HTTP foutcode. Zoals beschreven in <a href="https://www.rfc-editor.org/rfc/rfc7231">RFC7231</a>. Bijvoorbeeld: 404 voor "Not Found".'
-      properties:
-        '@value':
-          type: integer
-          format: int64
-        '@type':
-          type: string
-          pattern: ^Integer$
-      required:
-        - '@value'
-        - '@type'
     Problemdetail.detail:
       title: Problemdetail.detail
-      type: object
+      type: string
       description: Mensleesbare beschrijving van de fout.
-      properties:
-        '@value':
-          type: string
-      required:
-        - '@value'
     Problemdetail.instance:
       title: Problemdetail.instance
-      type: object
+      type: string
+      format: uri
       description: 'Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.'
-      properties:
-        '@id':
-          type: string
-          format: uri
-        '@type':
-          type: string
-          pattern: ^AnyURI$
-      required:
-        - '@id'
-        - '@type'
     Problemdetail:
       title: Problemdetail
       type: object
@@ -1063,43 +1026,18 @@ components:
         - '@type'
         - waarde
         - naam
-    Error.status:
-      title: Error.status
-      type: object
-      description: 'HTTP foutcode. Zoals beschreven in <a href="https://www.rfc-editor.org/rfc/rfc7231">RFC7231</a>. Bijvoorbeeld: 404 voor "Not Found".'
-      properties:
-        '@value':
-          type: integer
-          format: int64
-        '@type':
-          type: string
-          pattern: ^Integer$
-      required:
-        - '@value'
-        - '@type'
     Error.title:
       title: Error.title
-      type: object
+      type: string
       description: Korte mensleesbare beschrijving van de fout.
-      properties:
-        '@value':
-          type: string
-      required:
-        - '@value'
     Error.type:
       title: Error.type
-      type: object
+      type: string
       description: Aard van de fout.
-      properties:
-        '@id':
-          type: string
-          format: uri
-        '@type':
-          type: string
-          pattern: ^AnyURI$
-      required:
-        - '@id'
-        - '@type'
+    Error.detail:
+      title: Error.detail
+      type: string
+      description: Mensleesbare beschrijving van de fout.
     Error:
       title: Error
       type: object
@@ -1112,14 +1050,15 @@ components:
           type: string
           description: Object type (klasse Error)
           pattern: ^Error$
-        status:
-          $ref: '#/components/schemas/Error.status'
+        detail:
+          $ref: '#/components/schemas/Error.detail'
         title:
           $ref: '#/components/schemas/Error.title'
         type:
           $ref: '#/components/schemas/Error.type'
       required:
         - '@type'
+        - detail
         - title
         - type
     Jurisdictie:
