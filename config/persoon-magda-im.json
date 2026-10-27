@@ -3,7 +3,7 @@
     "name": "persoon",
     "type": "impl",
     "eap": "OSLO-Persoon-MAGDA-IM.eap",
-    "diagram": "OSLO-Persoon-IM-metEnumeraties",
+    "diagram": "OSLO-Persoon-IM",
     "template": "persoon-im.j2",
     "title": "Implementatiemodel MAGDA-Persoon",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
