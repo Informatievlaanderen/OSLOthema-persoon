@@ -3,7 +3,7 @@
     "name": "persoon",
     "prefix": "magda",
     "type": "voc",
-    "eap": "OSLO-Persoon-MAGDA-IM-MVP.eap",
+    "eap": "1-OSLO-Persoon-MAGDA-IM-Named-Schemas.eap",
     "diagram": "OSLO-Persoon-IM-metEnumeraties",
     "template": "persoon-im-voc.j2",
     "title": "Vocabularium MAGDA-Persoon",
