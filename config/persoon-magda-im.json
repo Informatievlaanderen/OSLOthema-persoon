@@ -2,7 +2,7 @@
   {
     "name": "persoon",
     "type": "impl",
-    "eap": "4-OSLO-Persoon-MAGDA-IM-Problemdetail.eap",
+    "eap": "OSLO-Persoon-MAGDA-IM-MVP.eap",
     "diagram": "OSLO-Persoon-IM-metEnumeraties",
     "template": "persoon-im.j2",
     "title": "Implementatiemodel MAGDA-Persoon",
