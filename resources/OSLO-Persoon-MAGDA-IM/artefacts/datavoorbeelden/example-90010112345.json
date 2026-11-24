@@ -124,7 +124,7 @@
           }
         },
         {
-          "@type": "Referentieadres",
+          "@type": "WettelijkVerblijf",
           "verblijfsadres": {
             "@type": "Adresvoorstelling",
             "huisnummer": { "@value": "8" },
@@ -153,7 +153,7 @@
       {
         "@type": "Samenwonen",
         "metPersoon": {
-          "@type": "GeregistreerdPersoonReferentie",
+          "@type": "GeregistreerdPersoon",
           "registratie": {
             "@type": "Identificator",
             "identificator": { "@value": "88052012345" }

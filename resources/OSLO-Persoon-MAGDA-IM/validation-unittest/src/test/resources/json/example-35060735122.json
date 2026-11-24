@@ -3,13 +3,11 @@
   "@type": "PersonEnvelope",
   "warning": [
     {
-      "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004",
+      "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Persoon/Uitzondering/30004",
       "@type": "Uitzondering",
-      "oorsprong": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/UitzonderingOorsprong/MAGDA" },
-      "type": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/UitzonderingType/WAARSCHUWING" },
       "diagnose": { "@value": "Persoon heeft een nieuw INSZ verkregen" },
       "datum": { "@value": "2026-07-30T09:57:00Z", "@type": "DateTime" },
-      "omstandigheid": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Omstandigheid/100" },
+      "omstandigheid": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Persoon/Omstandigheid/100" },
       "annotatie": [
         {
           "@type": "Annotatie",
@@ -78,7 +76,7 @@
         "@id": "http://publications.europa.eu/resource/authority/country/DEU",
         "@type": "AdministratiefBeheerder",
         "type": {
-          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/DiplomatiekePost"
         },
         "voorkeursnaam": {
           "@language": "nl",

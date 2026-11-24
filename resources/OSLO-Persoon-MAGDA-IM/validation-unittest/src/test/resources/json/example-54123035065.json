@@ -45,7 +45,7 @@
       {
         "@type": "AdministratiefBeheerder",
         "type": {
-          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/Gemeente"
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/Gemeente"
         },
         "voorkeursnaam": {
           "@language": "nl",
@@ -97,7 +97,7 @@
         },
         "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
         "metPersoon": {
-          "@type": "PersoonReferentie",
+          "@type": "Persoon",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
           },
@@ -117,7 +117,7 @@
         },
         "datumVanAfstamming": { "@value": "1954-12-30", "@type": "Date" },
         "metPersoon": {
-          "@type": "PersoonReferentie",
+          "@type": "Persoon",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
@@ -133,7 +133,7 @@
       {
         "@type": "Huwelijk",
         "metPersoon": {
-          "@type": "GeregistreerdPersoonReferentie",
+          "@type": "GeregistreerdPersoon",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
