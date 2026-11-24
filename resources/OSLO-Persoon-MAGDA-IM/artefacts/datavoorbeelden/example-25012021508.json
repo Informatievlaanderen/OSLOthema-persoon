@@ -110,7 +110,7 @@
         },
         "datumVanAfstamming": { "@value": "1925-01-20", "@type": "Date" },
         "metPersoon": {
-          "@type": "PersoonReferentie",
+          "@type": "Persoon",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
           },
@@ -130,7 +130,7 @@
         },
         "datumVanAfstamming": { "@value": "1925-01-20", "@type": "Date" },
         "metPersoon": {
-          "@type": "PersoonReferentie",
+          "@type": "Persoon",
           "geslacht": {
             "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
           },
