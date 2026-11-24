@@ -47,7 +47,7 @@
         "@id": "http://publications.europa.eu/resource/authority/country/FRA",
         "@type": "AdministratiefBeheerder",
         "type": {
-          "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+          "@id": "https://data.vlaanderen.be/id/concept/IT001/AdministratiefBeheerdertype/DiplomatiekePost"
         },
         "voorkeursnaam": {
           "@language": "nl",
