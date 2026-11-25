@@ -1,0 +1,15 @@
+title: AdministratiefBeheerder
+type: object
+description: Organisatie die het dossier van de persoon in het register beheert.
+properties:
+  '@id':
+    type: string
+    format: uri
+  '@type':
+    type: string
+    description: Object type (klasse AdministratiefBeheerder)
+    pattern: ^AdministratiefBeheerder$
+  voorkeursnaam:
+    $ref: '#/components/schemas/AdministratiefBeheerder.voorkeursnaam'
+  type:
+    $ref: '#/components/schemas/AdministratiefBeheerdertype'
