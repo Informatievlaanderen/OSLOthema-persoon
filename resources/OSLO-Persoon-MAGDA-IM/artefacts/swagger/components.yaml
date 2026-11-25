@@ -71,16 +71,6 @@ components:
           format: uri
       required:
         - '@id'
-    ProcedureType:
-      title: ProcedureType
-      type: object
-      description: Enumeratie van ProcedureType
-      properties:
-        '@id':
-          type: string
-          format: uri
-      required:
-        - '@id'
     DomicilieStatus:
       title: DomicilieStatus
       type: object
